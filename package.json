@@ -1,0 +1,23 @@
+{
+  "name": "tactic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "ts-node-dev -r tsconfig-paths/register --transpile-only --ignore-watch node_modules src/index.ts"
+  },
+  "keywords": [],
+  "author": "Arlindo Boa",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.10.8",
+    "puppeteer": "^13.4.1",
+    "tsconfig-paths": "^3.12.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.6.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.2"
+  }
+}
