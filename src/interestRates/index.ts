@@ -3,7 +3,7 @@ import dayjs from 'dayjs'
 import { interestRate } from '@src/interestRates/interestRate'
 
 export const interestRates = async () => {
-  await fs.writeFile('date.txt', '31-12-2014')
+  await fs.writeFile('date.txt', '05-01-2020')
   let isBefore = true
 
   do {

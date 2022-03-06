@@ -1,6 +1,7 @@
 
 export const createRates = (preRates: number[]) => {
-  if (preRates.length === 3) {
+
+  if (preRates.length === 4) {
     return { 
       "FPD": preRates[0],
       "FPC": preRates[1],
