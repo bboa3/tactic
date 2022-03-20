@@ -1,0 +1,820 @@
+{
+  "MZN": {
+    "country": "Moçambique",
+    "flag": "https://flagcdn.com/w20/mz.png",
+    "name": "Mozambican Metical",
+    "iso": {
+      "code": "MZN",
+      "number": "943"
+    },
+    "units": {
+      "major": {
+        "name": "metical",
+        "symbol": "MT"
+      },
+      "minor": {
+        "name": "centavo",
+        "symbol": "",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "MT20",
+        "MT50",
+        "MT100",
+        "MT200",
+        "MT500",
+        "MT1000"
+      ],
+      "rare": []
+    },
+    "coins": {
+      "frequent": [
+        "MT1",
+        "MT2",
+        "MT5",
+        "MT10",
+        "5",
+        "10",
+        "50"
+      ],
+      "rare": []
+    }
+  },
+  "USD": {
+    "country": "Estados Unidos",
+    "flag": "https://flagcdn.com/w20/us.png",
+    "name": "US Dollar",
+    "iso": {
+      "code": "USD",
+      "number": "840"
+    },
+    "units": {
+      "major": {
+        "name": "dollar",
+        "symbol": "$"
+      },
+      "minor": {
+        "name": "cent",
+        "symbol": "¢",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "$1",
+        "$5",
+        "$10",
+        "$20",
+        "$50",
+        "$100"
+      ],
+      "rare": [
+        "2$"
+      ]
+    },
+    "coins": {
+      "frequent": [
+        "1¢",
+        "5¢",
+        "10¢",
+        "25¢"
+      ],
+      "rare": [
+        "$1",
+        "50¢"
+      ]
+    }
+  },
+  "ZAR": {
+    "country": "Àfrica do Sul",
+    "flag": "https://flagcdn.com/w20/za.png",
+    "name": "South African Rand",
+    "iso": {
+      "code": "ZAR",
+      "number": "710"
+    },
+    "units": {
+      "major": {
+        "name": "Rand",
+        "symbol": "R"
+      },
+      "minor": {
+        "name": "cent",
+        "symbol": "c",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "R10",
+        "R20",
+        "R50",
+        "R100",
+        "R200"
+      ],
+      "rare": []
+    },
+    "coins": {
+      "frequent": [
+        "R1",
+        "R2",
+        "R5",
+        "5c",
+        "10c",
+        "20c"
+      ],
+      "rare": []
+    }
+  },
+  "AED": {
+    "country": "Emirados Árabes Unidos",
+    "flag": "https://flagcdn.com/w20/ae.png",
+    "name": "Emirati Dirham",
+    "iso": {
+      "code": "AED",
+      "number": "784"
+    },
+    "units": {
+      "major": {
+        "name": "dirham",
+        "symbol": ".د.ب"
+      },
+      "minor": {
+        "name": "fils",
+        "symbol": "فلس",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "5.د.ب",
+        "10.د.ب",
+        "20.د.ب",
+        "50.د.ب",
+        "100.د.ب",
+        "200.د.ب",
+        "500.د.ب"
+      ],
+      "rare": [
+        "1000.د.ب"
+      ]
+    },
+    "coins": {
+      "frequent": [
+        "50فلس",
+        "1.د.ب"
+      ],
+      "rare": [
+        "25فلس"
+      ]
+    }
+  },
+  "AUD": {
+    "country": "Austrália",
+    "flag": "https://flagcdn.com/w20/au.png",
+    "name": "Australian Dollar",
+    "iso": {
+      "code": "AUD",
+      "number": "036"
+    },
+    "units": {
+      "major": {
+        "name": "dollar",
+        "symbol": "$"
+      },
+      "minor": {
+        "name": "cent",
+        "symbol": "c",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "5$",
+        "10$",
+        "20$",
+        "50$",
+        "100$"
+      ],
+      "rare": []
+    },
+    "coins": {
+      "frequent": [
+        "1$",
+        "2$",
+        "5c",
+        "10c",
+        "20c",
+        "50c"
+      ],
+      "rare": []
+    }
+  },
+  "BRL": {
+    "country": "Brasil",
+    "flag": "https://flagcdn.com/w20/br.png",
+    "name": "Brazilian real",
+    "iso": {
+      "code": "BRL",
+      "number": "986"
+    },
+    "units": {
+      "major": {
+        "name": "real",
+        "symbol": "R$"
+      },
+      "minor": {
+        "name": "centavo",
+        "symbol": "",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "R$2",
+        "R$5",
+        "R$10",
+        "R$20",
+        "R$50",
+        "R$100"
+      ],
+      "rare": [
+        "R$1"
+      ]
+    },
+    "coins": {
+      "frequent": [
+        "5",
+        "10",
+        "25",
+        "50",
+        "R$1"
+      ],
+      "rare": [
+        "1"
+      ]
+    }
+  },
+  "BWP": {
+    "country": "Botswana",
+    "flag": "https://flagcdn.com/w20/bw.png",
+    "name": "Botswana Pula",
+    "iso": {
+      "code": "BWP",
+      "number": "072"
+    },
+    "units": {
+      "major": {
+        "name": "Pula",
+        "symbol": "P"
+      },
+      "minor": {
+        "name": "Thebe",
+        "symbol": "t",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "P10",
+        "P20",
+        "P50",
+        "P100",
+        "P200"
+      ],
+      "rare": []
+    },
+    "coins": {
+      "frequent": [
+        "P1",
+        "P2",
+        "P5",
+        "5t",
+        "10t",
+        "25t",
+        "50t"
+      ],
+      "rare": []
+    }
+  },
+  "CAD": {
+    "country": "Canada",
+    "flag": "https://flagcdn.com/w20/ca.png",
+    "name": "Canadian Dollar",
+    "iso": {
+      "code": "CAD",
+      "number": "124"
+    },
+    "units": {
+      "major": {
+        "name": "dollar",
+        "symbol": "$"
+      },
+      "minor": {
+        "name": "cent",
+        "symbol": "¢",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "5$",
+        "10$",
+        "20$",
+        "50$",
+        "100$"
+      ],
+      "rare": [
+        "1$",
+        "2$",
+        "500$",
+        "1000$"
+      ]
+    },
+    "coins": {
+      "frequent": [
+        "1$",
+        "2$",
+        "5¢",
+        "10¢",
+        "25¢"
+      ],
+      "rare": [
+        "1¢",
+        "50¢"
+      ]
+    }
+  },
+  "CHF": {
+    "country": "Suíça",
+    "flag": "https://flagcdn.com/w20/ch.png",
+    "name": "Swiss Franc",
+    "iso": {
+      "code": "CHF",
+      "number": "756"
+    },
+    "units": {
+      "major": {
+        "name": "franc",
+        "symbol": "CHF"
+      },
+      "minor": {
+        "name": "rappen",
+        "symbol": "Rp.",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "CHF10",
+        "CHF20",
+        "CHF50",
+        "CHF100",
+        "CHF200",
+        "CHF1000"
+      ],
+      "rare": []
+    },
+    "coins": {
+      "frequent": [
+        "5Rp.",
+        "10Rp.",
+        "20Rp.",
+        "50Rp.",
+        "CHF1",
+        "CHF2",
+        "CHF5"
+      ],
+      "rare": []
+    }
+  },
+  "CNY": {
+    "country": "China",
+    "flag": "https://flagcdn.com/w20/cn.png",
+    "name": "Yuan or chinese renminbi",
+    "iso": {
+      "code": "CNY",
+      "number": "156"
+    },
+    "units": {
+      "major": {
+        "name": "yuan",
+        "symbol": "¥"
+      },
+      "minor": {
+        "name": "fēn",
+        "symbol": "分",
+        "majorValue": 0.01
+      },
+      "minor2": {
+        "name": "jiǎo",
+        "symbol": "角",
+        "majorValue": 0.1
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "¥1",
+        "¥5",
+        "¥10",
+        "¥20",
+        "¥50",
+        "¥100"
+      ],
+      "rare": [
+        "分1",
+        "分2",
+        "分5",
+        "角1",
+        "角2",
+        "角5",
+        "¥2"
+      ]
+    },
+    "coins": {
+      "frequent": [
+        "分1",
+        "分2",
+        "分5",
+        "角1",
+        "角5",
+        "¥1"
+      ],
+      "rare": []
+    }
+  },
+  "DKK": {
+    "country": "Dinamarca",
+    "flag": "https://flagcdn.com/w20/dk.png",
+    "name": "Danish krone",
+    "iso": {
+      "code": "DKK",
+      "number": "208"
+    },
+    "units": {
+      "major": {
+        "name": "kroner",
+        "symbol": "kr"
+      },
+      "minor": {
+        "name": "kroner",
+        "symbol": "øre",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "kr50",
+        "kr100",
+        "kr200",
+        "kr500",
+        "kr1000"
+      ],
+      "rare": []
+    },
+    "coins": {
+      "frequent": [
+        "50øre",
+        "kr1",
+        "kr2",
+        "kr5",
+        "kr10",
+        "kr20"
+      ],
+      "rare": []
+    }
+  },
+  "EUR": {
+    "country": "União Europeia",
+    "flag": "https://flagcdn.com/w20/eu.png",
+    "name": "Euro",
+    "iso": {
+      "code": "EUR",
+      "number": "978"
+    },
+    "units": {
+      "major": {
+        "name": "euro",
+        "symbol": "€"
+      },
+      "minor": {
+        "name": "cent",
+        "symbol": "c",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "€5",
+        "€10",
+        "€20",
+        "€50",
+        "€100"
+      ],
+      "rare": [
+        "€200",
+        "€500"
+      ]
+    },
+    "coins": {
+      "frequent": [
+        "€1",
+        "€2",
+        "5c",
+        "10c",
+        "20c",
+        "50c"
+      ],
+      "rare": [
+        "1c",
+        "2c"
+      ]
+    }
+  },
+  "GBP": {
+    "country": "Inglaterra",
+    "flag": "https://flagcdn.com/w20/gb-eng.png",
+    "name": "British Pound",
+    "iso": {
+      "code": "GBP",
+      "number": "826"
+    },
+    "units": {
+      "major": {
+        "name": "pound",
+        "symbol": "£"
+      },
+      "minor": {
+        "name": "penny",
+        "symbol": "p",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "£5",
+        "£10",
+        "£20",
+        "£50"
+      ],
+      "rare": [
+        "£100"
+      ]
+    },
+    "coins": {
+      "frequent": [
+        "£1",
+        "£2",
+        "1p",
+        "2p",
+        "5p",
+        "10p",
+        "20p",
+        "50p"
+      ],
+      "rare": []
+    }
+  },
+  "KWD": {
+    "country": "Kuwait",
+    "flag": "https://flagcdn.com/w20/kw.png",
+    "name": "Kuwaiti Dinar",
+    "iso": {
+      "code": "KWD",
+      "number": "414"
+    },
+    "units": {
+      "major": {
+        "name": "dinar",
+        "symbol": "ك"
+      },
+      "minor": {
+        "name": "fils",
+        "symbol": "",
+        "majorValue": 0.001
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "250",
+        "500",
+        "1ك",
+        "5ك",
+        "10ك",
+        "20ك"
+      ],
+      "rare": []
+    },
+    "coins": {
+      "frequent": [
+        "5",
+        "10",
+        "20",
+        "50",
+        "100"
+      ],
+      "rare": []
+    }
+  },
+  "MUR": {
+    "country": "Mauricias",
+    "flag": "https://flagcdn.com/w20/mu.png",
+    "name": "Mauritian rupee",
+    "iso": {
+      "code": "MUR",
+      "number": "480"
+    },
+    "units": {
+      "major": {
+        "name": "rupee",
+        "symbol": "Rs"
+      },
+      "minor": {
+        "name": "cent",
+        "symbol": "",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "Rs25",
+        "Rs50",
+        "Rs100",
+        "Rs200",
+        "Rs500",
+        "Rs1000",
+        "RS2000"
+      ],
+      "rare": []
+    },
+    "coins": {
+      "frequent": [
+        "Rs1",
+        "Rs5",
+        "Rs10",
+        "Rs20"
+      ],
+      "rare": []
+    }
+  },
+  "NOK": {
+    "country": "Noruega",
+    "flag": "https://flagcdn.com/w20/no.png",
+    "name": "Norwegian krone",
+    "iso": {
+      "code": "NOK",
+      "number": "578"
+    },
+    "units": {
+      "major": {
+        "name": "Krone",
+        "symbol": "kr"
+      },
+      "minor": {
+        "name": "øre",
+        "symbol": "",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "kr50",
+        "kr100",
+        "kr200",
+        "kr500",
+        "kr1000"
+      ],
+      "rare": []
+    },
+    "coins": {
+      "frequent": [
+        "kr1",
+        "kr5",
+        "kr10",
+        "kr20"
+      ],
+      "rare": []
+    }
+  },
+  "NZD": {
+    "country": "Nova Zelândia",
+    "flag": "https://flagcdn.com/w20/nz.png",
+    "name": "New Zealand Dollar",
+    "iso": {
+      "code": "NZD",
+      "number": "554"
+    },
+    "units": {
+      "major": {
+        "name": "dollar",
+        "symbol": "$"
+      },
+      "minor": {
+        "name": "cent",
+        "symbol": "c",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "$5",
+        "$10",
+        "$20",
+        "$50",
+        "$100"
+      ],
+      "rare": []
+    },
+    "coins": {
+      "frequent": [
+        "10c",
+        "20c",
+        "50c",
+        "$1",
+        "$2"
+      ],
+      "rare": []
+    }
+  },
+  "SEK": {
+    "country": "Suécia",
+    "flag": "https://flagcdn.com/w20/se.png",
+    "name": "Swedish krona",
+    "iso": {
+      "code": "SEK",
+      "number": "752"
+    },
+    "units": {
+      "major": {
+        "name": "krona",
+        "symbol": "kr"
+      },
+      "minor": {
+        "name": "ören",
+        "symbol": "",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "kr20",
+        "kr50",
+        "kr100",
+        "kr500"
+      ],
+      "rare": [
+        "kr1000"
+      ]
+    },
+    "coins": {
+      "frequent": [
+        "kr1",
+        "kr5",
+        "kr10"
+      ],
+      "rare": []
+    }
+  },
+  "ZMW": {
+    "country": "Zâmbia",
+    "flag": "https://flagcdn.com/w20/zm.png",
+    "name": "Zambian Kwacha",
+    "iso": {
+      "code": "ZMW",
+      "number": "967"
+    },
+    "units": {
+      "major": {
+        "name": "Kwacha",
+        "symbol": "ZMK"
+      },
+      "minor": {
+        "name": "ngwee",
+        "symbol": "",
+        "majorValue": 0.01
+      }
+    },
+    "banknotes": {
+      "frequent": [
+        "2 kwacha",
+        "5 kwacha",
+        "10 kwacha",
+        "20 kwacha",
+        "50 kwacha",
+        "100 kwacha"
+      ],
+      "rare": []
+    },
+    "coins": {
+      "frequent": [
+        "5 ngwee",
+        "10 ngwee",
+        "50 ngwee",
+        "1 kwacha"
+      ],
+      "rare": []
+    }
+  }
+}

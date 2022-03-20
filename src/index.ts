@@ -1,5 +1,9 @@
 import express from 'express'
-import fs from 'fs/promises'
+import { config } from 'dotenv'
+import dotenvExpand from 'dotenv-expand'
+import { bancoRates } from '@src/exchange'
+
+dotenvExpand(config())
 
 const app = express()
 
@@ -9,11 +13,14 @@ app.use(
   })
 )
 
-app.get('/', async (req, res) => {
-  const intRates = JSON.parse((await fs.readFile('interestRates.json', 'utf8')))
+app.get('/', bancoRates)
 
-  res.json(intRates)
-})
+
+// app.get('/', async (req, res) => {
+//   const intRates = JSON.parse((await fs.readFile('interestRates.json', 'utf8')))
+
+//   res.json(intRates)
+// })
 
 app.listen(3002, () => {
   console.log(`Server running on http://localhost:3002`)
