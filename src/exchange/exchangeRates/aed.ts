@@ -1,18 +1,11 @@
 
-const aedRates = (text: string) => {
+const aedRates = (exchanges: any) => {
+  const line = exchanges[exchanges.length - 1].Line
 
-  const buy = text.split('\n')[51].split(',').join('.');
-  
-  const sale = text.split('\n')[124].split(',').join('.');
-
-  const medium = text.split('\n')[124].split(',').join('.');
-  
   return {
-    buy: Number(buy),
-    sale: Number(sale),
-    medium: Number(medium)
+    buy: Number(line[1]),
+    sale: Number(line[3])
   }
-
 }
 
 export default aedRates;

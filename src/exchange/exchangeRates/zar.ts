@@ -1,18 +1,12 @@
 
-const zarRates = (text: string) => {
-
-  const buy = text.split('\n')[50].split(',').join('.');
-  
-  const sale = text.split('\n')[123].split(',').join('.');
-
-  const medium = text.split('\n')[147].split(',').join('.');
+const zarRates = (exchanges: any) => {
+  const line = exchanges[45].Line
+  const line2 = exchanges[46].Line
 
   return {
-    buy: Number(buy),
-    sale: Number(sale),
-    medium: Number(medium)
+    buy: Number(line[0].split(',').join('.')),
+    sale: Number(line2[0].split(',').join('.'))
   }
-
 }
 
 export default zarRates;

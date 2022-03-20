@@ -1,15 +1,14 @@
 import { resolve } from "path";
 import { DownloaderHelper } from 'node-downloader-helper';
-import { PDFNet } from '@pdftron/pdfnet-node';
 import { Request, Response } from "express";
-import { parseString } from 'xml2js'
-import getDateRates from '@src/exchange/exchangeRates/getDate';
 import getExchangeRates from '@src/exchange/exchangeRates/getExchangeRates';
+import dayjs from "dayjs";
+import { PDFNet } from '@pdftron/pdfnet-node';
+import xml2js from 'xml2js'
 
-
-const ratesPath = resolve(__dirname, '..', '..', 'files', 'ZMCI213_16032022.pdf');
+const ratesPath = resolve(__dirname, '..', '..', 'files', 'ZMCI213_01022016.pdf');
 const dest = resolve(__dirname, '..', '..', 'files');
-const url = 'https://www.bancomoc.mz/Files/TCMD/ZMCI213_16032022.pdf';
+const url = 'https://www.bancomoc.mz/Files/TCMD/ZMCI213_01022016.pdf';
 
 export const bancoRates = (_request: Request, response: Response) => {
   const dl = new DownloaderHelper(url, dest, {
@@ -23,7 +22,7 @@ export const bancoRates = (_request: Request, response: Response) => {
   dl.on('retry', () => console.log('I am trying...'))
   dl.on('error', err => console.log(err))
   
-  dl.on('end', () => {
+  dl.on('end', async () => {
     const extractText = async () => {
       
       const doc = await PDFNet.PDFDoc.createFromFilePath(ratesPath);
@@ -39,27 +38,23 @@ export const bancoRates = (_request: Request, response: Response) => {
       
       txt.begin(page, rect);
       
-      const text = await txt.getAsXML();
+      const xml = await txt.getAsXML();
 
-      parseString(text, (err, result) => {
-        if(err) return console.log(err)
-        
-        response.status(200).json(result)
-      })
+      var parser = new xml2js.Parser(/* options */);
+      const exchanges = await parser.parseStringPromise(xml)
       
-      const date = getDateRates(text);  
       const exchangeRates = {}   
+      const date = dayjs(new Date(2016, 1, 1)).format('DD-MM-YYYY') 
       
-      exchangeRates[date] = getExchangeRates(text)
+      exchangeRates[date] = getExchangeRates(exchanges)
       
-      return exchangeRates
+      response.status(200).json(exchangeRates)
     }
-    
-    PDFNet.runWithCleanup(extractText, process.env.PDF_KEY).then((exchangeRates) => {
-      // response.status(200).json(exchangeRates)
+      
+    PDFNet.runWithCleanup(extractText, process.env.PDF_KEY).then(() => {
       
     }).catch(err => console.log(err))
-  });
+  })
   
-  dl.start();
+  dl.start()
 }

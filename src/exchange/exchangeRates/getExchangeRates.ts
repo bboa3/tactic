@@ -16,28 +16,33 @@ import nokRates from './nok';
 import nzdRates from './nzd';
 import sekRates from './sek';
 import zmwRates from './zmw';
+import szlRates from './szl';
 
-const getExchangeRates = (text: string) => {
+const getExchangeRates = (data: any) => {
+  const exchanges = data.Page.Flow[0].Para
+  
+
   const exchangeRates = {}
 
-  exchangeRates['USD'] = usdRates(text)
-  exchangeRates['ZAR'] = zarRates(text)
-  exchangeRates['AED'] = aedRates(text)
-  exchangeRates['AUD'] = audRates(text) 
-  exchangeRates['BRL'] = brlRates(text)
-  exchangeRates['BWP'] = bwpRates(text)
-  exchangeRates['CAD'] = cadRates(text)
-  exchangeRates['CHF'] = chfRates(text)
-  exchangeRates['CNY'] = cnyRates(text)
-  exchangeRates['DKK'] = dkkRates(text)
-  exchangeRates['EUR'] = eurRates(text)
-  exchangeRates['GBP'] = gbpRates(text)
-  exchangeRates['KWD'] = kwdRates(text)
-  exchangeRates['MUR'] = murRates(text)
-  exchangeRates['NOK'] = nokRates(text)
-  exchangeRates['NZD'] = nzdRates(text)
-  exchangeRates['SEK'] = sekRates(text)
-  exchangeRates['ZMW'] = zmwRates(text)
+  exchangeRates['USD'] = usdRates(exchanges)
+  exchangeRates['ZAR'] = zarRates(exchanges)
+  exchangeRates['SZL'] = szlRates(exchanges)
+  exchangeRates['AED'] = aedRates(exchanges)
+  exchangeRates['AUD'] = audRates(exchanges) 
+  exchangeRates['BRL'] = brlRates(exchanges)
+  exchangeRates['BWP'] = bwpRates(exchanges)
+  exchangeRates['CAD'] = cadRates(exchanges)
+  exchangeRates['CHF'] = chfRates(exchanges)
+  exchangeRates['CNY'] = cnyRates(exchanges)
+  exchangeRates['DKK'] = dkkRates(exchanges)
+  exchangeRates['EUR'] = eurRates(exchanges)
+  exchangeRates['GBP'] = gbpRates(exchanges)
+  exchangeRates['KWD'] = kwdRates(exchanges)
+  exchangeRates['MUR'] = murRates(exchanges)
+  exchangeRates['NOK'] = nokRates(exchanges)
+  exchangeRates['NZD'] = nzdRates(exchanges)
+  exchangeRates['SEK'] = sekRates(exchanges)
+  exchangeRates['ZMW'] = zmwRates(exchanges)
 
   return exchangeRates
 }

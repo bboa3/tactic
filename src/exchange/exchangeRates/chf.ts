@@ -1,19 +1,11 @@
 
-const chfRates = (text: string) => {
-
-  const buy = text.split('\n')[57].split(',').join('.');
-  
-  const sale = text.split('\n')[130].split(',').join('.');
-
-  const medium = text.split('\n')[154].split(',').join('.');
-
+const chfRates = (exchanges: any) => {
+  const line = exchanges[exchanges.length - 1].Line
 
   return {
-    buy: Number(buy),
-    sale: Number(sale),
-    medium: Number(medium)
+    buy: Number(line[1]),
+    sale: Number(line[3])
   }
-
 }
 
 export default chfRates;

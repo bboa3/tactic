@@ -1,19 +1,11 @@
 
-const eurRates = (text: string) => {
-
-  const buy = text.split('\n')[61].split(',').join('.');
-
-  const sale = text.split('\n')[134].split(',').join('.');
-
-  const medium = text.split('\n')[158].split(',').join('.');
-
+const eurRates = (exchanges: any) => {
+  const line = exchanges[exchanges.length - 1].Line
 
   return {
-    buy: Number(buy),
-    sale: Number(sale),
-    medium: Number(medium)
+    buy: Number(line[1]),
+    sale: Number(line[3])
   }
-
 }
 
 export default eurRates;

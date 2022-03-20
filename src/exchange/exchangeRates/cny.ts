@@ -1,17 +1,10 @@
 
-const cnyRates = (text: string) => {
-
-  const buy = text.split('\n')[58].split(',').join('.');
-  
-  const sale = text.split('\n')[131].split(',').join('.');
-
-  const medium = text.split('\n')[155].split(',').join('.');
-
+const cnyRates = (exchanges: any) => {
+  const line = exchanges[exchanges.length - 1].Line
 
   return {
-    buy: Number(buy),
-    sale: Number(sale),
-    medium: Number(medium)
+    buy: Number(line[1]),
+    sale: Number(line[3])
   }
 
 }

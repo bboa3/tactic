@@ -1,19 +1,11 @@
 
-const cadRates = (text: string) => {
-
-  const buy = text.split('\n')[56].split(',').join('.');
-  
-  const sale = text.split('\n')[129].split(',').join('.');
-
-  const medium = text.split('\n')[153].split(',').join('.');
-
+const cadRates = (exchanges: any) => {
+  const line = exchanges[exchanges.length - 1].Line
 
   return {
-    buy: Number(buy),
-    sale: Number(sale),
-    medium: Number(medium)
+    buy: Number(line[1]),
+    sale: Number(line[3])
   }
-
 }
 
 export default cadRates;

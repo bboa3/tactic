@@ -1,18 +1,11 @@
 
-const nzdRates = (text: string) => {
-
-  const buy = text.split('\n')[68].split(',').join('.');
-  
-  const sale = text.split('\n')[141].split(',').join('.');
-
-  const medium = text.split('\n')[165].split(',').join('.');
+const nzdRates = (exchanges: any) => {
+  const line = exchanges[exchanges.length - 1].Line
 
   return {
-    buy: Number(buy),
-    sale: Number(sale),
-    medium: Number(medium)
+    buy: Number(line[1]),
+    sale: Number(line[3])
   }
-
 }
 
 export default nzdRates;

@@ -1,18 +1,11 @@
 
-const usdRates = (text: string) => {
-
-  const buy = text.split('\n')[49].split(',').join('.');
+const usdRates = (exchanges: any) => {
+  const line = exchanges[exchanges.length - 1].Line
   
-  const sale = text.split('\n')[122].split(',').join('.');
-
-  const medium = text.split('\n')[146].split(',').join('.');
-
   return {
-    buy: Number(buy),
-    sale: Number(sale),
-    medium: Number(medium)
+    buy: Number(line[1].split(',').join('.')),
+    sale: Number(line[3].split(',').join('.'))
   }
-
 }
 
 export default usdRates;

@@ -1,18 +1,12 @@
 
-const murRates = (text: string) => {
-
-  const buy = text.split('\n')[66].split(',').join('.');
-  
-  const sale = text.split('\n')[139].split(',').join('.');
-
-  const medium = text.split('\n')[163].split(',').join('.');
+const murRates = (exchanges: any) => {
+  const line = exchanges[45].Line
+  const line2 = exchanges[46].Line
 
   return {
-    buy: Number(buy),
-    sale: Number(sale),
-    medium: Number(medium)
+    buy: Number(line[3].split(',').join('.')),
+    sale: Number(line2[3].split(',').join('.'))
   }
-
 }
 
 export default murRates;

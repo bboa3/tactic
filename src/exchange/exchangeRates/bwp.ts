@@ -1,19 +1,12 @@
 
-const bwpRates = (text: string) => {
-
-  const buy = text.split('\n')[55].split(',').join('.');
-  
-  const sale = text.split('\n')[128].split(',').join('.');
-
-  const medium = text.split('\n')[152].split(',').join('.');
-
+const bwpRates = (exchanges: any) => {
+  const line = exchanges[45].Line
+  const line2 = exchanges[46].Line
 
   return {
-    buy: Number(buy),
-    sale: Number(sale),
-    medium: Number(medium)
+    buy: Number(line[1].split(',').join('.')),
+    sale: Number(line2[1].split(',').join('.'))
   }
-
 }
 
 export default bwpRates;
