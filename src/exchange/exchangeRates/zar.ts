@@ -1,4 +1,3 @@
-
 const zarRates = (exchanges: any) => {
   const line = exchanges[45].Line
   const line2 = exchanges[46].Line
@@ -9,4 +8,4 @@ const zarRates = (exchanges: any) => {
   }
 }
 
-export default zarRates;
+export default zarRates
