@@ -26,28 +26,72 @@ const getExchangeRates = (data: any) => {
 
   const exchangeRates = {}
 
-  exchangeRates['USD'] = usdRates(exchanges)
-  exchangeRates['ZAR'] = zarRates(exchanges)
-  exchangeRates['SZL'] = szlRates(exchanges)
-  exchangeRates['AED'] = aedRates(exchanges)
-  exchangeRates['AUD'] = audRates(exchanges) 
-  exchangeRates['BRL'] = brlRates(exchanges)
-  exchangeRates['ZWL'] = zwlRates(exchanges)
-  exchangeRates['TZS'] = tzsRates(exchanges)
-  exchangeRates['BWP'] = bwpRates(exchanges)
-  exchangeRates['MWK'] = mwkRates(exchanges)
-  exchangeRates['CAD'] = cadRates(exchanges)
-  exchangeRates['CHF'] = chfRates(exchanges)
-  exchangeRates['CNY'] = cnyRates(exchanges)
-  exchangeRates['DKK'] = dkkRates(exchanges)
-  exchangeRates['EUR'] = eurRates(exchanges)
-  exchangeRates['GBP'] = gbpRates(exchanges)
-  exchangeRates['KWD'] = kwdRates(exchanges)
-  exchangeRates['MUR'] = murRates(exchanges)
-  exchangeRates['NOK'] = nokRates(exchanges)
-  exchangeRates['NZD'] = nzdRates(exchanges)
-  exchangeRates['SEK'] = sekRates(exchanges)
-  exchangeRates['ZMW'] = zmwRates(exchanges)
+  if (usdRates(exchanges).buy) {
+    exchangeRates['USD'] = usdRates(exchanges)
+  }
+  if (zarRates(exchanges).buy) {
+    exchangeRates['ZAR'] = zarRates(exchanges)
+  }
+  if (szlRates(exchanges).buy) {
+    exchangeRates['SZL'] = szlRates(exchanges)
+  }
+  if (aedRates(exchanges).buy) {
+    exchangeRates['AED'] = aedRates(exchanges)
+  }
+  if (audRates(exchanges).buy) {
+    exchangeRates['AUD'] = audRates(exchanges) 
+  }
+  if (brlRates(exchanges).buy) {
+    exchangeRates['BRL'] = brlRates(exchanges)
+  }
+  if (zwlRates(exchanges).buy) {
+    exchangeRates['ZWL'] = zwlRates(exchanges)
+  }
+  if (tzsRates(exchanges).buy) {
+    exchangeRates['TZS'] = tzsRates(exchanges)
+  }
+  if (bwpRates(exchanges).buy) {
+    exchangeRates['BWP'] = bwpRates(exchanges)
+  }
+  if (mwkRates(exchanges).buy) {
+    exchangeRates['MWK'] = mwkRates(exchanges)
+  }
+  if (cadRates(exchanges).buy) {
+    exchangeRates['CAD'] = cadRates(exchanges)
+  }
+  if (chfRates(exchanges).buy) {
+    exchangeRates['CHF'] = chfRates(exchanges)
+  }
+  if (cnyRates(exchanges).buy) {
+    exchangeRates['CNY'] = cnyRates(exchanges)
+  }
+  if (dkkRates(exchanges).buy) {
+    exchangeRates['DKK'] = dkkRates(exchanges)
+  }
+  if (eurRates(exchanges).buy) {
+    exchangeRates['EUR'] = eurRates(exchanges)
+  }
+  if (gbpRates(exchanges).buy) {
+    exchangeRates['GBP'] = gbpRates(exchanges)
+  }
+  if (kwdRates(exchanges).buy) {
+    exchangeRates['KWD'] = kwdRates(exchanges)
+  }
+  if (murRates(exchanges).buy) {
+    exchangeRates['MUR'] = murRates(exchanges)
+  }
+  if (nokRates(exchanges).buy) {
+    exchangeRates['NOK'] = nokRates(exchanges)
+  }
+  if (nzdRates(exchanges).buy) {
+    exchangeRates['NZD'] = nzdRates(exchanges)
+  }
+  if (sekRates(exchanges).buy) {
+    exchangeRates['SEK'] = sekRates(exchanges)
+  }
+  if (zmwRates(exchanges).buy) {
+    exchangeRates['ZMW'] = zmwRates(exchanges)
+  }
 
   return exchangeRates
 }
