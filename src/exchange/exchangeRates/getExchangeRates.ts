@@ -18,6 +18,8 @@ import sekRates from './sek';
 import zmwRates from './zmw';
 import szlRates from './szl';
 import zwlRates from './zwl';
+import mwkRates from './mwk';
+import tzsRates from './tzs';
 
 const getExchangeRates = (data: any) => {
   const exchanges = data.Page.Flow[0].Para
@@ -31,7 +33,9 @@ const getExchangeRates = (data: any) => {
   exchangeRates['AUD'] = audRates(exchanges) 
   exchangeRates['BRL'] = brlRates(exchanges)
   exchangeRates['ZWL'] = zwlRates(exchanges)
+  exchangeRates['TZS'] = tzsRates(exchanges)
   exchangeRates['BWP'] = bwpRates(exchanges)
+  exchangeRates['MWK'] = mwkRates(exchanges)
   exchangeRates['CAD'] = cadRates(exchanges)
   exchangeRates['CHF'] = chfRates(exchanges)
   exchangeRates['CNY'] = cnyRates(exchanges)
