@@ -1,7 +1,7 @@
 import express from 'express'
 import { config } from 'dotenv'
 import dotenvExpand from 'dotenv-expand'
-import { bancoRates } from '@src/exchange'
+import { exchangeRates } from '@src/exchange'
 
 dotenvExpand(config())
 
@@ -13,7 +13,7 @@ app.use(
   })
 )
 
-app.get('/', bancoRates)
+app.get('/', exchangeRates)
 
 
 // app.get('/', async (req, res) => {
