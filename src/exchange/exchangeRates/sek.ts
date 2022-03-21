@@ -1,10 +1,11 @@
 
 const sekRates = (exchanges: any) => {
-  const line = exchanges[exchanges.length - 1].Line
+  const line = exchanges[33].Line
+  const line2 = exchanges[36].Line
 
   return {
-    buy: Number(line[1]),
-    sale: Number(line[3])
+    buy: Number(line[2].split(',').join('.')),
+    sale: Number(line2[2].split(',').join('.'))
   }
 }
 
