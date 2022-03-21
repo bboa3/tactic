@@ -1,7 +1,7 @@
 
 const dkkRates = (exchanges: any) => {
-  const line = exchanges[32].Line
-  const line2 = exchanges[35].Line
+  const line = exchanges[26].Line
+  const line2 = exchanges[57].Line
 
   return {
     buy: toNumber(line[4].split(',').join('.')),

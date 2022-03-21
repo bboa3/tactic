@@ -1,10 +1,11 @@
 
 const usdRates = (exchanges: any) => {
-  const line = exchanges[exchanges.length - 1].Line
-  
+  const line = exchanges[25].Line
+  const line2 = exchanges[54].Line
+
   return {
-    buy: toNumber(line[1].split(',').join('.')),
-    sale: toNumber(line[3].split(',').join('.'))
+    buy: toNumber(line[0].split(',').join('.')),
+    sale: toNumber(line2[0].split(',').join('.'))
   }
 }
 

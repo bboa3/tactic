@@ -1,7 +1,7 @@
 
-const murRates = (exchanges: any) => {
-  const line = exchanges[28].Line
-  const line2 = exchanges[59].Line
+const iqdRates = (exchanges: any) => {
+  const line = exchanges[41].Line
+  const line2 = exchanges[47].Line
 
   return {
     buy: toNumber(line[1].split(',').join('.')),
@@ -15,4 +15,4 @@ function toNumber (num: string) {
   return Number(num)
 }
 
-export default murRates;
+export default iqdRates

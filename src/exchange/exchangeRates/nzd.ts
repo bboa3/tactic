@@ -1,10 +1,11 @@
 
 const nzdRates = (exchanges: any) => {
-  const line = exchanges[exchanges.length - 1].Line
+  const line = exchanges[29].Line
+  const line2 = exchanges[60].Line
 
   return {
-    buy: toNumber(line[1]),
-    sale: toNumber(line[3])
+    buy: toNumber(line[0].split(',').join('.')),
+    sale: toNumber(line2[0].split(',').join('.'))
   }
 }
 

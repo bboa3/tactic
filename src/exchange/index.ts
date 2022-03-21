@@ -1,33 +1,63 @@
-import dayjs from "dayjs"
-import fs from 'fs/promises'
-import { Request, Response } from "express";
 import { resolve } from "path"
-import { exchanges } from "@src/exchange/exchanges";
+import fs from 'fs/promises'
+import { DownloaderHelper } from 'node-downloader-helper';
+import getExchangeRates from '@src/exchange/exchangeRates/getExchangeRates';
+import { PDFNet } from '@pdftron/pdfnet-node';
+import xml2js from 'xml2js'
 
-const datePath = resolve(__dirname, '..', '..', 'files', 'date.txt');
+const dest = resolve(__dirname, '..', '..', 'files');
+const exchangesPath = resolve(__dirname, '..', '..', 'files', 'currencies', 'exchanges.json');
+const url = 'https://www.bancomoc.mz/Files/REFR/ZMMIREFR.pdf'
+const ratesPath = resolve(__dirname, '..', '..', 'files', 'ZMMIREFR.pdf')
+import { Request, Response } from "express";
+import dayjs from "dayjs";
 
-export const exchangeRates = async (_request: Request, response: Response) => {
-  await fs.writeFile(datePath, '01-02-2016')
-  let isBefore = true
+export const exchangeRates = async (request: Request, response: Response) => {
+  const dl = new DownloaderHelper(url, dest, {
+    retry: {
+      maxRetries: 3,
+      delay: 1000
+    },
+    override: true
+  });
+  
+  dl.on('retry', () => console.log('I am trying...'))
+  dl.on('error', err => console.log(err))
+  
+  dl.on('end', async () => {
+    const extractText = async () => {
+      
+      const doc = await PDFNet.PDFDoc.createFromFilePath(ratesPath);
+      await doc.initSecurityHandler();
+      
+      const page = await doc.getPage(1);
+      if(!page)
+      return console.log('page not found');
+      
+      const txt = await PDFNet.TextExtractor.create();
+      
+      const rect = new PDFNet.Rect(0, 0, 612, 794);
+      
+      txt.begin(page, rect);
+      
+      const xml = await txt.getAsXML();
 
-  do {
-    const lastD = (await fs.readFile(datePath, 'utf8')).split('-')
-    const day = Number(lastD[0])
-    const month = Number(lastD[1]) - 1
-    const year = Number(lastD[2])
-    
-    const lastDate = dayjs(new Date(year, month, day))
+      const parser = new xml2js.Parser(/* options */);
+      const exchanges = await parser.parseStringPromise(xml)
+      
+      return getExchangeRates(exchanges)
+    }
+      
+    PDFNet.runWithCleanup(extractText, process.env.PDF_KEY).then(async (exchanges) => {
+      const exchangeRates = JSON.parse((await fs.readFile(exchangesPath, 'utf8')))
 
-    const today = dayjs()
+      const date = dayjs().format('DD-MM-YYYY')
+  
+      exchangeRates[date] = exchanges
 
-    const newDate = lastDate.add(1, 'day').format('DD-MM-YYYY')
-
-    await exchanges(newDate)
-
-    await fs.writeFile(datePath, newDate)
-
-    isBefore = lastDate.isBefore(today)
-  } while (isBefore)
-
-  response.status(200).json('Done')
+      response.send(exchanges)
+    }).catch(err => console.log(err))
+  })
+  
+  return dl.start()
 }

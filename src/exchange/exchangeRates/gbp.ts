@@ -1,11 +1,11 @@
 
 const gbpRates = (exchanges: any) => {
-  const line = exchanges[33].Line
-  const line2 = exchanges[36].Line
+  const line = exchanges[27].Line
+  const line2 = exchanges[58].Line
 
   return {
-    buy: toNumber(line[0].split(',').join('.')),
-    sale: toNumber(line2[0].split(',').join('.'))
+    buy: toNumber(line[2].split(',').join('.')),
+    sale: toNumber(line2[2].split(',').join('.'))
   }
 }
 

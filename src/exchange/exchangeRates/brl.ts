@@ -1,11 +1,11 @@
 
 const brlRates = (exchanges: any) => {
-  const line = exchanges[32].Line
-  const line2 = exchanges[35].Line
+  const line = exchanges[26].Line
+  const line2 = exchanges[56].Line
 
   return {
-    buy: toNumber(line[0].split(',').join('.')),
-    sale: toNumber(line2[0].split(',').join('.'))
+    buy: toNumber(line[2].split(',').join('.')),
+    sale: toNumber(line2[2].split(',').join('.'))
   }
 }
 

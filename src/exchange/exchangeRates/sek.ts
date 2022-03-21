@@ -1,7 +1,7 @@
 
 const sekRates = (exchanges: any) => {
-  const line = exchanges[33].Line
-  const line2 = exchanges[36].Line
+  const line = exchanges[29].Line
+  const line2 = exchanges[60].Line
 
   return {
     buy: toNumber(line[2].split(',').join('.')),

@@ -1,7 +1,7 @@
 
-const cadRates = (exchanges: any) => {
-  const line = exchanges[26].Line
-  const line2 = exchanges[57].Line
+const inrRates = (exchanges: any) => {
+  const line = exchanges[41].Line
+  const line2 = exchanges[47].Line
 
   return {
     buy: toNumber(line[0].split(',').join('.')),
@@ -15,4 +15,4 @@ function toNumber (num: string) {
   return Number(num)
 }
 
-export default cadRates;
+export default inrRates

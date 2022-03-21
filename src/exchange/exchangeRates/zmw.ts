@@ -1,11 +1,11 @@
 
 const zmwRates = (exchanges: any) => {
-  const line = exchanges[41].Line
-  const line2 = exchanges[43].Line
+  const line = exchanges[30].Line
+  const line2 = exchanges[60].Line
 
   return {
-    buy: toNumber(line[2].split(',').join('.')),
-    sale: toNumber(line2[2].split(',').join('.'))
+    buy: toNumber(line[3].split(',').join('.')),
+    sale: toNumber(line2[3].split(',').join('.'))
   }
 }
 

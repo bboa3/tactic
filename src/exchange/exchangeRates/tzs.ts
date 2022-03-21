@@ -1,7 +1,7 @@
 
 const tzsRates = (exchanges: any) => {
-  const line = exchanges[41].Line
-  const line2 = exchanges[43].Line
+  const line = exchanges[43].Line
+  const line2 = exchanges[49].Line
 
   return {
     buy: toNumber(line[1].split(',').join('.')),

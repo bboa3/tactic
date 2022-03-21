@@ -1,7 +1,7 @@
 
 const zwlRates = (exchanges: any) => {
-  const line = exchanges[42].Line
-  const line2 = exchanges[44].Line
+  const line = exchanges[44].Line
+  const line2 = exchanges[50].Line
 
   return {
     buy: toNumber(line[0].split(',').join('.')),

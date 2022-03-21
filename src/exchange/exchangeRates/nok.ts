@@ -1,11 +1,11 @@
 
 const nokRates = (exchanges: any) => {
-  const line = exchanges[33].Line
-  const line2 = exchanges[36].Line
+  const line = exchanges[28].Line
+  const line2 = exchanges[59].Line
 
   return {
-    buy: toNumber(line[1].split(',').join('.')),
-    sale: toNumber(line2[1].split(',').join('.'))
+    buy: toNumber(line[2].split(',').join('.')),
+    sale: toNumber(line2[2].split(',').join('.'))
   }
 }
 

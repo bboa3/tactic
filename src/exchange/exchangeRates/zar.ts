@@ -1,10 +1,10 @@
 const zarRates = (exchanges: any) => {
-  const line = exchanges[45].Line
-  const line2 = exchanges[46].Line
+  const line = exchanges[24].Line
+  const line2 = exchanges[54].Line
 
   return {
-    buy: toNumber(line[0].split(',').join('.')),
-    sale: toNumber(line2[0].split(',').join('.'))
+    buy: toNumber(line[1].split(',').join('.')),
+    sale: toNumber(line2[1].split(',').join('.'))
   }
 }
 
