@@ -1,6 +1,6 @@
 
 const sekRates = (exchanges: any) => {
-  const line = exchanges[29].Line
+  const line = exchanges[30].Line
   const line2 = exchanges[60].Line
 
   return {

@@ -1,6 +1,6 @@
 
 const dkkRates = (exchanges: any) => {
-  const line = exchanges[26].Line
+  const line = exchanges[27].Line
   const line2 = exchanges[57].Line
 
   return {

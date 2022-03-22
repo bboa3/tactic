@@ -1,6 +1,6 @@
 
 const nokRates = (exchanges: any) => {
-  const line = exchanges[28].Line
+  const line = exchanges[29].Line
   const line2 = exchanges[59].Line
 
   return {

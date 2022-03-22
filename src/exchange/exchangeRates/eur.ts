@@ -1,5 +1,5 @@
 const eurRates = (exchanges: any) => {
-  const line = exchanges[27].Line
+  const line = exchanges[28].Line
   const line2 = exchanges[58].Line
 
   return {
