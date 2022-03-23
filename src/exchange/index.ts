@@ -1,9 +1,10 @@
 import { resolve } from "path"
 import fs from 'fs/promises'
-import { DownloaderHelper } from 'node-downloader-helper';
-import getExchangeRates from '@src/exchange/exchangeRates/getExchangeRates';
-import { PDFNet } from '@pdftron/pdfnet-node';
+import { DownloaderHelper } from 'node-downloader-helper'
+import getExchangeRates from '@src/exchange/exchangeRates/getExchangeRates'
+import { PDFNet } from '@pdftron/pdfnet-node'
 import xml2js from 'xml2js'
+
 
 const dest = resolve(__dirname, '..', '..', 'files');
 const exchangesPath = resolve(__dirname, '..', '..', 'files', 'currencies', 'exchanges.json');

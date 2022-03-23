@@ -1,7 +1,7 @@
 import express from 'express'
 import { config } from 'dotenv'
 import dotenvExpand from 'dotenv-expand'
-import { exchangeRates } from '@src/exchange'
+import { demographics } from '@src/demographic'
 
 dotenvExpand(config())
 
@@ -13,19 +13,8 @@ app.use(
   })
 )
 
-app.get('/', exchangeRates)
-
-
-// app.get('/', async (req, res) => {
-//   const intRates = JSON.parse((await fs.readFile('interestRates.json', 'utf8')))
-
-//   res.json(intRates)
-// })
+app.get('/', demographics)
 
 app.listen(3002, () => {
   console.log(`Server running on http://localhost:3002`)
 })
-
-
-// import { interestRates } from "@src/interestRates";
-// interestRates()
