@@ -2,7 +2,7 @@ import { Request, Response } from "express"
 import { resolve } from "path"
 import xlsx from 'xlsx'
 import { getCaboDelgado } from "@src/demographic/region/cabo-delgado"
-import { getNiassa } from "@src/demographic/region/niassa"
+import { countTotal } from "@src/demographic/count-total"
 
 export interface Props {
   ages: string[]
@@ -30,5 +30,5 @@ export const demographics = async (request: Request, response: Response) => {
 
   const people = await getCaboDelgado(data)
 
-  response.status(200).json(people)
+  response.status(200).json(countTotal(people))
 }

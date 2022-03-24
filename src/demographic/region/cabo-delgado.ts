@@ -70,64 +70,60 @@ export const getCaboDelgado = async (data: any) => {
       'POSTO ADMINISTRATIVO Murrebue': getPeople({ ages: data[0], men: data[163], women: data[164] }),
     },
     'DISTRITO Meluco': {
-      'POSTO ADMINISTRATIVO  Maua': getPeople({ ages: data[0], men: data[171], women: data[172] }),
-      'POSTO ADMINISTRATIVO  Maiaca': getPeople({ ages: data[0], men: data[175], women: data[176] })
-    },    
-    'POSTO ADMINISTRATIVO Meluco': {
-      'POSTO ADMINISTRATIVO Meluco': getPeople({ ages: data[0], men: data[183], women: data[184] }),
-      'POSTO ADMINISTRATIVO Muaguide': getPeople({ ages: data[0], men: data[187], women: data[188] })
-    },
+      'POSTO ADMINISTRATIVO Meluco': getPeople({ ages: data[0], men: data[171], women: data[172] }),
+      'POSTO ADMINISTRATIVO Muaguide': getPeople({ ages: data[0], men: data[175], women: data[176] })
+    }, 
     'DISTRITO Mocimboa da Praia': {
-      'POSTO ADMINISTRATIVO Mocimboa da Praia Sede': getPeople({ ages: data[0], men: data[195], women: data[196] }),
-      'POSTO ADMINISTRATIVO Diaca': getPeople({ ages: data[0], men: data[199], women: data[200] }),
-      'POSTO ADMINISTRATIVO Mbau': getPeople({ ages: data[0], men: data[203], women: data[204] })
+      'POSTO ADMINISTRATIVO Mocimboa da Praia Sede': getPeople({ ages: data[0], men: data[183], women: data[184] }),
+      'POSTO ADMINISTRATIVO Diaca': getPeople({ ages: data[0], men: data[187], women: data[188] }),
+      'POSTO ADMINISTRATIVO Mbau': getPeople({ ages: data[0], men: data[191], women: data[192] })
     },
     'DISTRITO Montepuez': {
-      'POSTO ADMINISTRATIVO Cidade de Montepuez': getPeople({ ages: data[0], men: data[211], women: data[212] }),
-      'POSTO ADMINISTRATIVO Mapupulo': getPeople({ ages: data[0], men: data[215], women: data[216] }),
-      'POSTO ADMINISTRATIVO Mirate Sede': getPeople({ ages: data[0], men: data[219], women: data[220] }),
-      'POSTO ADMINISTRATIVO Nairoto': getPeople({ ages: data[0], men: data[223], women: data[224] }),
-      'POSTO ADMINISTRATIVO Namanhumbir': getPeople({ ages: data[0], men: data[227], women: data[228] })
+      'POSTO ADMINISTRATIVO Cidade de Montepuez': getPeople({ ages: data[0], men: data[199], women: data[200] }),
+      'POSTO ADMINISTRATIVO Mapupulo': getPeople({ ages: data[0], men: data[203], women: data[204] }),
+      'POSTO ADMINISTRATIVO Mirate Sede': getPeople({ ages: data[0], men: data[207], women: data[208] }),
+      'POSTO ADMINISTRATIVO Nairoto': getPeople({ ages: data[0], men: data[211], women: data[212] }),
+      'POSTO ADMINISTRATIVO Namanhumbir': getPeople({ ages: data[0], men: data[215], women: data[216] })
     },
     'DISTRITO Mueda': {
-      'POSTO ADMINISTRATIVO Mueda-Sede': getPeople({ ages: data[0], men: data[235], women: data[236] }),
-      'POSTO ADMINISTRATIVO Chapa': getPeople({ ages: data[0], men: data[239], women: data[240] }),
-      'POSTO ADMINISTRATIVO Negomano': getPeople({ ages: data[0], men: data[243], women: data[244] }), ///
-      'POSTO ADMINISTRATIVO Ngapa': getPeople({ ages: data[0], men: data[247], women: data[248] }),
-      'POSTO ADMINISTRATIVO Namaua': getPeople({ ages: data[0], men: data[251], women: data[252] }),
-      'POSTO ADMINISTRATIVO Imbuho Sede': getPeople({ ages: data[0], men: data[255], women: data[266] })
+      'POSTO ADMINISTRATIVO Mueda-Sede': getPeople({ ages: data[0], men: data[223], women: data[224] }),
+      'POSTO ADMINISTRATIVO Chapa': getPeople({ ages: data[0], men: data[227], women: data[228] }),
+      'POSTO ADMINISTRATIVO Negomano': getPeople({ ages: data[0], men: data[231], women: data[232] }), ///
+      'POSTO ADMINISTRATIVO Ngapa': getPeople({ ages: data[0], men: data[235], women: data[236] }),
+      'POSTO ADMINISTRATIVO Namaua': getPeople({ ages: data[0], men: data[239], women: data[240] }),
+      'POSTO ADMINISTRATIVO Imbuho Sede': getPeople({ ages: data[0], men: data[243], women: data[244] })
     },
     'DISTRITO Muidumbe': {
-      'POSTO ADMINISTRATIVO Muambula': getPeople({ ages: data[0], men: data[273], women: data[274] }),
-      'POSTO ADMINISTRATIVO Chitunda': getPeople({ ages: data[0], men: data[277], women: data[278] }),
-      'POSTO ADMINISTRATIVO Miteda': getPeople({ ages: data[0], men: data[281], women: data[282] })
+      'POSTO ADMINISTRATIVO Muambula': getPeople({ ages: data[0], men: data[251], women: data[252] }),
+      'POSTO ADMINISTRATIVO Chitunda': getPeople({ ages: data[0], men: data[255], women: data[256] }),
+      'POSTO ADMINISTRATIVO Miteda': getPeople({ ages: data[0], men: data[259], women: data[260] })
     },
     'DISTRITO Namuno': {
-      'POSTO ADMINISTRATIVO Namuno sede': getPeople({ ages: data[0], men: data[289], women: data[290] }),
-      'POSTO ADMINISTRATIVO Hucula': getPeople({ ages: data[0], men: data[293], women: data[294] }),
-      'POSTO ADMINISTRATIVO Machoca': getPeople({ ages: data[0], men: data[297], women: data[298] }),
-      'POSTO ADMINISTRATIVO Meloco': getPeople({ ages: data[0], men: data[301], women: data[302] }),
-      'POSTO ADMINISTRATIVO Ncumpe': getPeople({ ages: data[0], men: data[305], women: data[306] }),
-      'POSTO ADMINISTRATIVO Papai': getPeople({ ages: data[0], men: data[309], women: data[310] })
+      'POSTO ADMINISTRATIVO Namuno sede': getPeople({ ages: data[0], men: data[267], women: data[268] }),
+      'POSTO ADMINISTRATIVO Hucula': getPeople({ ages: data[0], men: data[271], women: data[272] }),
+      'POSTO ADMINISTRATIVO Machoca': getPeople({ ages: data[0], men: data[275], women: data[276] }),
+      'POSTO ADMINISTRATIVO Meloco': getPeople({ ages: data[0], men: data[279], women: data[280] }),
+      'POSTO ADMINISTRATIVO Ncumpe': getPeople({ ages: data[0], men: data[283], women: data[284] }),
+      'POSTO ADMINISTRATIVO Papai': getPeople({ ages: data[0], men: data[287], women: data[288] })
     },
     'DISTRITO Nangade': {
-      'POSTO ADMINISTRATIVO Nangade Sede': getPeople({ ages: data[0], men: data[317], women: data[318] }),
-      'POSTO ADMINISTRATIVO Ntamba': getPeople({ ages: data[0], men: data[321], women: data[322] })
+      'POSTO ADMINISTRATIVO Nangade Sede': getPeople({ ages: data[0], men: data[295], women: data[296] }),
+      'POSTO ADMINISTRATIVO Ntamba': getPeople({ ages: data[0], men: data[299], women: data[300] })
     },
     'DISTRITO Palma': {
-      'POSTO ADMINISTRATIVO Palma': getPeople({ ages: data[0], men: data[329], women: data[330] }),
-      'POSTO ADMINISTRATIVO Olumbe': getPeople({ ages: data[0], men: data[333], women: data[334] }),
-      'POSTO ADMINISTRATIVO Pundanhar': getPeople({ ages: data[0], men: data[337], women: data[338] }),
-      'POSTO ADMINISTRATIVO Matchedje': getPeople({ ages: data[0], men: data[341], women: data[342] })
+      'POSTO ADMINISTRATIVO Palma': getPeople({ ages: data[0], men: data[307], women: data[308] }),
+      'POSTO ADMINISTRATIVO Olumbe': getPeople({ ages: data[0], men: data[311], women: data[312] }),
+      'POSTO ADMINISTRATIVO Pundanhar': getPeople({ ages: data[0], men: data[315], women: data[316] }),
+      'POSTO ADMINISTRATIVO Matchedje': getPeople({ ages: data[0], men: data[319], women: data[320] })
     },
     'DISTRITO Metuge': {
-      'POSTO ADMINISTRATIVO Metuge Sede': getPeople({ ages: data[0], men: data[349], women: data[350] }),
-      'POSTO ADMINISTRATIVO Mieze': getPeople({ ages: data[0], men: data[353], women: data[354] })
+      'POSTO ADMINISTRATIVO Metuge Sede': getPeople({ ages: data[0], men: data[327], women: data[328] }),
+      'POSTO ADMINISTRATIVO Mieze': getPeople({ ages: data[0], men: data[331], women: data[332] })
     },
     'DISTRITO Quissanga': {
-      'POSTO ADMINISTRATIVO Quissanga': getPeople({ ages: data[0], men: data[361], women: data[362] }),
-      'POSTO ADMINISTRATIVO Bilibiza': getPeople({ ages: data[0], men: data[365], women: data[366] }),
-      'POSTO ADMINISTRATIVO Mahate': getPeople({ ages: data[0], men: data[369], women: data[370] })
+      'POSTO ADMINISTRATIVO Quissanga': getPeople({ ages: data[0], men: data[339], women: data[340] }),
+      'POSTO ADMINISTRATIVO Bilibiza': getPeople({ ages: data[0], men: data[343], women: data[344] }),
+      'POSTO ADMINISTRATIVO Mahate': getPeople({ ages: data[0], men: data[347], women: data[348] })
     }
   }
 
