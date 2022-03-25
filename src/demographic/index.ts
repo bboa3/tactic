@@ -18,7 +18,7 @@ export interface PeopleNum {
 
 const path = resolve(__dirname, '..', '..', 'files', 'demographic', 'moçambique-em-bairros.xlsx');
 
-export const demographics = async (request: Request, response: Response) => {
+export const demographics = async (_request: Request, response: Response) => {
   const file = xlsx.readFile(path);
 
   const firstTabName = file.SheetNames[4];

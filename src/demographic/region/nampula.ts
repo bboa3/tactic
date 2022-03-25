@@ -79,7 +79,7 @@ export const getNampula = async (data: any) => {
     },
     'DISTRITO Mogovolas': {
       'POSTO ADMINISTRATIVO Nametil Sede': getPeople({ ages: data[0], men: data[191], women: data[192] }),
-      'POSTO ADMINISTRATIVO Calipo': getPeople({ ages: data[0], men: data[195], women: data[296] }),
+      'POSTO ADMINISTRATIVO Calipo': getPeople({ ages: data[0], men: data[195], women: data[196] }),
       'POSTO ADMINISTRATIVO Ilute': getPeople({ ages: data[0], men: data[199], women: data[200] }),
       'POSTO ADMINISTRATIVO Muatua': getPeople({ ages: data[0], men: data[203], women: data[204] }),
       'POSTO ADMINISTRATIVO Nanhupo Rio': getPeople({ ages: data[0], men: data[207], women: data[208] }),
@@ -100,7 +100,7 @@ export const getNampula = async (data: any) => {
     },
     'DISTRITO Muecate': {
       'POSTO ADMINISTRATIVO Muecate': getPeople({ ages: data[0], men: data[259], women: data[260] }),
-      'POSTO ADMINISTRATIVO Imala': getPeople({ ages: data[0], men: data[203], women: data[264] }),
+      'POSTO ADMINISTRATIVO Imala': getPeople({ ages: data[0], men: data[263], women: data[264] }),
       'POSTO ADMINISTRATIVO Mucoluane': getPeople({ ages: data[0], men: data[267], women: data[268] })
     },
     'DISTRITO Murrupula': {
