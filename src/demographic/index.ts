@@ -2,7 +2,7 @@ import { Request, Response } from "express"
 import { resolve } from "path"
 import xlsx from 'xlsx'
 import { countTotal } from "@src/demographic/count-total"
-import { getMaputoCidade } from "@src/demographic/region/maputo-cidade"
+import { getZambezia } from "@src/demographic/region/zambezia"
 
 export interface Props {
   ages: string[]
@@ -21,14 +21,14 @@ const path = resolve(__dirname, '..', '..', 'files', 'demographic', 'moçambique
 export const demographics = async (_request: Request, response: Response) => {
   const file = xlsx.readFile(path);
 
-  const firstTabName = file.SheetNames[12];
+  const firstTabName = file.SheetNames[5];
     
   const data: any = xlsx.utils.sheet_to_json(file.Sheets[firstTabName], {
     blankrows: false,
     header: 1,
   })
 
-  const people = await getMaputoCidade(data)
+  const people = await getZambezia(data)
 
   response.status(200).json(countTotal(people))
 }
