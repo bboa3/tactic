@@ -2,6 +2,7 @@ import express from 'express'
 import { config } from 'dotenv'
 import dotenvExpand from 'dotenv-expand'
 import { demographics } from '@src/demographic/population'
+import { meritalStatus } from '@src/demographic/maritalStatus'
 
 dotenvExpand(config())
 

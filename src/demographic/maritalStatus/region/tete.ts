@@ -5,20 +5,23 @@ import fs from 'fs/promises'
 const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 'maritalStatus', 'regions', 'tete.json')
 
 export const getTete = async (data: any) => {
-  const getPeople = ({ ages, men, women }: Props) => {
-    const people: PeopleNum[] = []
-
-    for (const age in ages) {
-      if(Number(age) > 1) {
-        people.push({
-          idade: ages[age],
-          homens: Number(men[age]),
-          mulheres: Number(women[age])
-        })
+  const getPeople = (pop: number[]) => {
+    return {
+      homens: {
+        Solteiros: pop[8],
+        Casados: pop[9],
+        'União Marital':pop[10],
+        'Divorciados/Separados': pop[11],
+        Viúvos: pop[12]
+      },
+      mulheres: {
+        Solteiras: pop[14],
+        Casadas: pop[15],
+        'União Marital': pop[16],
+        'Divorciadas/Separadas': pop[17],
+        Viúvas: pop[18]
       }
     }
-
-    return people
   }
 
   const people = {

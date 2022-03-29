@@ -48,55 +48,57 @@ export const getGaza = async (data: any) => {
     'DISTRITO CHICUALACUALA': {
       'POSTO ADMINISTRATIVO EDUARDO MONDLANE': getPeople({ ages: data[0], men: data[91], women: data[92] }),
       'POSTO ADMINISTRATIVO PAFURI': getPeople({ ages: data[0], men: data[95], women: data[96] }),
-      'POSTO ADMINISTRATIVO CHIGUBO - SEDE': getPeople({ ages: data[0], men: data[99], women: data[100] }),
-      'POSTO ADMINISTRATIVO NDINDIZA': getPeople({ ages: data[0], men: data[103], women: data[104] })
+    },
+    'DISTRITO CHIGUBO': {
+      'POSTO ADMINISTRATIVO CHIGUBO - SEDE': getPeople({ ages: data[0], men: data[103], women: data[104] }),
+      'POSTO ADMINISTRATIVO NDINDIZA': getPeople({ ages: data[0], men: data[107], women: data[108] })
     },
     'DISTRITO Chokwe': {
-      'POSTO ADMINISTRATIVO Cidade de Chokwe': getPeople({ ages: data[0], men: data[111], women: data[112] }),
-      'POSTO ADMINISTRATIVO Lionde': getPeople({ ages: data[0], men: data[115], women: data[116] }),
-      'POSTO ADMINISTRATIVO Macarretane': getPeople({ ages: data[0], men: data[119], women: data[120] }),
-      'POSTO ADMINISTRATIVO Xilembene': getPeople({ ages: data[0], men: data[123], women: data[124] })
+      'POSTO ADMINISTRATIVO Cidade de Chokwe': getPeople({ ages: data[0], men: data[115], women: data[116] }),
+      'POSTO ADMINISTRATIVO Lionde': getPeople({ ages: data[0], men: data[119], women: data[120] }),
+      'POSTO ADMINISTRATIVO Macarretane': getPeople({ ages: data[0], men: data[123], women: data[124] }),
+      'POSTO ADMINISTRATIVO Xilembene': getPeople({ ages: data[0], men: data[127], women: data[128] })
     },
     'DISTRITO Guija': {
-      'POSTO ADMINISTRATIVO Vila Caniçado': getPeople({ ages: data[0], men: data[131], women: data[132] }),
-      'POSTO ADMINISTRATIVO Chivongoene': getPeople({ ages: data[0], men: data[135], women: data[136] }),
-      'POSTO ADMINISTRATIVO Mubangoene': getPeople({ ages: data[0], men: data[139], women: data[140] }),
-      'POSTO ADMINISTRATIVO Nalazi': getPeople({ ages: data[0], men: data[143], women: data[144] })
+      'POSTO ADMINISTRATIVO Vila Caniçado': getPeople({ ages: data[0], men: data[135], women: data[136] }),
+      'POSTO ADMINISTRATIVO Chivongoene': getPeople({ ages: data[0], men: data[139], women: data[140] }),
+      'POSTO ADMINISTRATIVO Mubangoene': getPeople({ ages: data[0], men: data[143], women: data[144] }),
+      'POSTO ADMINISTRATIVO Nalazi': getPeople({ ages: data[0], men: data[147], women: data[148] })
     },
     'DISTRITO Mabalane': {
-      'POSTO ADMINISTRATIVO Mabalane': getPeople({ ages: data[0], men: data[151], women: data[152] }),
-      'POSTO ADMINISTRATIVO Combomune': getPeople({ ages: data[0], men: data[155], women: data[156] }),
-      'POSTO ADMINISTRATIVO Ntlhavene': getPeople({ ages: data[0], men: data[159], women: data[160] }),
+      'POSTO ADMINISTRATIVO Mabalane': getPeople({ ages: data[0], men: data[155], women: data[156] }),
+      'POSTO ADMINISTRATIVO Combomune': getPeople({ ages: data[0], men: data[159], women: data[160] }),
+      'POSTO ADMINISTRATIVO Ntlhavene': getPeople({ ages: data[0], men: data[163], women: data[164] }),
     },
     'DISTRITO Mandlakaze': {
-      'POSTO ADMINISTRATIVO Mandlakaze Sede': getPeople({ ages: data[0], men: data[167], women: data[168] }),
-      'POSTO ADMINISTRATIVO Chalala': getPeople({ ages: data[0], men: data[171], women: data[172] }),
-      'POSTO ADMINISTRATIVO Chibondzane': getPeople({ ages: data[0], men: data[175], women: data[176] }),
-      'POSTO ADMINISTRATIVO Chidenguele': getPeople({ ages: data[0], men: data[179], women: data[180] }),
-      'POSTO ADMINISTRATIVO Macuacua': getPeople({ ages: data[0], men: data[183], women: data[184] })
+      'POSTO ADMINISTRATIVO Mandlakaze Sede': getPeople({ ages: data[0], men: data[171], women: data[172] }),
+      'POSTO ADMINISTRATIVO Chalala': getPeople({ ages: data[0], men: data[175], women: data[176] }),
+      'POSTO ADMINISTRATIVO Chibondzane': getPeople({ ages: data[0], men: data[179], women: data[180] }),
+      'POSTO ADMINISTRATIVO Chidenguele': getPeople({ ages: data[0], men: data[183], women: data[184] }),
+      'POSTO ADMINISTRATIVO Macuacua': getPeople({ ages: data[0], men: data[187], women: data[188] })
     }, 
     'DISTRITO Massangena': {
-      'POSTO ADMINISTRATIVO Massangena': getPeople({ ages: data[0], men: data[191], women: data[192] }),
-      'POSTO ADMINISTRATIVO Mavue': getPeople({ ages: data[0], men: data[195], women: data[196] }),
+      'POSTO ADMINISTRATIVO Massangena': getPeople({ ages: data[0], men: data[195], women: data[196] }),
+      'POSTO ADMINISTRATIVO Mavue': getPeople({ ages: data[0], men: data[199], women: data[200] }),
     },
     'DISTRITO Massingir': {
-      'POSTO ADMINISTRATIVO Massingir Sede': getPeople({ ages: data[0], men: data[203], women: data[204] }),
-      'POSTO ADMINISTRATIVO Mavodze': getPeople({ ages: data[0], men: data[207], women: data[208] }),
-      'POSTO ADMINISTRATIVO Zulo': getPeople({ ages: data[0], men: data[211], women: data[212] })
+      'POSTO ADMINISTRATIVO Massingir Sede': getPeople({ ages: data[0], men: data[207], women: data[208] }),
+      'POSTO ADMINISTRATIVO Mavodze': getPeople({ ages: data[0], men: data[211], women: data[212] }),
+      'POSTO ADMINISTRATIVO Zulo': getPeople({ ages: data[0], men: data[215], women: data[216] })
     },
     'DISTRITO Limpopo': {
-      'POSTO ADMINISTRATIVO Chicumbane': getPeople({ ages: data[0], men: data[219], women: data[220] }),
-      'POSTO ADMINISTRATIVO Chissano': getPeople({ ages: data[0], men: data[223], women: data[224] }),
-      'Posto Administrativo ZONGOENE': getPeople({ ages: data[0], men: data[227], women: data[228] }),
+      'POSTO ADMINISTRATIVO Chicumbane': getPeople({ ages: data[0], men: data[223], women: data[224] }),
+      'POSTO ADMINISTRATIVO Chissano': getPeople({ ages: data[0], men: data[227], women: data[228] }),
+      'Posto Administrativo ZONGOENE': getPeople({ ages: data[0], men: data[231], women: data[232] }),
     },
     'DISTRITO Chongoene': {
-      'POSTO ADMINISTRATIVO Chongoene': getPeople({ ages: data[0], men: data[235], women: data[236] }),
-      'POSTO ADMINISTRATIVO Mazucane': getPeople({ ages: data[0], men: data[239], women: data[240] }),
-      'POSTO ADMINISTRATIVO Nguzene': getPeople({ ages: data[0], men: data[243], women: data[244] })
+      'POSTO ADMINISTRATIVO Chongoene': getPeople({ ages: data[0], men: data[239], women: data[240] }),
+      'POSTO ADMINISTRATIVO Mazucane': getPeople({ ages: data[0], men: data[243], women: data[244] }),
+      'POSTO ADMINISTRATIVO Nguzene': getPeople({ ages: data[0], men: data[247], women: data[248] })
     },
     'DISTRITO Mapai': {
-      'POSTO ADMINISTRATIVO  Mapai': getPeople({ ages: data[0], men: data[251], women: data[252] }),
-      'POSTO ADMINISTRATIVO  Machaila': getPeople({ ages: data[0], men: data[255], women: data[256] }),
+      'POSTO ADMINISTRATIVO  Mapai': getPeople({ ages: data[0], men: data[255], women: data[256] }),
+      'POSTO ADMINISTRATIVO  Machaila': getPeople({ ages: data[0], men: data[259], women: data[260] }),
     }
   }
 

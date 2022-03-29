@@ -28,17 +28,17 @@ export interface PeopleNum {
 
 const path = resolve(__dirname, '..', '..', '..', 'files', 'demographic', 'maritalStatus', 'estado-civil.xlsx');
 
-export const demographics = async (_request: Request, response: Response) => {
+export const meritalStatus = async (_request: Request, response: Response) => {
   const file = xlsx.readFile(path);
 
-  const firstTabName = file.SheetNames[2];
+  const firstTabName = file.SheetNames[1];
     
   const data: any = xlsx.utils.sheet_to_json(file.Sheets[firstTabName], {
     blankrows: false,
     header: 1,
   })
 
-  // const niassa = await getNiassa(data)
+  const niassa = await getNiassa(data)
   // const caboDelgado = await getCaboDelgado(data)
   // const nampula = await getNampula(data)
   // const zambezia = await getZambezia(data)
@@ -50,5 +50,5 @@ export const demographics = async (_request: Request, response: Response) => {
   // const maputoProvincia = await getMaputoProvincia(data)
   // const maputoCidade = await getMaputoCidade(data)
 
-  response.status(200).json(data)
+  response.status(200).json(niassa)
 }
