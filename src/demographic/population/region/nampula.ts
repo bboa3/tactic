@@ -42,7 +42,7 @@ export const getNampula = async (data: any) => {
       'POSTO ADMINISTRATIVO Alua': getPeople({ ages: data[0], men: data[67], women: data[68] }),
       'POSTO ADMINISTRATIVO Namiroa': getPeople({ ages: data[0], men: data[71], women: data[72] })
     },
-    'DISTRITO  Ilha de Mocambique': {
+    'DISTRITO Ilha de Mocambique': {
       'POSTO ADMINISTRATIVO Ilha de Mocambique': getPeople({ ages: data[0], men: data[79], women: data[80] }),
       'POSTO ADMINISTRATIVO Lumbo': getPeople({ ages: data[0], men: data[83], women: data[84] })
     },

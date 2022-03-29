@@ -29,16 +29,16 @@ export const getGaza = async (data: any) => {
     'DISTRITO BILENE': getPeople(data[153]),
     'DISTRITO de CHIBUTO': getPeople(data[154]),
     'DISTRITO CHICUALACUALA': getPeople(data[155]),
-    'DISTRITO CHIGUBO': getPeople(data[155]),
-    'DISTRITO Chokwe': getPeople(data[158]),
-    'DISTRITO Guija': getPeople(data[152]),
-    'DISTRITO Mabalane': getPeople(data[152]),
-    'DISTRITO Mandlakaze': getPeople(data[152]),
-    'DISTRITO Massangena': getPeople(data[152]),
-    'DISTRITO Massingir': getPeople(data[152]),
-    'DISTRITO Limpopo': getPeople(data[152]),
-    'DISTRITO Chongoene': getPeople(data[152]),
-    'DISTRITO Mapai': getPeople(data[152])
+    'DISTRITO CHIGUBO': getPeople(data[156]),
+    'DISTRITO Chokwe': getPeople(data[157]),
+    'DISTRITO Guija': getPeople(data[158]),
+    'DISTRITO Mabalane': getPeople(data[159]),
+    'DISTRITO Mandlakaze': getPeople(data[160]),
+    'DISTRITO Massangena': getPeople(data[161]),
+    'DISTRITO Massingir': getPeople(data[162]),
+    'DISTRITO Limpopo': getPeople(data[163]),
+    'DISTRITO Chongoene': getPeople(data[164]),
+    'DISTRITO Mapai': getPeople(data[165])
   }
 
   await fs.writeFile(path, JSON.stringify(people))
