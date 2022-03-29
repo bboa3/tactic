@@ -104,6 +104,5 @@ export const getNiassa = async (data: any) => {
 
   await fs.writeFile(path, JSON.stringify(people))
 
-  return true
-  // return countTotal(people)
+  return people
 }
