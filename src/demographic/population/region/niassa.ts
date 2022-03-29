@@ -1,9 +1,8 @@
-import { PeopleNum, Props } from "@src/demographic"
+import { PeopleNum, Props } from "@src/demographic/population"
 import { resolve } from 'path'
 import fs from 'fs/promises'
-import { countTotal } from "@src/demographic/count-total"
 
-const path = resolve(__dirname, '..', '..', '..', 'files', 'demographic', 'regions', 'niassa.json')
+const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 'population', 'regions', 'niassa.json')
 
 export const getNiassa = async (data: any) => {
   const getPeople = ({ ages, men, women }: Props) => {

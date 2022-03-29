@@ -1,4 +1,4 @@
-import { PeopleNum } from "@src/demographic"
+import { PeopleNum } from "@src/demographic/population"
 
 export const countTotal = (people: any) => {
   const DISTRITOs = Object.values(people)

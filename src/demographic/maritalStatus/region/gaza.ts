@@ -1,8 +1,8 @@
-import { PeopleNum, Props } from "@src/demographic"
+import { PeopleNum, Props } from "@src/demographic/population"
 import { resolve } from 'path'
 import fs from 'fs/promises'
 
-const path = resolve(__dirname, '..', '..', '..', 'files', 'demographic', 'regions', 'gaza.json')
+const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 'maritalStatus', 'regions', 'gaza.json')
 
 export const getGaza = async (data: any) => {
   const getPeople = ({ ages, men, women }: Props) => {

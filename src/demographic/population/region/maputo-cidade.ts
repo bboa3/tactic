@@ -1,8 +1,8 @@
-import { PeopleNum, Props } from "@src/demographic"
+import { PeopleNum, Props } from "@src/demographic/population"
 import { resolve } from 'path'
 import fs from 'fs/promises'
 
-const path = resolve(__dirname, '..', '..', '..', 'files', 'demographic', 'regions', 'maputo-cidade.json')
+const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 'population', 'regions', 'maputo-cidade.json')
 
 export const getMaputoCidade = async (data: any) => {
   const getPeople = ({ ages, men, women }: Props) => {
