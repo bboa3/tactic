@@ -1,17 +1,17 @@
 import { Request, Response } from "express"
 import { resolve } from "path"
 import xlsx from 'xlsx'
-import { getZambezia } from "@src/demographic/maritalStatus/region/zambezia"
-import { getNiassa } from "@src/demographic/maritalStatus/region/niassa"
-import { getCaboDelgado } from "@src/demographic/maritalStatus/region/cabo-delgado"
-import { getNampula } from "@src/demographic/maritalStatus/region/nampula"
-import { getTete } from "@src/demographic/maritalStatus/region/tete"
-import { getManica } from "@src/demographic/maritalStatus/region/manica"
-import { getSofala } from "@src/demographic/maritalStatus/region/sofala"
-import { getInhambane } from "@src/demographic/maritalStatus/region/inhambane"
-import { getGaza } from "@src/demographic/maritalStatus/region/gaza"
-import { getMaputoProvincia } from "@src/demographic/maritalStatus/region/maputo-provincia"
-import { getMaputoCidade } from "@src/demographic/maritalStatus/region/maputo-cidade"
+import { getZambezia } from "@src/demographic/homeOwnership/region/zambezia"
+import { getNiassa } from "@src/demographic/homeOwnership/region/niassa"
+import { getCaboDelgado } from "@src/demographic/homeOwnership/region/cabo-delgado"
+import { getNampula } from "@src/demographic/homeOwnership/region/nampula"
+import { getTete } from "@src/demographic/homeOwnership/region/tete"
+import { getManica } from "@src/demographic/homeOwnership/region/manica"
+import { getSofala } from "@src/demographic/homeOwnership/region/sofala"
+import { getInhambane } from "@src/demographic/homeOwnership/region/inhambane"
+import { getGaza } from "@src/demographic/homeOwnership/region/gaza"
+import { getMaputoProvincia } from "@src/demographic/homeOwnership/region/maputo-provincia"
+import { getMaputoCidade } from "@src/demographic/homeOwnership/region/maputo-cidade"
 
 export interface Props {
   ages: string[]
@@ -25,12 +25,12 @@ export interface PeopleNum {
   mulheres: number
 }
 
-const path = resolve(__dirname, '..', '..', '..', 'files', 'demographic', 'estado-civil.xlsx');
+const path = resolve(__dirname, '..', '..', '..', 'files', 'demographic', 'habitacao-atlas.xlsx');
 
 export const meritalStatus = async (_request: Request, response: Response) => {
   const file = xlsx.readFile(path);
 
-  const firstTabName = file.SheetNames[1];
+  const firstTabName = file.SheetNames[2];
     
   const data: any = xlsx.utils.sheet_to_json(file.Sheets[firstTabName], {
     blankrows: false,
