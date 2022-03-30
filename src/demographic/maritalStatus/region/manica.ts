@@ -26,18 +26,18 @@ export const getManica = async (data: any) => {
 
 
   const people = {
-    'DISTRITO Chimoio': getPeople(data[108]),
-    'DISTRITO Barue': getPeople(data[109]),
-    'DISTRITO Gondola': getPeople(data[110]),
-    'DISTRITO Guro': getPeople(data[111]),
-    'DISTRITO Machaze': getPeople(data[112]),
-    'DISTRITO Macossa': getPeople(data[113]),
-    'DISTRITO Manica': getPeople(data[114]),
-    'DISTRITO Mussorize': getPeople(data[115]),
-    'DISTRITO Sussundenga': getPeople(data[116]),
-    'DISTRITO Tambara': getPeople(data[117]),
-    'DISTRITO Macate': getPeople(data[118]),
-    'DISTRITO Vanduzi': getPeople(data[119]),
+    'distrito chimoio': getPeople(data[108]),
+    'distrito barue': getPeople(data[109]),
+    'distrito gondola': getPeople(data[110]),
+    'distrito guro': getPeople(data[111]),
+    'distrito machaze': getPeople(data[112]),
+    'distrito macossa': getPeople(data[113]),
+    'distrito manica': getPeople(data[114]),
+    'distrito mussorize': getPeople(data[115]),
+    'distrito sussundenga': getPeople(data[116]),
+    'distrito tambara': getPeople(data[117]),
+    'distrito macate': getPeople(data[118]),
+    'distrito vanduzi': getPeople(data[119]),
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))

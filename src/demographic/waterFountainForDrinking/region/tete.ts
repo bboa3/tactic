@@ -21,21 +21,21 @@ export const getTete = async (data: any) => {
   }
 
   const people = {
-    'DISTRITO Cidade de Tete': getPeople(data[87]),
-    'DISTRITO Angonia': getPeople(data[88]),
-    'DISTRITO Cahora-Bassa': getPeople(data[89]),
-    'DISTRITO Changara': getPeople(data[90]),
-    'DISTRITO Chifunde': getPeople(data[91]),
-    'DISTRITO Chiuta': getPeople(data[92]),
-    'DISTRITO Macanga': getPeople(data[93]),
-    'DISTRITO Magoe': getPeople(data[94]),
-    'DISTRITO Maravia': getPeople(data[95]),
-    'DISTRITO Moatize': getPeople(data[96]),
-    'DISTRITO Mutarara': getPeople(data[97]),
-    'DISTRITO Tsangano': getPeople(data[98]),
-    'DISTRITO Zumbo': getPeople(data[99]),
-    'DISTRITO Doa': getPeople(data[100]),
-    'DISTRITO Marara': getPeople(data[101])
+    'distrito cidade de tete': getPeople(data[87]),
+    'distrito angonia': getPeople(data[88]),
+    'distrito cahora-Bassa': getPeople(data[89]),
+    'distrito changara': getPeople(data[90]),
+    'distrito chifunde': getPeople(data[91]),
+    'distrito chiuta': getPeople(data[92]),
+    'distrito macanga': getPeople(data[93]),
+    'distrito magoe': getPeople(data[94]),
+    'distrito maravia': getPeople(data[95]),
+    'distrito moatize': getPeople(data[96]),
+    'distrito mutarara': getPeople(data[97]),
+    'distrito tsangano': getPeople(data[98]),
+    'distrito zumbo': getPeople(data[99]),
+    'distrito doa': getPeople(data[100]),
+    'distrito marara': getPeople(data[101])
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))

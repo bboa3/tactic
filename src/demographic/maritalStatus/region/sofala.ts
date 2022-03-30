@@ -25,19 +25,19 @@ export const getSofala = async (data: any) => {
   }
 
   const people = {
-    'DISTRITO Cidade da Beira': getPeople(data[122]),
-    'DISTRITO Buzi': getPeople(data[123]),
-    'DISTRITO Caia': getPeople(data[124]),
-    'DISTRITO Chemba': getPeople(data[125]),
-    'DISTRITO Cheringoma': getPeople(data[126]),
-    'DISTRITO Chibabava': getPeople(data[127]),
-    'DISTRITO Dondo': getPeople(data[128]),
-    'DISTRITO Gorongosa': getPeople(data[129]),
-    'DISTRITO Machanga': getPeople(data[130]),
-    'DISTRITO Maringue': getPeople(data[131]),
-    'DISTRITO Marromeu': getPeople(data[132]),
-    'DISTRITO Muanza': getPeople(data[133]),
-    'DISTRITO Nhamatanda': getPeople(data[134])
+    'distrito cidade da beira': getPeople(data[122]),
+    'distrito buzi': getPeople(data[123]),
+    'distrito caia': getPeople(data[124]),
+    'distrito chemba': getPeople(data[125]),
+    'distrito cheringoma': getPeople(data[126]),
+    'distrito chibabava': getPeople(data[127]),
+    'distrito dondo': getPeople(data[128]),
+    'distrito gorongosa': getPeople(data[129]),
+    'distrito machanga': getPeople(data[130]),
+    'distrito maringue': getPeople(data[131]),
+    'distrito marromeu': getPeople(data[132]),
+    'distrito muanza': getPeople(data[133]),
+    'distrito nhamatanda': getPeople(data[134])
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))

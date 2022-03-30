@@ -21,23 +21,23 @@ export const getCaboDelgado = async (data: any) => {
   }
 
   const people = {
-    'DISTRITO Cidade de Pemba': getPeople(data[22]),
-    'DISTRITO Ancuabe': getPeople(data[23]),
-    'DISTRITO Balama': getPeople(data[24]),
-    'DISTRITO Chiure': getPeople(data[25]),
-    'DISTRITO Ibo': getPeople(data[26]),
-    'DISTRITO Macomia': getPeople(data[27]),
-    'DISTRITO Mecufi': getPeople(data[28]),
-    'DISTRITO Meluco': getPeople(data[29]),
-    'DISTRITO Mocimboa da Praia': getPeople(data[30]),
-    'DISTRITO Montepuez': getPeople(data[31]),
-    'DISTRITO Mueda': getPeople(data[32]),
-    'DISTRITO Muidumbe': getPeople(data[33]),
-    'DISTRITO Namuno': getPeople(data[34]),
-    'DISTRITO Nangade': getPeople(data[35]),
-    'DISTRITO Palma': getPeople(data[36]),
-    'DISTRITO Metuge': getPeople(data[37]),
-    'DISTRITO Quissanga': getPeople(data[38])
+    'distrito cidade de pemba': getPeople(data[22]),
+    'distrito ancuabe': getPeople(data[23]),
+    'distrito balama': getPeople(data[24]),
+    'distrito chiure': getPeople(data[25]),
+    'distrito ibo': getPeople(data[26]),
+    'distrito macomia': getPeople(data[27]),
+    'distrito mecufi': getPeople(data[28]),
+    'distrito meluco': getPeople(data[29]),
+    'distrito mocimboa da praia': getPeople(data[30]),
+    'distrito montepuez': getPeople(data[31]),
+    'distrito mueda': getPeople(data[32]),
+    'distrito muidumbe': getPeople(data[33]),
+    'distrito namuno': getPeople(data[34]),
+    'distrito nangade': getPeople(data[35]),
+    'distrito palma': getPeople(data[36]),
+    'distrito metuge': getPeople(data[37]),
+    'distrito quissanga': getPeople(data[38])
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))

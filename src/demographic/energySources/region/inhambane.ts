@@ -21,20 +21,20 @@ export const getInhambane = async (data: any) => {
   }
 
   const people = {
-    'DISTRITO Cidade de Inhambane': getPeople(data[130]),
-    'DISTRITO Funhalouro': getPeople(data[131]),
-    'DISTRITO Govuro': getPeople(data[132]),
-    'DISTRITO Homoine': getPeople(data[133]),
-    'DISTRITO Inharrime': getPeople(data[134]),
-    'DISTRITO Inhassoro': getPeople(data[135]),
-    'DISTRITO Jangamo': getPeople(data[136]),
-    'DISTRITO Mabote': getPeople(data[137]),
-    'DISTRITO Massinga': getPeople(data[138]),
-    'DISTRITO Cidade de Maxixe': getPeople(data[139]),
-    'DISTRITO Morrumbene': getPeople(data[140]),
-    'DISTRITO Panda': getPeople(data[141]),
-    'DISTRITO Vilankulo': getPeople(data[142]),
-    'DISTRITO Zavala': getPeople(data[143])
+    'distrito cidade de inhambane': getPeople(data[130]),
+    'distrito funhalouro': getPeople(data[131]),
+    'distrito govuro': getPeople(data[132]),
+    'distrito homoine': getPeople(data[133]),
+    'distrito inharrime': getPeople(data[134]),
+    'distrito inhassoro': getPeople(data[135]),
+    'distrito jangamo': getPeople(data[136]),
+    'distrito mabote': getPeople(data[137]),
+    'distrito Massinga': getPeople(data[138]),
+    'distrito cidade de maxixe': getPeople(data[139]),
+    'distrito morrumbene': getPeople(data[140]),
+    'distrito panda': getPeople(data[141]),
+    'distrito vilankulo': getPeople(data[142]),
+    'distrito zavala': getPeople(data[143])
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))

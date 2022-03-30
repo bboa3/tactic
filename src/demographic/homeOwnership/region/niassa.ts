@@ -16,22 +16,22 @@ export const getNiassa = async (data: any) => {
 
 
   const people = {
-    'DISTRITO Lichinga': getPeople(data[5]),
-    'DISTRITO Cuamba': getPeople(data[6]),
-    'DISTRITO Lago': getPeople(data[7]),
-    'DISTRITO Chimbunila': getPeople(data[8]),
-    'DISTRITO Majune': getPeople(data[9]),
-    'DISTRITO Mandimba': getPeople(data[10]),
-    'DISTRITO Marrupa': getPeople(data[11]),
-    'DISTRITO Maua': getPeople(data[12]), 
-    'DISTRITO Mavago': getPeople(data[13]),
-    'DISTRITO Mecanhelas': getPeople(data[14]),
-    'DISTRITO Mecula': getPeople(data[15]),
-    'DISTRITO Metarica': getPeople(data[16]),
-    'DISTRITO Muembe': getPeople(data[17]),
-    'DISTRITO Ngauma': getPeople(data[18]),
-    'DISTRITO Nipepe': getPeople(data[19]),
-    'DISTRITO Sanga': getPeople(data[20])
+    'distrito lichinga': getPeople(data[5]),
+    'distrito cuamba': getPeople(data[6]),
+    'distrito lago': getPeople(data[7]),
+    'distrito chimbunila': getPeople(data[8]),
+    'distrito majune': getPeople(data[9]),
+    'distrito mandimba': getPeople(data[10]),
+    'distrito marrupa': getPeople(data[11]),
+    'distrito maua': getPeople(data[12]), 
+    'distrito mavago': getPeople(data[13]),
+    'distrito mecanhelas': getPeople(data[14]),
+    'distrito mecula': getPeople(data[15]),
+    'distrito metarica': getPeople(data[16]),
+    'distrito muembe': getPeople(data[17]),
+    'distrito ngauma': getPeople(data[18]),
+    'distrito nipepe': getPeople(data[19]),
+    'distrito sanga': getPeople(data[20])
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))
