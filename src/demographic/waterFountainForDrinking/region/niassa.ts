@@ -1,16 +1,21 @@
 import { resolve } from 'path'
 import fs from 'fs/promises'
 
-const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 'regime-de-propriedade-da-casa.json')
+const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 'fonte-de-agua-para-beber.json')
 
 export const getNiassa = async (data: any) => {
   const getPeople = (pop: number[]) => {
     return {
-      'própria': pop[2],
-      'alugada': pop[3],
-      'cedida/emprestada temporariamente': pop[4],
-      'outra': pop[5],
-      'desconhecido': pop[6]
+      'canalizada': pop[2],
+      'fontanário/torneira pública': pop[6],
+      'furo/poço com bomba manual': pop[7],
+      'poço sem bomba manual': pop[8],
+      'nascente/rio/lago/lagoa': pop[11],
+      'chuva': pop[14],
+      'tanques camiões/carregada em tambores': pop[15],
+      'mineral/engarrafada': pop[16],
+      'outra': pop[17],
+      'desconhecida': pop[18]
     }
   }
 

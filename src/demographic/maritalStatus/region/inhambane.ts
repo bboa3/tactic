@@ -8,18 +8,18 @@ export const getInhambane = async (data: any) => {
   const getPeople = (pop: number[]) => {
     return {
       homens: {
-        Solteiros: pop[8],
-        Casados: pop[9],
-        'União Marital':pop[10],
-        'Divorciados/Separados': pop[11],
-        Viúvos: pop[12]
+        solteiros: pop[8],
+        sasados: pop[9],
+        'união marital':pop[10],
+        'divorciados/separados': pop[11],
+        viúvos: pop[12]
       },
       mulheres: {
-        Solteiras: pop[14],
-        Casadas: pop[15],
-        'União Marital': pop[16],
-        'Divorciadas/Separadas': pop[17],
-        Viúvas: pop[18]
+        solteiras: pop[14],
+        sasadas: pop[15],
+        'união marital': pop[16],
+        'divorciadas/separadas': pop[17],
+        viúvas: pop[18]
       }
     }
   }
