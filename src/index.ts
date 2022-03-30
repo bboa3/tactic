@@ -5,6 +5,7 @@ import { demographics } from '@src/demographic/population'
 import { meritalStatus } from '@src/demographic/maritalStatus'
 import { homeOwnership } from '@src/demographic/homeOwnership'
 import { waterFountainForDrinking } from '@src/demographic/waterFountainForDrinking'
+import { energySources } from '@src/demographic/energySources'
 
 dotenvExpand(config())
 
@@ -16,7 +17,7 @@ app.use(
   })
 )
 
-app.get('/', waterFountainForDrinking)
+app.get('/', energySources)
 
 app.listen(3002, () => {
   console.log(`Server running on http://localhost:3002`)
