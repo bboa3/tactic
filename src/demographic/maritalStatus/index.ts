@@ -13,18 +13,6 @@ import { getGaza } from "@src/demographic/maritalStatus/region/gaza"
 import { getMaputoProvincia } from "@src/demographic/maritalStatus/region/maputo-provincia"
 import { getMaputoCidade } from "@src/demographic/maritalStatus/region/maputo-cidade"
 
-export interface Props {
-  ages: string[]
-  men: string[]
-  women: string[]
-}
-
-export interface PeopleNum {
-  idade: string,
-  homens: number,
-  mulheres: number
-}
-
 const path = resolve(__dirname, '..', '..', '..', 'files', 'demographic', 'estado-civil.xlsx');
 
 export const meritalStatus = async (_request: Request, response: Response) => {

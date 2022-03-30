@@ -3,6 +3,7 @@ import { config } from 'dotenv'
 import dotenvExpand from 'dotenv-expand'
 import { demographics } from '@src/demographic/population'
 import { meritalStatus } from '@src/demographic/maritalStatus'
+import { homeOwnership } from '@src/demographic/homeOwnership'
 
 dotenvExpand(config())
 
@@ -14,7 +15,7 @@ app.use(
   })
 )
 
-app.get('/', meritalStatus)
+app.get('/', homeOwnership)
 
 app.listen(3002, () => {
   console.log(`Server running on http://localhost:3002`)

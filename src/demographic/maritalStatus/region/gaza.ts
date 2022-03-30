@@ -25,20 +25,20 @@ export const getGaza = async (data: any) => {
   }
 
   const people = {
-    'DISTRITO DE XAI-XAI': getPeople(data[152]),
-    'DISTRITO BILENE': getPeople(data[153]),
-    'DISTRITO de CHIBUTO': getPeople(data[154]),
-    'DISTRITO CHICUALACUALA': getPeople(data[155]),
-    'DISTRITO CHIGUBO': getPeople(data[156]),
-    'DISTRITO Chokwe': getPeople(data[157]),
-    'DISTRITO Guija': getPeople(data[158]),
-    'DISTRITO Mabalane': getPeople(data[159]),
-    'DISTRITO Mandlakaze': getPeople(data[160]),
-    'DISTRITO Massangena': getPeople(data[161]),
-    'DISTRITO Massingir': getPeople(data[162]),
-    'DISTRITO Limpopo': getPeople(data[163]),
-    'DISTRITO Chongoene': getPeople(data[164]),
-    'DISTRITO Mapai': getPeople(data[165])
+    'DISTRITO DE XAI-XAI': getPeople(data[153]),
+    'DISTRITO BILENE': getPeople(data[154]),
+    'DISTRITO de CHIBUTO': getPeople(data[155]),
+    'DISTRITO CHICUALACUALA': getPeople(data[156]),
+    'DISTRITO CHIGUBO': getPeople(data[157]),
+    'DISTRITO Chokwe': getPeople(data[158]),
+    'DISTRITO Guija': getPeople(data[159]),
+    'DISTRITO Mabalane': getPeople(data[160]),
+    'DISTRITO Mandlakaze': getPeople(data[161]),
+    'DISTRITO Massangena': getPeople(data[162]),
+    'DISTRITO Massingir': getPeople(data[163]),
+    'DISTRITO Limpopo': getPeople(data[164]),
+    'DISTRITO Chongoene': getPeople(data[165]),
+    'DISTRITO Mapai': getPeople(data[166])
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))

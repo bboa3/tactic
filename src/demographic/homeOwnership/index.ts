@@ -13,24 +13,12 @@ import { getGaza } from "@src/demographic/homeOwnership/region/gaza"
 import { getMaputoProvincia } from "@src/demographic/homeOwnership/region/maputo-provincia"
 import { getMaputoCidade } from "@src/demographic/homeOwnership/region/maputo-cidade"
 
-export interface Props {
-  ages: string[]
-  men: string[]
-  women: string[]
-}
-
-export interface PeopleNum {
-  idade: string,
-  homens: number,
-  mulheres: number
-}
-
 const path = resolve(__dirname, '..', '..', '..', 'files', 'demographic', 'habitacao-atlas.xlsx');
 
-export const meritalStatus = async (_request: Request, response: Response) => {
+export const homeOwnership = async (_request: Request, response: Response) => {
   const file = xlsx.readFile(path);
 
-  const firstTabName = file.SheetNames[2];
+  const firstTabName = file.SheetNames[3];
     
   const data: any = xlsx.utils.sheet_to_json(file.Sheets[firstTabName], {
     blankrows: false,
@@ -61,5 +49,5 @@ export const meritalStatus = async (_request: Request, response: Response) => {
     gaza,
     maputoProvincia,
     maputoCidade
-   })
+  })
 }
