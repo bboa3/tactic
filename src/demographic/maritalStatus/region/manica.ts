@@ -2,7 +2,7 @@ import { PeopleNum, Props } from "@src/demographic/population"
 import { resolve } from 'path'
 import fs from 'fs/promises'
 
-const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 'marital-status.json')
+const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 'estado-civil.json')
 
 export const getManica = async (data: any) => {
   const getPeople = (pop: number[]) => {
