@@ -4,7 +4,7 @@ import fs from 'fs/promises'
 
 const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 'population', 'regions', 'manica.json')
 
-export const getmanica = async (data: any) => {
+export const getManica = async (data: any) => {
   const getPeople = ({ ages, men, women }: Props) => {
     const people: PeopleNum[] = []
 
