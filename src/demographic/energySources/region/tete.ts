@@ -10,7 +10,7 @@ export const getTete = async (data: any) => {
       'electricidade': pop[2],
       'gerador/placa solar': pop[3],
       'gás': pop[4],
-      'petróleoa/parafina/querosene': pop[5],
+      'petróleo/parafina/querosene': pop[5],
       'velas': pop[6],
       'baterias': pop[7],
       'lenha': pop[8],

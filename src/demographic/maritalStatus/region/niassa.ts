@@ -8,14 +8,14 @@ export const getNiassa = async (data: any) => {
     return {
       homens: {
         solteiros: pop[8],
-        sasados: pop[9],
+        casados: pop[9],
         'união marital':pop[10],
         'divorciados/separados': pop[11],
         viúvos: pop[12]
       },
       mulheres: {
         solteiras: pop[14],
-        sasadas: pop[15],
+        casadas: pop[15],
         'união marital': pop[16],
         'divorciadas/separadas': pop[17],
         viúvas: pop[18]

@@ -15,7 +15,7 @@ import { getMaputoCidade } from "@src/demographic/maritalStatus/region/maputo-ci
 
 const path = resolve(__dirname, '..', '..', '..', 'files', 'demographic', 'estado-civil.xlsx');
 
-export const meritalStatus = async (_request: Request, response: Response) => {
+export const maritalStatus = async (_request: Request, response: Response) => {
   const file = xlsx.readFile(path);
 
   const firstTabName = file.SheetNames[1];
