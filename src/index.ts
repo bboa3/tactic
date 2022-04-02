@@ -1,11 +1,7 @@
 import express from 'express'
 import { config } from 'dotenv'
 import dotenvExpand from 'dotenv-expand'
-import { demographics } from '@src/demographic/population'
-import { maritalStatus } from '@src/demographic/maritalStatus'
-import { homeOwnership } from '@src/demographic/homeOwnership'
-import { waterFountainForDrinking } from '@src/demographic/waterFountainForDrinking'
-import { energySources } from '@src/demographic/energySources'
+import { PIB } from '@src/PIB'
 
 dotenvExpand(config())
 
@@ -17,7 +13,7 @@ app.use(
   })
 )
 
-app.get('/', maritalStatus)
+app.get('/', PIB)
 
 app.listen(3002, () => {
   console.log(`Server running on http://localhost:3002`)
