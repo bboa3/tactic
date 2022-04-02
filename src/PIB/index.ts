@@ -31,10 +31,11 @@ export const PIB = async (_request: Request, response: Response) => {
   const years: string[] = data[2].filter((_value, index) => index !== 0)
   const pib: number[] = data[29].filter((_value, index) => index !== 0)
 
-  const PIB = {}
-
-  years.forEach((year, index) => {
-    PIB[year] = pib[index]
+  const PIB = years.map((year, index) => {
+    return {
+      ano: Number(year),
+      pib: pib[index]
+    }
   })
 
   await fs.writeFile(dest, JSON.stringify(PIB))
