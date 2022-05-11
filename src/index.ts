@@ -5,6 +5,7 @@ import fs from 'fs/promises'
 import dotenvExpand from 'dotenv-expand'
 
 import { interestRates } from '@src/interestRates'
+import { rates } from './rates'
 
 dotenvExpand(config())
 
@@ -18,11 +19,13 @@ app.use(
   })
 )
 
-app.get('/', async (rep, res) => {
-  const rates = JSON.parse((await fs.readFile(path, 'utf8')))
+app.get('/', rates)
 
-  res.json(rates)
-})
+// app.get('/', async (rep, res) => {
+//   const rates = JSON.parse((await fs.readFile(path, 'utf8')))
+
+//   res.json(rates)
+// })
 
 
 app.listen(3002, () => {
