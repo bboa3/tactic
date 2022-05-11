@@ -22,7 +22,7 @@ export const interestRate = async (date: string) => {
     preRates.push(rate)
   })
 
-  const rates = createRates(preRates)
+  const rates = await createRates(preRates, date)
 
   return rates
 }
