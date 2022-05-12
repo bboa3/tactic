@@ -6,7 +6,7 @@ interface Rate {
   value: number
 }
 
-interface prevRates {
+interface PrevRates {
   FPD: Rate[]
   FPC: Rate[]
   'Taxa MIMO': Rate[]
@@ -15,14 +15,14 @@ interface prevRates {
 
 const path = resolve(__dirname, '..', '..', 'files', 'interestRates.json')
 
-export const createRates = async (rates: number[], date: string): Promise<prevRates> => {
-  const prevRates: prevRates = JSON.parse((await fs.readFile(path, 'utf8')))
+export const createRates = async (rates: number[], date: string): Promise<PrevRates> => {
+  const prevRates: PrevRates = JSON.parse((await fs.readFile(path, 'utf8')))
   const { FPD, FPC, "Prime rate": Prime, "Taxa MIMO": MIMO } = prevRates
   
   const prevFPD = FPD[FPD.length - 1].value
   const currentFPD = rates[0] 
   
-  if (currentFPD !== prevFPD) {
+  if (currentFPD !== prevFPD && currentFPD !== null && !!currentFPD) {
     prevRates.FPD = [
       ...FPD,
       {
@@ -35,7 +35,7 @@ export const createRates = async (rates: number[], date: string): Promise<prevRa
   const prevFPC = FPC[FPC.length - 1].value
   const currentFPC = rates[1]
   
-  if (currentFPC !== prevFPC) {
+  if (currentFPC !== prevFPC && currentFPC !== null && !!currentFPC) {
     prevRates.FPC = [
       ...FPC,
       {
@@ -45,28 +45,28 @@ export const createRates = async (rates: number[], date: string): Promise<prevRa
     ]
   }
   
-  const prevPrime = Prime[Prime.length - 1].value
-  const currentPrime = rates[3]
-  
-  if (currentPrime !== prevPrime && currentPrime !== null) {
-    prevRates['Prime rate'] = [
-      ...Prime,
-      {
-        updatedAt: date,
-        value: currentPrime
-      }
-    ]
-  }
-  
   const prevMIMO = MIMO[MIMO.length - 1].value
   const currentMIMO = rates[2]
   
-  if (currentMIMO !== prevMIMO && currentMIMO !== null) {
+  if (currentMIMO !== prevMIMO && currentMIMO !== null && !!currentMIMO) {
     prevRates['Taxa MIMO'] = [
       ...MIMO,
       {
         updatedAt: date,
         value: currentMIMO
+      }
+    ]
+  }
+
+  const prevPrime = Prime[Prime.length - 1].value
+  const currentPrime = rates[3]
+  
+  if (currentPrime !== prevPrime && currentPrime !== null && !!currentPrime) {
+    prevRates['Prime rate'] = [
+      ...Prime,
+      {
+        updatedAt: date,
+        value: currentPrime
       }
     ]
   }

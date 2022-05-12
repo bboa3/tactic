@@ -19,13 +19,11 @@ app.use(
   })
 )
 
-app.get('/', rates)
+app.get('/', async (rep, res) => {
+  const rates = JSON.parse((await fs.readFile(path, 'utf8')))
 
-// app.get('/', async (rep, res) => {
-//   const rates = JSON.parse((await fs.readFile(path, 'utf8')))
-
-//   res.json(rates)
-// })
+  res.json(rates)
+})
 
 
 app.listen(3002, () => {

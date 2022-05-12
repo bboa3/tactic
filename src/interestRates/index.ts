@@ -2,7 +2,7 @@ import fs from 'fs/promises'
 import dayjs from 'dayjs'
 import { interestRate } from '@src/interestRates/interestRate'
 
-const startDate = '13-03-2022'
+const startDate = '14-12-2018'
 export const interestRates = async () => {
   await fs.writeFile('date.txt', startDate)
   let isBefore = true
@@ -16,7 +16,7 @@ export const interestRates = async () => {
     const lastDate = dayjs(new Date(year, month, day))
 
     const lastDatePlusOne = lastDate.add(1, 'day')
-    const lastDatePlusOneFormatted = lastDate.add(1, 'day').format('DD-MM-YYYY')
+    const lastDatePlusOneFormatted = lastDatePlusOne.format('DD-MM-YYYY')
 
     await interestRate(lastDatePlusOneFormatted)
 
