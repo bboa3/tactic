@@ -13,7 +13,7 @@ interface InterestRates {
   FPD: Rate[]
   FPC: Rate[]
   'Taxa MIMO': Rate[]
-  'Prime rate': Rate[]
+  'Prime Pate': Rate[]
 }
 
 const filterRates = (rates: Rate[]) => {
@@ -36,12 +36,12 @@ const filterRates = (rates: Rate[]) => {
 
 export const rates = async (_request: Request, response: Response) => {
   const prevRates: InterestRates = JSON.parse((await fs.readFile(path, 'utf8')))
-  const { FPD, FPC, "Prime rate": Prime, "Taxa MIMO": MIMO } = prevRates
+  const { FPD, FPC, "Prime Pate": Prime, "Taxa MIMO": MIMO } = prevRates
   
   const interestRates = {
     FPD: filterRates(FPD),
     FPC: filterRates(FPC),
-    'Prime rate': filterRates(Prime),
+    'Prime Pate': filterRates(Prime),
     'Taxa MIMO': filterRates(MIMO),
   }
   

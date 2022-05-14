@@ -10,14 +10,14 @@ interface PrevRates {
   FPD: Rate[]
   FPC: Rate[]
   'Taxa MIMO': Rate[]
-  'Prime rate': Rate[]
+  'Prime Pate': Rate[]
 }
 
 const path = resolve(__dirname, '..', '..', 'files', 'interestRates.json')
 
 export const createRates = async (rates: number[], date: string): Promise<PrevRates> => {
   const prevRates: PrevRates = JSON.parse((await fs.readFile(path, 'utf8')))
-  const { FPD, FPC, "Prime rate": Prime, "Taxa MIMO": MIMO } = prevRates
+  const { FPD, FPC, "Prime Pate": Prime, "Taxa MIMO": MIMO } = prevRates
   
   const prevFPD = FPD[FPD.length - 1].value
   const currentFPD = rates[0] 
@@ -62,7 +62,7 @@ export const createRates = async (rates: number[], date: string): Promise<PrevRa
   const currentPrime = rates[3]
   
   if (currentPrime !== prevPrime && currentPrime !== null && !!currentPrime) {
-    prevRates['Prime rate'] = [
+    prevRates['Prime Pate'] = [
       ...Prime,
       {
         updatedAt: date,
