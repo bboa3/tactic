@@ -13,21 +13,23 @@ interface InterestRates {
   FPD: Rate[]
   FPC: Rate[]
   'Taxa MIMO': Rate[]
-  'Prime Pate': Rate[]
+  'Prime Rate': Rate[]
 }
 
-const filterRates = (rates: Rate[]) => {
-  const interestRates = [] as Rate[]
+const resetDate = (rates: Rate[]) => {
+  const interestRates = rates.map(rate => {
+    const { value, updatedAt } = rate
 
-  rates.forEach(rate => {
-    const prevRate = interestRates[interestRates.length - 1]
+    const dates = updatedAt.split('-')
+    const day = dates[0]
+    const month = dates[1]
+    const year = dates[2]
 
-    if (!prevRate) {
-      return interestRates.push(rate)
-    }
+    const date = `${year}-${month}-${day}`
 
-    if (rate.value !== prevRate.value) {
-      interestRates.push(rate)
+    return {
+      value,
+      updatedAt: date
     }
   })
 
@@ -36,13 +38,13 @@ const filterRates = (rates: Rate[]) => {
 
 export const rates = async (_request: Request, response: Response) => {
   const prevRates: InterestRates = JSON.parse((await fs.readFile(path, 'utf8')))
-  const { FPD, FPC, "Prime Pate": Prime, "Taxa MIMO": MIMO } = prevRates
-  
+  const { FPD, FPC, "Prime Rate": Prime, "Taxa MIMO": MIMO } = prevRates
+
   const interestRates = {
-    FPD: filterRates(FPD),
-    FPC: filterRates(FPC),
-    'Prime Pate': filterRates(Prime),
-    'Taxa MIMO': filterRates(MIMO),
+    FPD: resetDate(FPD),
+    FPC: resetDate(FPC),
+    'Prime Rate': resetDate(Prime),
+    'Taxa MIMO': resetDate(MIMO),
   }
   
   await fs.writeFile(path, JSON.stringify(interestRates))

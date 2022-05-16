@@ -15,9 +15,20 @@ interface PrevRates {
 
 const path = resolve(__dirname, '..', '..', 'files', 'interestRates.json')
 
+const formatDate = (date: string) => {
+  const dates = date.split('-')
+  const day = dates[0]
+  const month = dates[1]
+  const year = dates[2]
+  
+  return `${year}-${month}-${day}`
+}
+
 export const createRates = async (rates: number[], date: string): Promise<PrevRates> => {
   const prevRates: PrevRates = JSON.parse((await fs.readFile(path, 'utf8')))
   const { FPD, FPC, "Prime Pate": Prime, "Taxa MIMO": MIMO } = prevRates
+
+  const updatedAt = formatDate(date)
   
   const prevFPD = FPD[FPD.length - 1].value
   const currentFPD = rates[0] 
@@ -26,7 +37,7 @@ export const createRates = async (rates: number[], date: string): Promise<PrevRa
     prevRates.FPD = [
       ...FPD,
       {
-        updatedAt: date,
+        updatedAt,
         value: currentFPD
       }
     ]
@@ -39,7 +50,7 @@ export const createRates = async (rates: number[], date: string): Promise<PrevRa
     prevRates.FPC = [
       ...FPC,
       {
-        updatedAt: date,
+        updatedAt,
         value: currentFPC
       }
     ]
@@ -52,7 +63,7 @@ export const createRates = async (rates: number[], date: string): Promise<PrevRa
     prevRates['Taxa MIMO'] = [
       ...MIMO,
       {
-        updatedAt: date,
+        updatedAt,
         value: currentMIMO
       }
     ]
@@ -65,7 +76,7 @@ export const createRates = async (rates: number[], date: string): Promise<PrevRa
     prevRates['Prime Pate'] = [
       ...Prime,
       {
-        updatedAt: date,
+        updatedAt,
         value: currentPrime
       }
     ]
