@@ -48,7 +48,7 @@ export const getManica = async (data: any) => {
       'posto administrativo chitobe': getPeople({ ages: data[0], men: data[83], women: data[84] }),
       'posto administrativo save': getPeople({ ages: data[0], men: data[87], women: data[88] })
     },
-    'distrito macosa': {
+    'distrito macossa': {
       'posto administrativo macosa sede': getPeople({ ages: data[0], men: data[95], women: data[96] }),
       'posto administrativo nguawala': getPeople({ ages: data[0], men: data[99], women: data[100] }),
       'posto administrativo nhamagua': getPeople({ ages: data[0], men: data[103], women: data[104] })
