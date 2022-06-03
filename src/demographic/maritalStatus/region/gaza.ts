@@ -24,20 +24,20 @@ export const getGaza = async (data: any) => {
   }
 
   const people = {
-    'distrito de xai-xai': getPeople(data[153]),
-    'distrito bilene': getPeople(data[154]),
-    'distrito de chibuto': getPeople(data[155]),
-    'distrito chicualacuala': getPeople(data[156]),
-    'distrito chigubo': getPeople(data[157]),
-    'distrito chokwe': getPeople(data[158]),
-    'distrito guija': getPeople(data[159]),
-    'distrito mabalane': getPeople(data[160]),
-    'distrito mandlakaze': getPeople(data[161]),
-    'distrito massangena': getPeople(data[162]),
-    'distrito massingir': getPeople(data[163]),
-    'distrito limpopo': getPeople(data[164]),
-    'distrito chongoene': getPeople(data[165]),
-    'distrito mapai': getPeople(data[166])
+    'xai-xai': getPeople(data[153]),
+    'bilene': getPeople(data[154]),
+    'chibuto': getPeople(data[155]),
+    'chicualacuala': getPeople(data[156]),
+    'chigubo': getPeople(data[157]),
+    'chokwe': getPeople(data[158]),
+    'guija': getPeople(data[159]),
+    'mabalane': getPeople(data[160]),
+    'mandlakaze': getPeople(data[161]),
+    'massangena': getPeople(data[162]),
+    'massingir': getPeople(data[163]),
+    'limpopo': getPeople(data[164]),
+    'chongoene': getPeople(data[165]),
+    'mapai': getPeople(data[166])
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))

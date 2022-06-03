@@ -24,13 +24,13 @@ export const getMaputoCidade = async (data: any) => {
   }
 
   const people = {
-    'distrito kampfumo': getPeople(data[178]),
-    'distrito nlhamankulu': getPeople(data[179]),
-    'distrito kaMaxakeni': getPeople(data[180]),
-    'distrito kamavota': getPeople(data[181]),
-    'distrito kaMubukwana': getPeople(data[182]),
-    'distrito katembe': getPeople(data[183]),
-    'distrito kanyaka': getPeople(data[184]),
+    'kampfumo': getPeople(data[178]),
+    'nlhamankulu': getPeople(data[179]),
+    'kaMaxakeni': getPeople(data[180]),
+    'kamavota': getPeople(data[181]),
+    'kaMubukwana': getPeople(data[182]),
+    'katembe': getPeople(data[183]),
+    'kanyaka': getPeople(data[184]),
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))

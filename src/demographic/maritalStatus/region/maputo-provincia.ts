@@ -24,14 +24,14 @@ export const getMaputoProvincia = async (data: any) => {
   }
 
   const people = {
-    'distrito cidade da matola': getPeople(data[169]),
-    'distrito boane': getPeople(data[170]),
-    'distrito magude': getPeople(data[171]),
-    'distrito manhica': getPeople(data[172]),
-    'distrito de marracuene': getPeople(data[173]),
-    'distrito matutuine': getPeople(data[174]),
-    'distrito moamba': getPeople(data[175]),
-    'distrito namaacha': getPeople(data[176])
+    'cidade da matola': getPeople(data[169]),
+    'boane': getPeople(data[170]),
+    'magude': getPeople(data[171]),
+    'manhica': getPeople(data[172]),
+    'de marracuene': getPeople(data[173]),
+    'matutuine': getPeople(data[174]),
+    'moamba': getPeople(data[175]),
+    'namaacha': getPeople(data[176])
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))

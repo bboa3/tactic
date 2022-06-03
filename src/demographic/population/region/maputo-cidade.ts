@@ -22,7 +22,7 @@ export const getMaputoCidade = async (data: any) => {
   }
 
   const people = {
-    'distrito kampfumo': {
+    'kampfumo': {
       'bairro alto mae a': getPeople({ ages: data[0], men: data[11], women: data[12] }),
       'bairro alto mae b': getPeople({ ages: data[0], men: data[15], women: data[16] }),
       'bairro central a': getPeople({ ages: data[0], men: data[19], women: data[20] }),
@@ -35,7 +35,7 @@ export const getMaputoCidade = async (data: any) => {
       'bairro polana cimento b': getPeople({ ages: data[0], men: data[47], women: data[48] }),
       'bairro sommerschield': getPeople({ ages: data[0], men: data[51], women: data[52] })
     },
-    'distrito nlhamankulu': {
+    'nlhamankulu': {
       'bairro aeroporto a': getPeople({ ages: data[0], men: data[59], women: data[60] }),
       'bairro aeroporto b': getPeople({ ages: data[0], men: data[63], women: data[64] }),
       'bairro chamanculo a': getPeople({ ages: data[0], men: data[67], women: data[68] }),
@@ -48,7 +48,7 @@ export const getMaputoCidade = async (data: any) => {
       'bairro Xipamanine': getPeople({ ages: data[0], men: data[95], women: data[96] }),
       'bairro munhuana': getPeople({ ages: data[0], men: data[99], women: data[100] }),
     },
-    'distrito kaMaxakeni': {
+    'kaMaxakeni': {
       'bairro mafalala': getPeople({ ages: data[0], men: data[107], women: data[108] }),
       'bairro maxaquene a': getPeople({ ages: data[0], men: data[111], women: data[112] }),
       'bairro maxaquene b': getPeople({ ages: data[0], men: data[115], women: data[116] }),
@@ -58,7 +58,7 @@ export const getMaputoCidade = async (data: any) => {
       'bairro polana canico b': getPeople({ ages: data[0], men: data[131], women: data[132] }),
       'bairro urbanizacao': getPeople({ ages: data[0], men: data[135], women: data[136] })
     },
-    'distrito kamavota': {
+    'kamavota': {
       'bairro albazine': getPeople({ ages: data[0], men: data[143], women: data[144] }),
       'bairro costa do sol': getPeople({ ages: data[0], men: data[147], women: data[148] }),
       'bairro ferroviario': getPeople({ ages: data[0], men: data[151], women: data[152] }),
@@ -71,7 +71,7 @@ export const getMaputoCidade = async (data: any) => {
       'bairro 3 de fevereiro': getPeople({ ages: data[0], men: data[179], women: data[180] }),
       'bairro laulane': getPeople({ ages: data[0], men: data[183], women: data[184] })
     },
-    'distrito kamubukwana': {
+    'kamubukwana': {
       'bairro bagamoio': getPeople({ ages: data[0], men: data[191], women: data[192] }),
       'bairro george dimitrov': getPeople({ ages: data[0], men: data[195], women: data[196] }),
       'bairro inhagoia a': getPeople({ ages: data[0], men: data[199], women: data[200] }),
@@ -87,14 +87,14 @@ export const getMaputoCidade = async (data: any) => {
       'bairro magoanine b': getPeople({ ages: data[0], men: data[239], women: data[240] }),
       'bairro magoanine c': getPeople({ ages: data[0], men: data[243], women: data[244] })
     },
-    'distrito katembe': {
+    'katembe': {
       'bairro chali': getPeople({ ages: data[0], men: data[251], women: data[252] }),
       'bairro chamissava': getPeople({ ages: data[0], men: data[255], women: data[256] }),
       'bairro guachene': getPeople({ ages: data[0], men: data[259], women: data[260] }),
       'bairro incassane': getPeople({ ages: data[0], men: data[263], women: data[264] }),
       'bairro inguide': getPeople({ ages: data[0], men: data[267], women: data[268] }),
     },
-    'distrito kanyaka': {
+    'kanyaka': {
       'bairro inguane': getPeople({ ages: data[0], men: data[275], women: data[276] }),
       'bairro nhaquene': getPeople({ ages: data[0], men: data[279], women: data[280] }),
       'bairro ridzene': getPeople({ ages: data[0], men: data[283], women: data[284] }),

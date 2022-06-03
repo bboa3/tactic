@@ -25,22 +25,22 @@ export const getNiassa = async (data: any) => {
 
 
   const people = {
-    'distrito lichinga': getPeople(data[7]),
-    'distrito cuamba': getPeople(data[8]),
-    'distrito lago': getPeople(data[9]),
-    'distrito chimbunila': getPeople(data[10]),
-    'distrito majune': getPeople(data[11]),
-    'distrito mandimba': getPeople(data[12]),
-    'distrito marrupa': getPeople(data[13]),
-    'distrito maua': getPeople(data[14]), 
-    'distrito mavago': getPeople(data[15]),
-    'distrito mecanhelas': getPeople(data[16]),
-    'distrito mecula': getPeople(data[17]),
-    'distrito metarica': getPeople(data[18]),
-    'distrito muembe': getPeople(data[19]),
-    'distrito ngauma': getPeople(data[20]),
-    'distrito nipepe': getPeople(data[21]),
-    'distrito sanga': getPeople(data[22])
+    'lichinga': getPeople(data[7]),
+    'cuamba': getPeople(data[8]),
+    'lago': getPeople(data[9]),
+    'chimbunila': getPeople(data[10]),
+    'majune': getPeople(data[11]),
+    'mandimba': getPeople(data[12]),
+    'marrupa': getPeople(data[13]),
+    'maua': getPeople(data[14]), 
+    'mavago': getPeople(data[15]),
+    'mecanhelas': getPeople(data[16]),
+    'mecula': getPeople(data[17]),
+    'metarica': getPeople(data[18]),
+    'muembe': getPeople(data[19]),
+    'ngauma': getPeople(data[20]),
+    'nipepe': getPeople(data[21]),
+    'sanga': getPeople(data[22])
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))

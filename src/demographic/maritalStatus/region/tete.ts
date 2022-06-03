@@ -24,21 +24,21 @@ export const getTete = async (data: any) => {
   }
 
   const people = {
-    'distrito cidade de tete': getPeople(data[92]),
-    'distrito angonia': getPeople(data[93]),
-    'distrito cahora-Bassa': getPeople(data[94]),
-    'distrito changara': getPeople(data[95]),
-    'distrito chifunde': getPeople(data[96]),
-    'distrito chiuta': getPeople(data[97]),
-    'distrito macanga': getPeople(data[98]),
-    'distrito magoe': getPeople(data[99]),
-    'distrito maravia': getPeople(data[100]),
-    'distrito moatize': getPeople(data[101]),
-    'distrito mutarara': getPeople(data[102]),
-    'distrito tsangano': getPeople(data[103]),
-    'distrito zumbo': getPeople(data[104]),
-    'distrito doa': getPeople(data[105]),
-    'distrito marara': getPeople(data[106])
+    'cidade de tete': getPeople(data[92]),
+    'angonia': getPeople(data[93]),
+    'cahora-Bassa': getPeople(data[94]),
+    'changara': getPeople(data[95]),
+    'chifunde': getPeople(data[96]),
+    'chiuta': getPeople(data[97]),
+    'macanga': getPeople(data[98]),
+    'magoe': getPeople(data[99]),
+    'maravia': getPeople(data[100]),
+    'moatize': getPeople(data[101]),
+    'mutarara': getPeople(data[102]),
+    'tsangano': getPeople(data[103]),
+    'zumbo': getPeople(data[104]),
+    'doa': getPeople(data[105]),
+    'marara': getPeople(data[106])
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))

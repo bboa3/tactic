@@ -24,23 +24,23 @@ export const getCaboDelgado = async (data: any) => {
   }
 
   const people = {
-    'distrito cidade de pemba': getPeople(data[24]),
-    'distrito ancuabe': getPeople(data[25]),
-    'distrito balama': getPeople(data[26]),
-    'distrito chiure': getPeople(data[27]),
-    'distrito ibo': getPeople(data[28]),
-    'distrito macomia': getPeople(data[29]),
-    'distrito mecufi': getPeople(data[30]),
-    'distrito meluco': getPeople(data[31]),
-    'distrito mocimboa da Praia': getPeople(data[32]),
-    'distrito montepuez': getPeople(data[33]),
-    'distrito mueda': getPeople(data[34]),
-    'distrito muidumbe': getPeople(data[35]),
-    'distrito namuno': getPeople(data[36]),
-    'distrito nangade': getPeople(data[37]),
-    'distrito palma': getPeople(data[38]),
-    'distrito metuge': getPeople(data[39]),
-    'distrito quissanga': getPeople(data[40])
+    'cidade de pemba': getPeople(data[24]),
+    'ancuabe': getPeople(data[25]),
+    'balama': getPeople(data[26]),
+    'chiure': getPeople(data[27]),
+    'ibo': getPeople(data[28]),
+    'macomia': getPeople(data[29]),
+    'mecufi': getPeople(data[30]),
+    'meluco': getPeople(data[31]),
+    'mocimboa da Praia': getPeople(data[32]),
+    'montepuez': getPeople(data[33]),
+    'mueda': getPeople(data[34]),
+    'muidumbe': getPeople(data[35]),
+    'namuno': getPeople(data[36]),
+    'nangade': getPeople(data[37]),
+    'palma': getPeople(data[38]),
+    'metuge': getPeople(data[39]),
+    'quissanga': getPeople(data[40])
   }
 
   const parsedFile = JSON.parse(await fs.readFile(path, 'utf8'))
