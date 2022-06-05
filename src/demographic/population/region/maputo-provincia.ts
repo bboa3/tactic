@@ -46,7 +46,7 @@ export const getMaputoProvincia = async (data: any) => {
       'posto administrativo xinavane': getPeople({ ages: data[0], men: data[79], women: data[80] }),
       'posto administrativo 3 de fevereiro': getPeople({ ages: data[0], men: data[83], women: data[84] })
     },
-    'de marracuene': {
+    'marracuene': {
       'posto administrativo marracuene': getPeople({ ages: data[0], men: data[91], women: data[92] }),
       'posto administrativo machubo': getPeople({ ages: data[0], men: data[95], women: data[96] })
     },

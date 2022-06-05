@@ -25,7 +25,7 @@ export const getMaputoProvincia = async (data: any) => {
     'boane': getPeople(data[161]),
     'magude': getPeople(data[162]),
     'manhica': getPeople(data[163]),
-    'de marracuene': getPeople(data[164]),
+    'marracuene': getPeople(data[164]),
     'matutuine': getPeople(data[165]),
     'moamba': getPeople(data[166]),
     'namaacha': getPeople(data[167])
