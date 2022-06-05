@@ -32,7 +32,7 @@ export const getGaza = async (data: any) => {
     'chokwe': getPeople(data[158]),
     'guija': getPeople(data[159]),
     'mabalane': getPeople(data[160]),
-    'mandlakaze': getPeople(data[161]),
+    'manjacaze': getPeople(data[161]),
     'massangena': getPeople(data[162]),
     'massingir': getPeople(data[163]),
     'limpopo': getPeople(data[164]),

@@ -29,7 +29,7 @@ export const getGaza = async (data: any) => {
     'distrito chokwe': getPeople(data[150]),
     'distrito guija': getPeople(data[151]),
     'distrito mabalane': getPeople(data[152]),
-    'distrito mandlakaze': getPeople(data[153]),
+    'distrito manjacaze': getPeople(data[153]),
     'distrito massangena': getPeople(data[154]),
     'distrito massingir': getPeople(data[155]),
     'distrito limpopo': getPeople(data[156]),

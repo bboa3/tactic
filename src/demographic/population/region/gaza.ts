@@ -70,8 +70,8 @@ export const getGaza = async (data: any) => {
       'posto administrativo combomune': getPeople({ ages: data[0], men: data[159], women: data[160] }),
       'posto administrativo ntlhavene': getPeople({ ages: data[0], men: data[163], women: data[164] }),
     },
-    'mandlakaze': {
-      'posto administrativo mandlakaze sede': getPeople({ ages: data[0], men: data[171], women: data[172] }),
+    'manjacaze': {
+      'posto administrativo manjacaze sede': getPeople({ ages: data[0], men: data[171], women: data[172] }),
       'posto administrativo chalala': getPeople({ ages: data[0], men: data[175], women: data[176] }),
       'posto administrativo chibondzane': getPeople({ ages: data[0], men: data[179], women: data[180] }),
       'posto administrativo chidenguele': getPeople({ ages: data[0], men: data[183], women: data[184] }),
@@ -89,7 +89,7 @@ export const getGaza = async (data: any) => {
     'limpopo': {
       'posto administrativo chicumbane': getPeople({ ages: data[0], men: data[223], women: data[224] }),
       'posto administrativo chissano': getPeople({ ages: data[0], men: data[227], women: data[228] }),
-      'posto administrativo zONGOENE': getPeople({ ages: data[0], men: data[231], women: data[232] }),
+      'posto administrativo zongoene': getPeople({ ages: data[0], men: data[231], women: data[232] }),
     },
     'chongoene': {
       'posto administrativo chongoene': getPeople({ ages: data[0], men: data[239], women: data[240] }),
