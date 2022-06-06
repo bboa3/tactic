@@ -6,6 +6,7 @@ import dotenvExpand from 'dotenv-expand'
 
 import { interestRates } from '@src/interestRates'
 import { rates } from './rates'
+import { demographics } from './demographic/population'
 
 dotenvExpand(config())
 
@@ -19,7 +20,7 @@ app.use(
   })
 )
 
-app.get('/', rates)
+app.get('/', demographics)
 
 
 app.listen(3002, () => {

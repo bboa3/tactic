@@ -100,5 +100,5 @@ export const demographics = async (_request: Request, response: Response) => {
   const maputoProvincia = await getMaputoProvincia(maputoProvinciaData)
   const maputoCidade = await getMaputoCidade(maputoCidadeData)
 
-  response.status(200).json(countTotal(maputoCidade))
+  response.status(200).json(countTotal(zambezia))
 }
