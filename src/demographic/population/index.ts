@@ -82,7 +82,7 @@ export const demographics = async (_request: Request, response: Response) => {
   const maputoProvinciaData: any = xlsx.utils.sheet_to_json(file.Sheets[maputoProvinciaTabName], {
     blankrows: false,
     header: 1,
-  })  
+  })
   const maputoCidadeData: any = xlsx.utils.sheet_to_json(file.Sheets[maputoCidadeTabName], {
     blankrows: false,
     header: 1,
