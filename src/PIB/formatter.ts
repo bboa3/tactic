@@ -202,8 +202,10 @@ export const  PIBFormatter = (years: number[], pibData: PIBData) => {
 function getPIB (years: number[], pib: number[]) {
   return years.map((year, index) => {
     return {
-      ano: Number(year),
-      pib: Number(pib[index + 1])
+      date: {
+        year: Number(year)
+      },
+      value: Number(pib[index + 1])
     }
   })
 }
