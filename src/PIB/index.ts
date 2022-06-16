@@ -10,7 +10,7 @@ const dest = resolve(__dirname, '..', '..', 'files', 'PIB', 'pib.json')
 export const PIB = async (_request: Request, response: Response) => {
   const file = xlsx.readFile(path);
 
-  const tabName = file.SheetNames[0]
+  const tabName = file.SheetNames[2]
     
   const data: any = xlsx.utils.sheet_to_json(file.Sheets[tabName], {
     blankrows: false,
