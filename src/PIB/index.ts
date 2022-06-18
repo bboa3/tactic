@@ -5,7 +5,7 @@ import xlsx from 'xlsx'
 import { PIBData, PIBFormatter } from "@src/PIB/formatter"
 
 const path = resolve(__dirname, '..', '..', 'files', 'PIB', 'optica-de-produção.xlsx')
-const dest = resolve(__dirname, '..', '..', 'files', 'PIB', 'pib.json')
+const dest = resolve(__dirname, '..', '..', 'files', 'PIB', 'gdp.json')
 
 export const PIB = async (_request: Request, response: Response) => {
   const file = xlsx.readFile(path);
