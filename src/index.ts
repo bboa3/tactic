@@ -8,6 +8,7 @@ import { interestRates } from '@src/interestRates'
 import { rates } from './rates'
 import { demographics } from './demographic/population'
 import { PIB } from './PIB'
+import { economicActivityIndex } from '@src/economicActivityIndex'
 
 dotenvExpand(config())
 
@@ -21,7 +22,7 @@ app.use(
   })
 )
 
-app.get('/', PIB)
+app.get('/', economicActivityIndex)
 
 
 app.listen(3002, () => {
