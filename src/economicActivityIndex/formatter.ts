@@ -46,6 +46,7 @@ export interface EAILines {
   EAILine47: number[]
   EAILine48: number[]
   EAILine49: number[]
+  EAILine50: number[]
 }
 
 interface EAIData {
@@ -102,6 +103,7 @@ export const  EAIFormatter = ({year, eaiLines }: EAIData) => {
     EAILine47,
     EAILine48,
     EAILine49,
+    EAILine50,
   } = eaiLines
   const aggregate = [
     {
@@ -145,202 +147,207 @@ export const  EAIFormatter = ({year, eaiLines }: EAIData) => {
     {
       id: 0,
       name: 'Indústria Extractiva',
-      EAI: (year >= 2019) && getEAILine(year, EAILine11)
+      EAI: (year >= 2020) && getEAILine(year, EAILine11)
     },
     {
       id: 1,
       name: 'Indústria Transformadora',
-      EAI: (year >= 2019) && getEAILine(year, EAILine12)
+      EAI: (year >= 2020) && getEAILine(year, EAILine12)
     },
     {
       id: 2,
       name: 'Hulha e Lenhite',
-      EAI: (year >= 2019) && getEAILine(year, EAILine13)
+      EAI: (year >= 2020) && getEAILine(year, EAILine13)
     },
     {
       id: 3,
       name: 'Extracção de Hulha',
-      EAI: (year >= 2019) && getEAILine(year, EAILine14)
+      EAI: (year >= 2020) && getEAILine(year, EAILine14)
     },
     {
       id: 4,
       name: 'Petróleo Bruto e Gás Natural',
-      EAI: (year >= 2019) && getEAILine(year, EAILine15)
+      EAI: (year >= 2020) && getEAILine(year, EAILine15)
     },
     {
       id: 5,
       name: 'Extracção de Gás Natural e de Condensados',
-      EAI: (year >= 2019) && getEAILine(year, EAILine16)
+      EAI: (year >= 2020) && getEAILine(year, EAILine16)
     },
     {
       id: 6,
       name: 'Minérios Metálicos',
-      EAI: (year >= 2019) && getEAILine(year, EAILine17)
+      EAI: (year >= 2020) && getEAILine(year, EAILine17)
     },
     {
       id: 7,
       name: 'Extracção e Preparação de Minérios Metálicos não Ferrosos',
-      EAI: (year >= 2019) && getEAILine(year, EAILine18)
+      EAI: (year >= 2020) && getEAILine(year, EAILine18)
     },
     {
       id: 8,
       name: 'Outros Produtos das Indústrias Extractivas',
-      EAI: (year >= 2019) && getEAILine(year, EAILine19)
+      EAI: (year >= 2020) && getEAILine(year, EAILine19)
     },
     {
       id: 9,
       name: 'Extracção de Pedra, Areia e Argila',
-      EAI: (year >= 2019) && getEAILine(year, EAILine20)
+      EAI: (year >= 2020) && getEAILine(year, EAILine20)
     },
     {
       id: 10,
-      name: 'Produtos Alimentares',
-      EAI: (year >= 2019) && getEAILine(year, EAILine21)
+      name: 'Indústrias extrativas, N.E.',
+      EAI: (year >= 2020) && getEAILine(year, EAILine21)
     },
     {
       id: 11,
-      name: 'Abate de Animais, Preparação e Conservação de Carne e de Produtos à Base de Carne',
-      EAI: (year >= 2019) && getEAILine(year, EAILine22)
+      name: 'Produtos Alimentares',
+      EAI: (year >= 2020) && getEAILine(year, EAILine22)
     },
     {
       id: 12,
-      name: 'Preparação e Conservação, de Frutos e de Produtos Hortícolas',
-      EAI: (year >= 2019) && getEAILine(year, EAILine23)
+      name: 'Abate de Animais, Preparação e Conservação de Carne e de Produtos à Base de Carne',
+      EAI: (year >= 2020) && getEAILine(year, EAILine23)
     },
     {
       id: 13,
-      name: 'Produção de Óleos e Gorduras, Animais e Vegetais',
-      EAI: (year >= 2019) && getEAILine(year, EAILine24)
+      name: 'Preparação e Conservação, de Frutos e de Produtos Hortícolas',
+      EAI: (year >= 2020) && getEAILine(year, EAILine24)
     },
     {
       id: 14,
-      name: 'Indústria de Lacticínios',
-      EAI: (year >= 2019) && getEAILine(year, EAILine25)
+      name: 'Produção de Óleos e Gorduras, Animais e Vegetais',
+      EAI: (year >= 2020) && getEAILine(year, EAILine25)
     },
     {
       id: 15,
-      name: 'Transformação de Cereais e Leguminosas; Fabricação de Amidos, Féculas e de Produtos afins',
-      EAI: (year >= 2019) && getEAILine(year, EAILine26)
+      name: 'Indústria de Lacticínios',
+      EAI: (year >= 2020) && getEAILine(year, EAILine26)
     },
     {
       id: 16,
-      name: 'Fabricação de Produtos de Padaria, Pastelaria (fresca e de conservação) e de outros produtos alimentares',
-      EAI: (year >= 2019) && getEAILine(year, EAILine27)
+      name: 'Transformação de Cereais e Leguminosas; Fabricação de Amidos, Féculas e de Produtos afins',
+      EAI: (year >= 2020) && getEAILine(year, EAILine27)
     },
     {
       id: 17,
-      name: 'Fabricação de Alimentos para Animais',
-      EAI: (year >= 2019) && getEAILine(year, EAILine28)
+      name: 'Fabricação de Produtos de Padaria, Pastelaria (fresca e de conservação) e de outros produtos alimentares',
+      EAI: (year >= 2020) && getEAILine(year, EAILine28)
     },
     {
       id: 18,
-      name: 'Bebidas',
-      EAI: (year >= 2019) && getEAILine(year, EAILine29)
+      name: 'Fabricação de Alimentos para Animais',
+      EAI: (year >= 2020) && getEAILine(year, EAILine29)
     },
     {
       id: 19,
-      name: 'Indústria das Bebidas',
-      EAI: (year >= 2019) && getEAILine(year, EAILine30)
+      name: 'Bebidas',
+      EAI: (year >= 2020) && getEAILine(year, EAILine30)
     },
     {
       id: 20,
-      name: 'Produtos da Indústria do Tabaco',
-      EAI: (year >= 2019) && getEAILine(year, EAILine31)
+      name: 'Indústria das Bebidas',
+      EAI: (year >= 2020) && getEAILine(year, EAILine31)
     },
     {
       id: 21,
-      name: 'Indústria do Tabaco',
-      EAI: (year >= 2019) && getEAILine(year, EAILine32)
+      name: 'Produtos da Indústria do Tabaco',
+      EAI: (year >= 2020) && getEAILine(year, EAILine32)
     },
     {
       id: 22,
-      name: 'Madeira e suas obras (excepto mobiliário), obras de cestaria e de espartaria',
-      EAI: (year >= 2019) && getEAILine(year, EAILine33)
+      name: 'Indústria do Tabaco',
+      EAI: (year >= 2020) && getEAILine(year, EAILine33)
     },
     {
       id: 23,
-      name: 'Serração, Aplainamento e Impregnação da madeira',
-      EAI: (year >= 2019) && getEAILine(year, EAILine34)
+      name: 'Madeira e suas obras (excepto mobiliário), obras de cestaria e de espartaria',
+      EAI: (year >= 2020) && getEAILine(year, EAILine34)
     },
     {
       id: 24,
-      name: 'Trabalhos de Impressão e Gravação',
-      EAI: (year >= 2019) && getEAILine(year, EAILine35)
+      name: 'Serração, Aplainamento e Impregnação da madeira',
+      EAI: (year >= 2020) && getEAILine(year, EAILine35)
     },
     {
       id: 25,
-      name: 'Impressão e Actividades  dos Serviços Relacionados com a impressão',
-      EAI: (year >= 2019) && getEAILine(year, EAILine36)
+      name: 'Trabalhos de Impressão e Gravação',
+      EAI: (year >= 2020) && getEAILine(year, EAILine36)
     },
     {
       id: 26,
-      name: 'Produtos Químicos',
-      EAI: (year >= 2019) && getEAILine(year, EAILine37)
+      name: 'Impressão e Actividades  dos Serviços Relacionados com a impressão',
+      EAI: (year >= 2020) && getEAILine(year, EAILine37)
     },
     {
       id: 27,
-      name: 'Fabricação de Outros Produtos Químicos',
-      EAI: (year >= 2019) && getEAILine(year, EAILine38)
+      name: 'Produtos Químicos',
+      EAI: (year >= 2020) && getEAILine(year, EAILine38)
     },
     {
       id: 28,
-      name: 'Artigos de Borracha e Matérias Plásticas',
-      EAI: (year >= 2019) && getEAILine(year, EAILine39)
+      name: 'Fabricação de Outros Produtos Químicos',
+      EAI: (year >= 2020) && getEAILine(year, EAILine39)
     },
     {
       id: 29,
       name: 'Artigos de Borracha e Matérias Plásticas',
-      EAI: (year >= 2019) && getEAILine(year, EAILine40)
+      EAI: (year >= 2020) && getEAILine(year, EAILine40)
     },
     {
       id: 30,
-      name: 'Outros Produtos Minerais não Metálicos',
-      EAI: (year >= 2019) && getEAILine(year, EAILine41)
+      name: 'Artigos de Borracha e Matérias Plásticas',
+      EAI: (year >= 2020) && getEAILine(year, EAILine41)
     },
     {
       id: 31,
-      name: 'Fabricação de Produtos Minerais não Metálicos, n.e.',
-      EAI: (year >= 2019) && getEAILine(year, EAILine42)
+      name: 'Outros Produtos Minerais não Metálicos',
+      EAI: (year >= 2020) && getEAILine(year, EAILine42)
     },
     {
       id: 32,
-      name: 'Metais de Base',
-      EAI: (year >= 2019) && getEAILine(year, EAILine43)
+      name: 'Fabricação de Produtos Minerais não Metálicos, n.e.',
+      EAI: (year >= 2020) && getEAILine(year, EAILine43)
     },
     {
       id: 33,
-      name: 'Indústrias Metalúrgicas de Base de Ferro e aço',
-      EAI: (year >= 2019) && getEAILine(year, EAILine44)
+      name: 'Metais de Base',
+      EAI: (year >= 2020) && getEAILine(year, EAILine44)
     },
     {
       id: 34,
-      name: 'Obtenção e Primeira Transformação dos Metais não Ferrosos',
-      EAI: (year >= 2019) && getEAILine(year, EAILine45)
+      name: 'Indústrias Metalúrgicas de Base de Ferro e aço',
+      EAI: (year >= 2020) && getEAILine(year, EAILine45)
     },
     {
       id: 35,
-      name: 'Produtos  Metálicos Transformados, Excepto Máquinas e Equipamento',
-      EAI: (year >= 2019) && getEAILine(year, EAILine46)
+      name: 'Obtenção e Primeira Transformação dos Metais não Ferrosos',
+      EAI: (year >= 2020) && getEAILine(year, EAILine46)
     },
     {
       id: 36,
-      name: 'Fabricação de Elementos de Construção em Metal,  Reservatórios e Geradores de vapor',
-      EAI: (year >= 2019) && getEAILine(year, EAILine47)
+      name: 'Produtos  Metálicos Transformados, Excepto Máquinas e Equipamento',
+      EAI: (year >= 2020) && getEAILine(year, EAILine47)
     },
     {
       id: 37,
-      name: 'Máquinas e Equipamentos, n.e.',
-      EAI: (year >= 2019) && getEAILine(year, EAILine48)
+      name: 'Fabricação de Elementos de Construção em Metal,  Reservatórios e Geradores de vapor',
+      EAI: (year >= 2020) && getEAILine(year, EAILine48)
     },
     {
       id: 38,
+      name: 'Máquinas e Equipamentos, n.e.',
+      EAI: (year >= 2020) && getEAILine(year, EAILine49)
+    },
+    {
+      id: 39,
       name: 'Fabricação de  Máquinas e Equipamento para uso Específico',
-      EAI: (year >= 2019) && getEAILine(year, EAILine49)
+      EAI: (year >= 2020) && getEAILine(year, EAILine50)
     },
     {
       id: 10,
       name: 'Total',
-      EAI: (year >= 2019) && getEAILine(year, EAILine10)
+      EAI: (year >= 2020) && getEAILine(year, EAILine10)
     }
   ]
 

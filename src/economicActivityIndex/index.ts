@@ -106,6 +106,7 @@ export const economicActivityIndex = async (_request: Request, response: Respons
       EAILine47: data[47],
       EAILine48: data[48],
       EAILine49: data[49],
+      EAILine50: data[50],
     }
 
     const { aggregate: newAggregate, industries: newIndustries } = EAIFormatter({ year, eaiLines })
@@ -123,7 +124,7 @@ export const economicActivityIndex = async (_request: Request, response: Respons
       }
     }
 
-    if (year >= 2019) {
+    if (year >= 2020) {
       let index = 0
       for (const industry of newIndustries) {
         if (!industries[0]) {
