@@ -19,6 +19,9 @@ export const economicActivityIndex = async (_request: Request, response: Respons
   const tabName2022 = file.SheetNames[6]
 
   const tabNames = [
+    tabName2016,
+    tabName2017,
+    tabName2018,
     tabName2019,
     tabName2020,
     tabName2021,
@@ -94,7 +97,10 @@ export const economicActivityIndex = async (_request: Request, response: Respons
     const { aggregateIndex, industryIndex } = EAIs
 
     EAIs.aggregateIndex = [...aggregateIndex, ...newAggregateIndex]
-    EAIs.industryIndex = [...industryIndex, ...newIndustryIndex]
+
+    if (year >= 2019) {
+      EAIs.industryIndex = [...industryIndex, ...newIndustryIndex]
+    }
   }
 
   await fs.writeFile(dest, JSON.stringify(EAIs))
