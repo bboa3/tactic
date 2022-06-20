@@ -103,7 +103,7 @@ export const  EAIFormatter = ({year, eaiLines }: EAIData) => {
     EAILine48,
     EAILine49,
   } = eaiLines
-  const aggregateIndex = [
+  const aggregate = [
     {
       id: 0,
       name: 'Indices do Volume de Negócios',
@@ -141,7 +141,7 @@ export const  EAIFormatter = ({year, eaiLines }: EAIData) => {
     }
   ]
 
-  const industryIndex = [
+  const industries = [
     {
       id: 0,
       name: 'Indústria Extractiva',
@@ -345,8 +345,8 @@ export const  EAIFormatter = ({year, eaiLines }: EAIData) => {
   ]
 
   return {
-    aggregateIndex,
-    industryIndex
+    aggregate,
+    industries
   }
 }
 

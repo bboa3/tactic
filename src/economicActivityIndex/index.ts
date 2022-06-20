@@ -7,6 +7,23 @@ import { EAILines, EAIFormatter } from '@src/economicActivityIndex/formatter'
 const path = resolve(__dirname, '..', '..', 'files', 'economicActivityIndex', 'indice-de-actividade-economica.xlsx')
 const dest = resolve(__dirname, '..', '..', 'files', 'economicActivityIndex', 'eai.json')
 
+interface EAIs {
+  id: number
+  name: string
+  EAI: {
+    date: {
+      year: number
+      month: number
+    },
+    value: number
+  }[],
+}
+
+interface Entity {
+  aggregate: EAIs[]
+  industries: EAIs[]
+}
+
 export const economicActivityIndex = async (_request: Request, response: Response) => {
   const file = xlsx.readFile(path);
 
@@ -28,9 +45,9 @@ export const economicActivityIndex = async (_request: Request, response: Respons
     tabName2022
   ]
 
-  const EAIs = {
-    aggregateIndex: [],
-    industryIndex: []
+  const EAIs: Entity = {
+    aggregate: [],
+    industries: []
   }
 
   for (const tabName of tabNames) {
@@ -91,15 +108,32 @@ export const economicActivityIndex = async (_request: Request, response: Respons
       EAILine49: data[49],
     }
 
-    const { aggregateIndex: newAggregateIndex, industryIndex: newIndustryIndex } = EAIFormatter({ year, eaiLines })
-    
+    const { aggregate: newAggregate, industries: newIndustries } = EAIFormatter({ year, eaiLines })
 
-    const { aggregateIndex, industryIndex } = EAIs
+    const { aggregate, industries } = EAIs
 
-    EAIs.aggregateIndex = [...aggregateIndex, ...newAggregateIndex]
+    let index = 0
+    for (const industry of newAggregate) {
+      if (!aggregate[0]) {
+        EAIs.aggregate = newAggregate
+      } else {
+        industry.EAI = [...aggregate[index].EAI, ...industry.EAI]
+        EAIs.aggregate[index] = industry
+        index++
+      }
+    }
 
     if (year >= 2019) {
-      EAIs.industryIndex = [...industryIndex, ...newIndustryIndex]
+      let index = 0
+      for (const industry of newIndustries) {
+        if (!industries[0]) {
+          EAIs.industries = newIndustries
+        } else {
+          industry.EAI = [...industries[index].EAI, ...industry.EAI]
+          EAIs.industries[index] = industry
+          index++
+        }
+      }
     }
   }
 
