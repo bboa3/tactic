@@ -106,7 +106,7 @@ export const  EIFormatter = ({year, eiLines }: EIData) => {
   const aggregate = [
     {
       id: 0,
-      name: 'Indices de Emprego',
+      name: 'Índices de Emprego',
       values: getEILine(year, EILine2)
     },
     {
@@ -224,7 +224,7 @@ export const  EIFormatter = ({year, eiLines }: EIData) => {
     },
     {
       id: 17,
-      name: 'Transformação de CereIs e Leguminosas; Fabricação de Amidos, Féculas e de Produtos afins',
+      name: 'Transformação de Cereis e Leguminosas; Fabricação de Amidos, Féculas e de Produtos afins',
       values: (year >= 2020) && getEILine(year, EILine26)
     },
     {

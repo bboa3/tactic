@@ -105,7 +105,7 @@ export const employmentIndex = async (_request: Request, response: Response) => 
       EILine46: data[46],
       EILine47: data[47],
       EILine48: data[48],
-      EILine49: data[49]
+      EILine49: data[49],
     }
 
     const { aggregate: newAggregate, industries: newIndustries } = EIFormatter({ year, eiLines })
@@ -127,7 +127,7 @@ export const employmentIndex = async (_request: Request, response: Response) => 
       let index = 0
       for (const industry of newIndustries) {
         if (!industries[0]) {
-          EIs.aggregate = newIndustries
+          EIs.industries = newIndustries
         } else {
           industry.values = [...industries[index].values, ...industry.values]
           EIs.industries[index] = industry

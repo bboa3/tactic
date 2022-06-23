@@ -19,7 +19,7 @@ app.use(
   })
 )
 
-app.get('/', economicActivityIndex)
+app.get('/', employmentIndex)
 
 
 app.listen(3002, () => {
