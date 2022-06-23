@@ -5,7 +5,8 @@ import fs from 'fs/promises'
 import dotenvExpand from 'dotenv-expand'
 
 import { economicActivityIndex } from '@src/economicActivityIndex'
-import { employmentIndex } from './employmentIndex'
+import { employmentIndex } from '@src/employmentIndex'
+import { incomeIndex } from '@src/incomeIndex'
 
 dotenvExpand(config())
 
@@ -19,7 +20,7 @@ app.use(
   })
 )
 
-app.get('/', employmentIndex)
+app.get('/', incomeIndex)
 
 
 app.listen(3002, () => {
