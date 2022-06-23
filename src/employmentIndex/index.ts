@@ -10,7 +10,7 @@ const dest = resolve(__dirname, '..', '..', 'files', 'employmentIndex', 'employm
 interface EIs {
   id: number
   name: string
-  EI: {
+  values: {
     date: {
       year: number
       month: number
@@ -117,7 +117,7 @@ export const employmentIndex = async (_request: Request, response: Response) => 
       if (!aggregate[0]) {
         EIs.aggregate = newAggregate
       } else {
-        industry.EI = [...aggregate[index].EI, ...industry.EI]
+        industry.values = [...aggregate[index].values, ...industry.values]
         EIs.aggregate[index] = industry
         index++
       }
@@ -127,9 +127,9 @@ export const employmentIndex = async (_request: Request, response: Response) => 
       let index = 0
       for (const industry of newIndustries) {
         if (!industries[0]) {
-          EIs.industries = newIndustries
+          EIs.aggregate = newIndustries
         } else {
-          industry.EI = [...industries[index].EI, ...industry.EI]
+          industry.values = [...industries[index].values, ...industry.values]
           EIs.industries[index] = industry
           index++
         }

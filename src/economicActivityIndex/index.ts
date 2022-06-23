@@ -10,7 +10,7 @@ const dest = resolve(__dirname, '..', '..', 'files', 'economicActivityIndex', 'e
 interface EAIs {
   id: number
   name: string
-  EAI: {
+  values: {
     date: {
       year: number
       month: number
@@ -118,7 +118,7 @@ export const economicActivityIndex = async (_request: Request, response: Respons
       if (!aggregate[0]) {
         EAIs.aggregate = newAggregate
       } else {
-        industry.EAI = [...aggregate[index].EAI, ...industry.EAI]
+        industry.values = [...aggregate[index].values, ...industry.values]
         EAIs.aggregate[index] = industry
         index++
       }
@@ -130,7 +130,7 @@ export const economicActivityIndex = async (_request: Request, response: Respons
         if (!industries[0]) {
           EAIs.industries = newIndustries
         } else {
-          industry.EAI = [...industries[index].EAI, ...industry.EAI]
+          industry.values = [...industries[index].values, ...industry.values]
           EAIs.industries[index] = industry
           index++
         }
