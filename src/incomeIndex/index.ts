@@ -5,7 +5,7 @@ import xlsx from 'xlsx'
 import { IILines, IIFormatter } from '@src/incomeIndex/formatter'
 
 const path = resolve(__dirname, '..', '..', 'files', 'incomeIndex', 'indice-de-remuneracoes.xlsx')
-const dest = resolve(__dirname, '..', '..', 'files', 'incomeIndex', 'employment-index.json')
+const dest = resolve(__dirname, '..', '..', 'files', 'incomeIndex', 'income-index.json')
 
 interface IIs {
   id: number
