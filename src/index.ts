@@ -4,11 +4,8 @@ import { resolve } from 'path'
 import fs from 'fs/promises'
 import dotenvExpand from 'dotenv-expand'
 
-import { interestRates } from '@src/interestRates'
-import { rates } from './rates'
-import { demographics } from './demographic/population'
-import { PIB } from './PIB'
 import { economicActivityIndex } from '@src/economicActivityIndex'
+import { employmentIndex } from './employmentIndex'
 
 dotenvExpand(config())
 
@@ -22,7 +19,7 @@ app.use(
   })
 )
 
-app.get('/', economicActivityIndex)
+app.get('/', employmentIndex)
 
 
 app.listen(3002, () => {
