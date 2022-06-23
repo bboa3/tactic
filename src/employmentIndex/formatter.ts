@@ -105,6 +105,11 @@ export const  EIFormatter = ({year, eiLines }: EIData) => {
   } = eiLines
   const aggregate = [
     {
+      id: 0,
+      name: 'Indices de Emprego',
+      values: getEILine(year, EILine2)
+    },
+    {
       id: 1,
       name: 'Indústria',
       values: getEILine(year, EILine3)
@@ -128,15 +133,15 @@ export const  EIFormatter = ({year, eiLines }: EIData) => {
       id: 5,
       name: 'Outros Serviços',
       values: getEILine(year, EILine7)
-    },
-    {
-      id: 0,
-      name: 'Indices de Emprego',
-      values: getEILine(year, EILine2)
     }
   ]
 
   const industries = [
+    {
+      id: 0,
+      name: 'Total',
+      values: (year >= 2020) && getEILine(year, EILine9)
+    },
     {
       id: 1,
       name: 'Indústria Extractiva',
@@ -336,11 +341,6 @@ export const  EIFormatter = ({year, eiLines }: EIData) => {
       id: 40,
       name: 'Fabricação de  Máquinas e Equipamento para uso Específico',
       values: (year >= 2020) && getEILine(year, EILine49)
-    },
-    {
-      id: 0,
-      name: 'Total',
-      values: (year >= 2020) && getEILine(year, EILine9)
     }
   ]
 

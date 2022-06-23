@@ -107,6 +107,11 @@ export const  EAIFormatter = ({year, eaiLines }: EAIData) => {
   } = eaiLines
   const aggregate = [
     {
+      id: 0,
+      name: 'Indices do Volume de Negócios',
+      values: getEAILine(year, EAILine2)
+    },
+    {
       id: 1,
       name: 'Indústria',
       values: getEAILine(year, EAILine3)
@@ -135,15 +140,15 @@ export const  EAIFormatter = ({year, eaiLines }: EAIData) => {
       id: 6,
       name: 'Outros Serviços',
       values: getEAILine(year, EAILine8)
-    },
-    {
-      id: 0,
-      name: 'Indices do Volume de Negócios',
-      values: getEAILine(year, EAILine2)
     }
   ]
 
   const industries = [
+    {
+      id: 0,
+      name: 'Total',
+      values: (year >= 2020) && getEAILine(year, EAILine10)
+    },
     {
       id: 1,
       name: 'Indústria Extractiva',
@@ -343,11 +348,6 @@ export const  EAIFormatter = ({year, eaiLines }: EAIData) => {
       id: 40,
       name: 'Fabricação de  Máquinas e Equipamento para uso Específico',
       values: (year >= 2020) && getEAILine(year, EAILine50)
-    },
-    {
-      id: 0,
-      name: 'Total',
-      values: (year >= 2020) && getEAILine(year, EAILine10)
     }
   ]
 
