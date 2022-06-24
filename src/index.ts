@@ -7,6 +7,7 @@ import dotenvExpand from 'dotenv-expand'
 import { economicActivityIndex } from '@src/economicActivityIndex'
 import { employmentIndex } from '@src/employmentIndex'
 import { incomeIndex } from '@src/incomeIndex'
+import { businessConfidence } from '@src/businessConfidence'
 
 dotenvExpand(config())
 
@@ -20,7 +21,7 @@ app.use(
   })
 )
 
-app.get('/', incomeIndex)
+app.get('/', businessConfidence)
 
 
 app.listen(3002, () => {

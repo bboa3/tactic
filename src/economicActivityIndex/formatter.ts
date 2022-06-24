@@ -357,7 +357,7 @@ export const  EAIFormatter = ({year, eaiLines }: EAIData) => {
   }
 }
 
-function getEAILine (year, EAIs: number[]) {
+function getEAILine (year: number, EAIs: number[]) {
   return EAIs.map((EAI, index) => {
     return {
       date: {
