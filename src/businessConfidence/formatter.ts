@@ -191,7 +191,7 @@ function getBusinessConfidence (businessConfidence: number[]) {
           year,
           quarter,
           fromMonth: 3,
-          toMonth: 6
+          toMonth: 5
         },
         value
       }
@@ -206,8 +206,8 @@ function getBusinessConfidence (businessConfidence: number[]) {
         date: {
           year,
           quarter,
-          fromMonth: 7,
-          toMonth: 9
+          fromMonth: 6,
+          toMonth: 8
         },
         value
       }
@@ -220,8 +220,8 @@ function getBusinessConfidence (businessConfidence: number[]) {
       date: {
         year,
         quarter,
-        fromMonth: 10,
-        toMonth: 12
+        fromMonth: 9,
+        toMonth: 11
       },
       value
     }
