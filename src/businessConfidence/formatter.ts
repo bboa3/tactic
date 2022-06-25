@@ -67,14 +67,14 @@ export const  businessConfidenceFormatter = (businessConfidenceData: BusinessCon
       },
       {
         id: 3,
-        name: 'Clima Económico',
+        name: 'Indicador do clima económico',
         values: getBusinessConfidence(line5)
       }
     ],
     demandExpectation: [
       {
         id: 0,
-        name: 'Produção Industrial',
+        name: 'Produção industrial',
         values: getBusinessConfidence(line7)
       },
       {
@@ -89,14 +89,14 @@ export const  businessConfidenceFormatter = (businessConfidenceData: BusinessCon
       },
       {
         id: 3,
-        name: 'Indicador de Perspectiva da procura',
+        name: 'Indicador de perspectiva da procura',
         values: getBusinessConfidence(line10)
       },
     ],
     jobExpectation: [
       {
         id: 0,
-        name: 'Produção Industrial',
+        name: 'Produção industrial',
         values: getBusinessConfidence(line12)
       },
       {
@@ -111,14 +111,14 @@ export const  businessConfidenceFormatter = (businessConfidenceData: BusinessCon
       },
       {
         id: 3,
-        name: 'Indicador de Perspectiva emprego',
+        name: 'Indicador de perspectiva emprego',
         values: getBusinessConfidence(line15)
       }
     ],
     currentEmployment: [
       {
         id: 0,
-        name: 'Produção Industrial',
+        name: 'Produção industrial',
         values: getBusinessConfidence(line17)
       },
       {
@@ -140,7 +140,7 @@ export const  businessConfidenceFormatter = (businessConfidenceData: BusinessCon
     priceExpectation: [
       {
         id: 0,
-        name: 'Produção Industrial',
+        name: 'Produção industrial',
         values: getBusinessConfidence(line22)
       },
       {
@@ -155,7 +155,7 @@ export const  businessConfidenceFormatter = (businessConfidenceData: BusinessCon
       },
       {
         id: 3,
-        name: 'Indicador e perspectivas de preços',
+        name: 'Indicador de perspectivas de preços',
         values: getBusinessConfidence(line25)
       }
     ]
