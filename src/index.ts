@@ -8,6 +8,7 @@ import { economicActivityIndex } from '@src/economicActivityIndex'
 import { employmentIndex } from '@src/employmentIndex'
 import { incomeIndex } from '@src/incomeIndex'
 import { businessConfidence } from '@src/businessConfidence'
+import { exchangeRates } from './exchange'
 
 dotenvExpand(config())
 
@@ -21,7 +22,7 @@ app.use(
   })
 )
 
-app.get('/', businessConfidence)
+app.use('/', exchangeRates)
 
 
 app.listen(3002, () => {

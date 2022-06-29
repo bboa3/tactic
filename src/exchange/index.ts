@@ -1,19 +1,16 @@
 import { resolve } from "path"
-import fs from 'fs/promises'
 import { DownloaderHelper } from 'node-downloader-helper'
-import getExchangeRates from '@src/exchange/exchangeRates/getExchangeRates'
+import { formatter } from '@src/exchange/formatter'
+import { saveTrades } from "@src/exchange/db"
 import { PDFNet } from '@pdftron/pdfnet-node'
 import xml2js from 'xml2js'
-
+import { Request, Response } from "express";
 
 const dest = resolve(__dirname, '..', '..', 'files');
-const exchangesPath = resolve(__dirname, '..', '..', 'files', 'currencies', 'exchanges.json');
+const filePath = resolve(__dirname, '..', '..', 'files', 'ZMMIREFR.pdf')
 const url = 'https://www.bancomoc.mz/Files/REFR/ZMMIREFR.pdf'
-const ratesPath = resolve(__dirname, '..', '..', 'files', 'ZMMIREFR.pdf')
-import { Request, Response } from "express";
-import dayjs from "dayjs";
 
-export const exchangeRates = async (request: Request, response: Response) => {
+export const exchangeRates = async (_request: Request, response: Response) => {
   const dl = new DownloaderHelper(url, dest, {
     retry: {
       maxRetries: 3,
@@ -28,7 +25,7 @@ export const exchangeRates = async (request: Request, response: Response) => {
   dl.on('end', async () => {
     const extractText = async () => {
       
-      const doc = await PDFNet.PDFDoc.createFromFilePath(ratesPath);
+      const doc = await PDFNet.PDFDoc.createFromFilePath(filePath);
       await doc.initSecurityHandler();
       
       const page = await doc.getPage(1);
@@ -46,16 +43,13 @@ export const exchangeRates = async (request: Request, response: Response) => {
       const parser = new xml2js.Parser(/* options */);
       const exchanges = await parser.parseStringPromise(xml)
       
-      return getExchangeRates(exchanges)
+      const formattedTrades = formatter(exchanges)
+      const trades = await saveTrades(formattedTrades)
+
+      return trades
     }
       
     PDFNet.runWithCleanup(extractText, process.env.PDF_KEY).then(async (exchanges) => {
-      const exchangeRates = JSON.parse((await fs.readFile(exchangesPath, 'utf8')))
-
-      const date = dayjs().format('DD-MM-YYYY')
-  
-      exchangeRates[date] = exchanges
-
       response.send(exchanges)
     }).catch(err => console.log(err))
   })
