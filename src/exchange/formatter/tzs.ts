@@ -5,8 +5,8 @@ const tzsRates = (exchanges: any) => {
   const saleLine = find({ exchanges, id: 31 })
 
   return {
-    buy: toNumber(buyLine[2].split(',').join('.')),
-    sale: toNumber(saleLine[2].split(',').join('.'))
+    buy: toNumber(buyLine[2].split(',').join('.')) / 1000,
+    sale: toNumber(saleLine[2].split(',').join('.')) / 1000
   }
 }
 

@@ -7,8 +7,8 @@ const zwlRates = (exchanges: any) => {
   const saleLine = filtered[17].Line
 
   return {
-    buy: toNumber(buyLine[0].split(',').join('.')),
-    sale: toNumber(saleLine[0].split(',').join('.'))
+    buy: toNumber(buyLine[0].split(',').join('.')) / 1000,
+    sale: toNumber(saleLine[0].split(',').join('.')) / 1000
   }
 }
 

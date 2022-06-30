@@ -5,8 +5,8 @@ const iqdRates = (exchanges: any) => {
   const saleLine = find({ exchanges, id: 30 })
 
   return {
-    buy: toNumber(buyLine[1].split(',').join('.')),
-    sale: toNumber(saleLine[1].split(',').join('.'))
+    buy: toNumber(buyLine[1].split(',').join('.')) / 1000,
+    sale: toNumber(saleLine[1].split(',').join('.')) / 1000
   }
 }
 

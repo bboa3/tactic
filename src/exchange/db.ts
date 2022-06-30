@@ -48,15 +48,35 @@ export const saveTrades = async (newTrades: Data[]) => {
   const currencies: Currency[] = JSON.parse((await fs.readFile(path, 'utf8')))
 
   const save = (iso: string, trade: Trade) => {
-    const currency = currencies.find(currency => currency.iso.code === iso)
-		
-    currency.trades.push(trade)
-    return currency
-  }
-	console.log(newTrades)
-	
-  const newCurrencies: Currency[] = newTrades.map(({ iso, trade }) => save(iso, trade))  
+		const currency = getCurrency(iso, currencies)
+		if (!currency) return null
 
+		currency.trades.push(trade)
+		return currency
+  }
+
+	const newCurrencies: Currency[] = []
+
+	for (const newTrade of newTrades) {
+		const { iso, trade } = newTrade
+		const newT = save(iso, trade)
+
+		if (newT) {
+			newCurrencies.push(newT)
+		}
+	}
+	
   await fs.writeFile(path, JSON.stringify(newCurrencies))
   return newCurrencies
+}
+
+
+function getCurrency (iso: string, currencies: Currency[]): Currency | null {
+	for (const currency of currencies) {
+		if (currency.iso.code === iso) {
+			return currency
+		}
+	}
+
+	return null
 }
