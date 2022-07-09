@@ -5,7 +5,7 @@ import dayjs from 'dayjs'
 
 const tableSelector = '#ContentPlaceHolder1_Panel2 > div:nth-child(1) > table:nth-child(1)'
 
-export const interestRate = async (date: string) => {
+export const formatter = async (date: string) => {
   const invertedDate = dayjs(date).format('DD-MM-YYYY')
   const response: string = await httpFetch(invertedDate)
 

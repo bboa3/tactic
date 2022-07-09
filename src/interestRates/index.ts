@@ -1,6 +1,6 @@
 import fs from 'fs/promises'
 import dayjs from 'dayjs'
-import { interestRate } from '@src/interestRates/interestRate'
+import { formatter } from '@src/interestRates/formatter'
 import { saveInterestRates } from './db'
 
 const startDate = '2018-01-01'
@@ -16,7 +16,7 @@ export const interestRates = async () => {
     const lastDatePlusOne = lastDate.add(1, 'day')
     const lastDatePlusOneFormatted = lastDatePlusOne.format('YYYY-MM-DD')
 
-    const rates = await interestRate(lastDatePlusOneFormatted)
+    const rates = await formatter(lastDatePlusOneFormatted)
 
     await saveInterestRates(rates)
 
