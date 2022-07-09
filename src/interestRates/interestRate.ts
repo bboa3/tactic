@@ -1,12 +1,14 @@
 import { httpFetch } from '@src/interestRates/fetch'
 import * as cheerio from 'cheerio'
 import { Element } from 'cheerio'
-import { createRates } from '@src/interestRates/rates'
+import { InterestRatesData, saveInterestRates } from '@src/interestRates/db'
+import dayjs from 'dayjs'
 
 const tableSelector = '#ContentPlaceHolder1_Panel2 > div:nth-child(1) > table:nth-child(1)'
 
 export const interestRate = async (date: string) => {
-  const response: string = await httpFetch(date)
+  const invertedDate = dayjs(date).format('DD-MM-YYYY')
+  const response: string = await httpFetch(invertedDate)
 
   const $ = cheerio.load(response)
 
@@ -22,7 +24,14 @@ export const interestRate = async (date: string) => {
     preRates.push(rate)
   })
 
-  const rates = await createRates(preRates, date)
+  const data: InterestRatesData = {
+    date,
+    FPD: preRates[0],
+    FPC: preRates[1],
+    'Taxa MIMO': preRates[2],
+    'Prime rate': preRates[3]
+  }
 
-  return rates
+  const t = await saveInterestRates(data)
+  console.log(t)
 }

@@ -70,7 +70,6 @@ export const saveTrades = async (newTrades: Data[]) => {
   return newCurrencies
 }
 
-
 function getCurrency (iso: string, currencies: Currency[]): Currency | null {
 	for (const currency of currencies) {
 		if (currency.iso.code === iso) {
