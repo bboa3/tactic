@@ -32,6 +32,5 @@ export const interestRate = async (date: string) => {
     'Prime rate': preRates[3]
   }
 
-  const t = await saveInterestRates(data)
-  console.log(t)
+  await saveInterestRates(data)
 }
