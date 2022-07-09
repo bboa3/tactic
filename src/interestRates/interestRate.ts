@@ -1,7 +1,6 @@
 import { httpFetch } from '@src/interestRates/fetch'
 import * as cheerio from 'cheerio'
 import { Element } from 'cheerio'
-import { InterestRatesData, saveInterestRates } from '@src/interestRates/db'
 import dayjs from 'dayjs'
 
 const tableSelector = '#ContentPlaceHolder1_Panel2 > div:nth-child(1) > table:nth-child(1)'
@@ -24,13 +23,11 @@ export const interestRate = async (date: string) => {
     preRates.push(rate)
   })
 
-  const data: InterestRatesData = {
+  return {
     date,
     FPD: preRates[0],
     FPC: preRates[1],
     'Taxa MIMO': preRates[2],
     'Prime rate': preRates[3]
   }
-
-  await saveInterestRates(data)
 }
