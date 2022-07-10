@@ -6,9 +6,9 @@ import { saveInterestRates } from './db'
 const startDate = '2018-01-01'
 export const interestRates = async () => {
   await fs.writeFile('date.txt', startDate)
-  let isBefore = true
+  let isEnd = false
 
-  do {
+  while (!isEnd) {
     const lastD = (await fs.readFile('date.txt', 'utf8'))
 
     const lastDate = dayjs(lastD)
@@ -23,6 +23,6 @@ export const interestRates = async () => {
     await fs.writeFile('date.txt', lastDatePlusOneFormatted)
     const today = dayjs(new Date())
 
-    isBefore = lastDatePlusOne.isBefore(today)
-  } while (isBefore)
+    isEnd = !(lastDatePlusOne.isBefore(today))
+  }
 } 

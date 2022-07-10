@@ -16,10 +16,10 @@ interface InterestRate {
 
 export interface InterestRatesData {
   date: string
-  FPD: number
-  FPC: number
-  'Taxa MIMO': number
-  'Prime rate': number
+  FPD?: number
+  FPC?: number
+  'Taxa MIMO'?: number
+  'Prime rate'?: number
 }
 
 
@@ -27,7 +27,19 @@ export const saveInterestRates = async ({ FPD, FPC, "Taxa MIMO": MIMO, "Prime ra
   const fileParsed: InterestRate[] = JSON.parse((await fs.readFile(path, 'utf8')))
 
   const interestRates = fileParsed.map(({ id, name, values }) => {
-    const saveValue = (value: number) => [...values, { date, value }]
+    const saveValue = (value: number) => {
+      if (!value) {
+        return [
+          ...values, 
+          {
+            date, 
+            value: values[values.length - 1].value
+          }
+        ]
+      }
+
+      return [...values, { date, value }]
+    }
 
     if (id === 0) {
       return {
