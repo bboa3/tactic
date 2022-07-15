@@ -4,12 +4,7 @@ import { resolve } from 'path'
 import fs from 'fs/promises'
 import dotenvExpand from 'dotenv-expand'
 
-import { economicActivityIndex } from '@src/economicActivityIndex'
-import { employmentIndex } from '@src/employmentIndex'
-import { incomeIndex } from '@src/incomeIndex'
-import { businessConfidence } from '@src/businessConfidence'
-import { exchangeRates } from './exchange'
-import { interestRates } from './interestRates'
+import { balanceOfPayment } from '@src/balanceOfPayment'
 
 dotenvExpand(config())
 
@@ -23,7 +18,7 @@ app.use(
   })
 )
 
-app.use('/', interestRates)
+app.use('/', balanceOfPayment)
 
 
 app.listen(3002, () => {
