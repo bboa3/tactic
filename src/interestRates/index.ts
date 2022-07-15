@@ -1,7 +1,7 @@
 import fs from 'fs/promises'
 import dayjs from 'dayjs'
 import { formatter } from '@src/interestRates/formatter'
-import { saveInterestRates } from './db'
+import { saveInterestRates } from '@src/interestRates/db'
 
 const startDate = '2018-01-01'
 export const interestRates = async () => {
