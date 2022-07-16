@@ -33,27 +33,27 @@ export const  balanceOfPaymentFormatter = (BalanceOfPaymentData: BalanceOfPaymen
 
   const balanceOfPayment = [
     {
-      id: 0,
+      id: 'goods',
       name: 'Bens',
       values: getBalanceOfPayments({ credits: line3, debits: line4, startYear })
     },
     {
-      id: 1,
+      id: 'services',
       name: 'Serviços',
       values: getBalanceOfPayments({ credits: line6, debits: line7, startYear })
     },
     {
-      id: 2,
+      id: 'primary-income',
       name: 'Rendimentos Primários',
       values: getBalanceOfPayments({ credits: line9, debits: line10, startYear })
     },
     {
-      id: 3,
+      id: 'unilateral-transfers',
       name: 'Transferências Unilaterais',
       values: getBalanceOfPayments({ credits: line12, debits: line13, startYear })
     },
     {
-      id: 4,
+      id: 'capital-flows',
       name: 'Fluxos de capitais',
       values: getBalanceOfPayments({ credits: line15, debits: line16, startYear })
     }
