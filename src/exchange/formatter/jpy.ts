@@ -1,19 +1,18 @@
-import { find } from "./find"
+const jpyRates = (exchanges: string[]) => {
+  const regex = /Japão/i
 
-const jpyRates = (exchanges: any) => {
-  const buyLine = find({ exchanges, id: 28 })
-  const saleLine = find({ exchanges, id: 31 })
+  const exchange = exchanges.find(exchange => exchange.match(regex))
+  if (!exchange) throw new Error(`${regex.source} exchange rates not found`)
+  
+  const rates = exchange.match(/\d+/g)
+
+  const buy = `${rates[0]}.${rates[1]}`
+  const sate = `${rates[2]}.${rates[3]}`
 
   return {
-    buy: toNumber(buyLine[0].split(',').join('.')) / 1000,
-    sale: toNumber(saleLine[0].split(',').join('.')) / 1000
+    buy: Number(buy) / 1000,
+    sale: Number(sate) / 1000
   }
-}
-
-function toNumber (num: string) {
-  if(typeof Number(num) === 'string') throw new Error(`${num} is not a number`)
-
-  return Number(num)
 }
 
 export default jpyRates

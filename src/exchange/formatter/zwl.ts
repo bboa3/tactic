@@ -1,21 +1,19 @@
-import { filter, find } from "./find"
+const zwlRates = (exchanges: string[]) => {
+  const regex = /Zimbabwe/i
 
-const zwlRates = (exchanges: any) => {
-  const filtered = filter({ exchanges, id: 0 })
+  const exchange = exchanges.find(exchange => exchange.match(regex))
 
-  const buyLine = filtered[15].Line
-  const saleLine = filtered[17].Line
+  if (!exchange) throw new Error(`${regex.source} exchange rates not found`)
+  
+  const rates = exchange.match(/\d+/g)
+
+  const buy = `${rates[0]}.${rates[1]}`
+  const sate = `${rates[2]}.${rates[3]}`
 
   return {
-    buy: toNumber(buyLine[0].split(',').join('.')) / 1000,
-    sale: toNumber(saleLine[0].split(',').join('.')) / 1000
+    buy: Number(buy) / 1000,
+    sale: Number(sate) / 1000
   }
-}
-
-function toNumber (num: string) {
-  if(typeof Number(num) === 'string') throw new Error(`${num} is not a number`)
-
-  return Number(num)
 }
 
 export default zwlRates;

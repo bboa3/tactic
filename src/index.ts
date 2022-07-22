@@ -5,6 +5,7 @@ import fs from 'fs/promises'
 import dotenvExpand from 'dotenv-expand'
 
 import { balanceOfPayment } from '@src/balanceOfPayment'
+import { exchangeRates } from './exchange'
 
 dotenvExpand(config())
 
@@ -18,7 +19,7 @@ app.use(
   })
 )
 
-app.use('/', balanceOfPayment)
+app.use('/', exchangeRates)
 
 
 app.listen(3002, () => {

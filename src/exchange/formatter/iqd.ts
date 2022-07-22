@@ -1,19 +1,18 @@
-import { find } from "./find"
+const iqdRates = (exchanges: string[]) => {
+  const regex = /Iraque/i
 
-const iqdRates = (exchanges: any) => {
-  const buyLine = find({ exchanges, id: 27 })
-  const saleLine = find({ exchanges, id: 30 })
+  const exchange = exchanges.find(exchange => exchange.match(regex))
+  if (!exchange) throw new Error(`${regex.source} exchange rates not found`)
+  
+  const rates = exchange.match(/\d+/g)
+
+  const buy = `${rates[0]}.${rates[1]}`
+  const sate = `${rates[2]}.${rates[3]}`
 
   return {
-    buy: toNumber(buyLine[1].split(',').join('.')) / 1000,
-    sale: toNumber(saleLine[1].split(',').join('.')) / 1000
+    buy: Number(buy) / 1000,
+    sale: Number(sate) / 1000
   }
-}
-
-function toNumber (num: string) {
-  if(typeof Number(num) === 'string') throw new Error(`${num} is not a number`)
-
-  return Number(num)
 }
 
 export default iqdRates

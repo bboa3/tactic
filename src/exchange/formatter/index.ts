@@ -37,37 +37,43 @@ interface Formatted {
   trade: Trade
 }
 
-export const formatter = (data: any): Formatted[] => {
-  const exchanges = data.Page.Flow[0].Para
+interface Tables {
+  byUnitTable: string[],
+  by1000UnitsTable: string[]
+}
+
+export const formatter = ({ byUnitTable, by1000UnitsTable }: Tables): Formatted[] => {
   const date = dayjs(new Date()).format('YYYY-MM-DD HH:mm')
 
+
+
   const formatted: Formatted[] = [
-    { iso: 'USD', trade: { ...usdRates(exchanges), date}},
-    { iso: 'ZAR', trade: { ...zarRates(exchanges), date}},
-    { iso: 'AED', trade: { ...aedRates(exchanges), date}},
-    { iso: 'AUD', trade: { ...audRates(exchanges), date}},
-    { iso: 'BRL', trade: { ...brlRates(exchanges), date}},
-    { iso: 'ZWL', trade: { ...zwlRates(exchanges), date}},
-    { iso: 'TZS', trade: { ...tzsRates(exchanges), date}},
-    { iso: 'BWP', trade: { ...bwpRates(exchanges), date}},
-    { iso: 'MWK', trade: { ...mwkRates(exchanges), date}},
-    { iso: 'CAD', trade: { ...cadRates(exchanges), date}},
-    { iso: 'CHF', trade: { ...chfRates(exchanges), date}},
-    { iso: 'CNY', trade: { ...cnyRates(exchanges), date}},
-    { iso: 'DKK', trade: { ...dkkRates(exchanges), date}},
-    { iso: 'EUR', trade: { ...eurRates(exchanges), date}},
-    { iso: 'GBP', trade: { ...gbpRates(exchanges), date}},
-    { iso: 'KWD', trade: { ...kwdRates(exchanges), date}},
-    { iso: 'MUR', trade: { ...murRates(exchanges), date}},
-    { iso: 'NOK', trade: { ...nokRates(exchanges), date}},
-    { iso: 'NZD', trade: { ...nzdRates(exchanges), date}},
-    { iso: 'SEK', trade: { ...sekRates(exchanges), date}},
-    { iso: 'ZMW', trade: { ...zmwRates(exchanges), date}},
-    { iso: 'INR', trade: { ...inrRates(exchanges), date}},
-    { iso: 'IQD', trade: { ...iqdRates(exchanges), date}},
-    { iso: 'JPY', trade: { ...jpyRates(exchanges), date}},
-    { iso: 'RUB', trade: { ...rubRates(exchanges), date}},
-    { iso: 'XDR', trade: { ...xdrRates(exchanges), date}}
+    { iso: 'USD', trade: { ...usdRates(byUnitTable), date}},
+    { iso: 'ZAR', trade: { ...zarRates(byUnitTable), date}},
+    { iso: 'AED', trade: { ...aedRates(byUnitTable), date}},
+    { iso: 'AUD', trade: { ...audRates(byUnitTable), date}},
+    { iso: 'BRL', trade: { ...brlRates(byUnitTable), date}},
+    { iso: 'ZWL', trade: { ...zwlRates(by1000UnitsTable), date}},
+    { iso: 'TZS', trade: { ...tzsRates(by1000UnitsTable), date}},
+    { iso: 'BWP', trade: { ...bwpRates(byUnitTable), date}},
+    { iso: 'MWK', trade: { ...mwkRates(by1000UnitsTable), date}},
+    { iso: 'CAD', trade: { ...cadRates(byUnitTable), date}},
+    { iso: 'CHF', trade: { ...chfRates(byUnitTable), date}},
+    { iso: 'CNY', trade: { ...cnyRates(byUnitTable), date}},
+    { iso: 'DKK', trade: { ...dkkRates(byUnitTable), date}},
+    { iso: 'EUR', trade: { ...eurRates(byUnitTable), date}},
+    { iso: 'GBP', trade: { ...gbpRates(byUnitTable), date}},
+    { iso: 'KWD', trade: { ...kwdRates(byUnitTable), date}},
+    { iso: 'MUR', trade: { ...murRates(byUnitTable), date}},
+    { iso: 'NOK', trade: { ...nokRates(byUnitTable), date}},
+    { iso: 'NZD', trade: { ...nzdRates(byUnitTable), date}},
+    { iso: 'SEK', trade: { ...sekRates(byUnitTable), date}},
+    { iso: 'ZMW', trade: { ...zmwRates(byUnitTable), date}},
+    { iso: 'INR', trade: { ...inrRates(by1000UnitsTable), date}},
+    { iso: 'IQD', trade: { ...iqdRates(by1000UnitsTable), date}},
+    { iso: 'JPY', trade: { ...jpyRates(by1000UnitsTable), date}},
+    { iso: 'RUB', trade: { ...rubRates(byUnitTable), date}},
+    { iso: 'XDR', trade: { ...xdrRates(byUnitTable), date}}
   ]
 
   return formatted
