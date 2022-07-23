@@ -1,5 +1,6 @@
-const usdRates = (exchanges: string[]) => {
-  const regex = /Estados Unidos Dolar/i
+
+const bwpRates = (exchanges: string[]) => {
+  const regex = /Botswana/i
 
   const exchange = exchanges.find(exchange => exchange.match(regex))
   if (!exchange) throw new Error(`${regex.source} exchange rates not found`)
@@ -15,4 +16,4 @@ const usdRates = (exchanges: string[]) => {
   }
 }
 
-export default usdRates;
+export default bwpRates;

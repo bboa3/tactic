@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 import fs from 'fs/promises'
 
-const path = resolve(__dirname, '..', '..', 'files', 'currencies', 'exchanges.json');
+const path = resolve(__dirname, '..', '..', '..', 'files', 'currencies', 'exchanges.json');
 
 interface Currency {
   country: string
@@ -30,7 +30,8 @@ interface Currency {
 		frequent: string[],
 	  rare: []
   },
-  trades: Trade[]
+  trades: Trade
+  tradesHistories: Trade[]
 }
 
 interface Trade {
@@ -44,14 +45,14 @@ interface Data {
   trade: Trade
 }
 
-export const saveTrades = async (newTrades: Data[]) => {
+export const exchangeRatesHistoriesDB = async (newTrades: Data[]) => {
   const currencies: Currency[] = JSON.parse((await fs.readFile(path, 'utf8')))
 
   const save = (iso: string, trade: Trade) => {
 		const currency = getCurrency(iso, currencies)
 		if (!currency) return null
 
-		currency.trades.push(trade)
+		currency.tradesHistories.push(trade)
 		return currency
   }
 
@@ -66,7 +67,7 @@ export const saveTrades = async (newTrades: Data[]) => {
 		}
 	}
 	
-  await fs.writeFile(path, JSON.stringify(newCurrencies))
+  // await fs.writeFile(path, JSON.stringify(newCurrencies))
   return newCurrencies
 }
 

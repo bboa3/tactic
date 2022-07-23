@@ -42,10 +42,8 @@ interface Tables {
   by1000UnitsTable: string[]
 }
 
-export const formatter = ({ byUnitTable, by1000UnitsTable }: Tables): Formatted[] => {
+export const currentExchangeRatesFormatter = ({ byUnitTable, by1000UnitsTable }: Tables): Formatted[] => {
   const date = dayjs(new Date()).format('YYYY-MM-DD HH:mm')
-
-
 
   const formatted: Formatted[] = [
     { iso: 'USD', trade: { ...usdRates(byUnitTable), date}},
