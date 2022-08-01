@@ -355,7 +355,7 @@ function getIILine (year, IIs: number[]) {
     return {
       date: {
         year,
-        month: index
+        month: index + 1
       },
       value: II
     }

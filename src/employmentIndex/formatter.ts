@@ -355,7 +355,7 @@ function getEILine (year, EIs: number[]) {
     return {
       date: {
         year,
-        month: index
+        month: index + 1
       },
       value: EI
     }

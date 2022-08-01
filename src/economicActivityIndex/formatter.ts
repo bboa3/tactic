@@ -362,7 +362,7 @@ function getEAILine (year: number, EAIs: number[]) {
     return {
       date: {
         year,
-        month: index
+        month: index + 1
       },
       value: EAI
     }
