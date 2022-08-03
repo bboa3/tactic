@@ -2,11 +2,10 @@ import express from 'express'
 import { config } from 'dotenv'
 import { resolve } from 'path'
 import dotenvExpand from 'dotenv-expand'
-import { businessConfidence } from '@src/businessConfidence'
-import { economicActivityIndex } from '@src/economicActivityIndex'
-import { employmentIndex } from '@src/employmentIndex'
-import { incomeIndex } from '@src/incomeIndex'
-import { exchangeRatesHistories } from '@src/exchange/TradeHistories'
+import { energySources } from '@src/demographic/energySources'
+import { homeOwnership } from '@src/demographic/homeOwnership'
+import { maritalStatus } from '@src/demographic/maritalStatus'
+import { waterFountainForDrinking } from '@src/demographic/waterFountainForDrinking'
 
 dotenvExpand(config())
 
@@ -20,7 +19,7 @@ app.use(
   })
 )
 
-app.get('/', incomeIndex)
+app.get('/', waterFountainForDrinking)
 
 
 app.listen(3002, () => {

@@ -6,13 +6,28 @@ const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 
 
 export const getManica = async (data: any) => {
   const getPeople = (pop: number[]) => {
-    return {
-      'própria': pop[2],
-      'alugada': pop[3],
-      'cedida/emprestada temporariamente': pop[4],
-      'outra': pop[5],
-      'desconhecido': pop[6]
-    }
+    return [
+      {
+        name: 'própria',
+        value: pop[2]
+      },
+      {
+        name: 'alugada',
+        value: pop[3]
+      },
+      {
+        name: 'cedida/emprestada temporariamente',
+        value: pop[4]
+      },
+      {
+        name: 'outra',
+        value: pop[5]
+      },
+      {
+        name: 'desconhecido',
+        value: pop[6]
+      }
+    ]
   }
 
 

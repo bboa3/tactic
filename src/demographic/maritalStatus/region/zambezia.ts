@@ -5,22 +5,58 @@ const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 
 
 export const getZambezia = async (data: any) => {
   const getPeople = (pop: number[]) => {
-    return {
-      homens: {
-        solteiros: pop[8],
-        casados: pop[9],
-        'união marital':pop[10],
-        'divorciados/separados': pop[11],
-        viúvos: pop[12]
+    return [
+      {
+        gender: 'homens',
+        status: [
+          {
+            name: 'solteiros',
+            value: pop[8]
+          },
+          {
+            name: 'casados',
+            value: pop[9]
+          },
+          {
+            name: 'união marital',
+            value: pop[10]
+          },
+          {
+            name: 'divorciados/separados',
+            value:  pop[11]
+          },
+          {
+            name: 'viúvos',
+            value: pop[12]
+          },
+        ]
       },
-      mulheres: {
-        solteiras: pop[14],
-        casadas: pop[15],
-        'união marital': pop[16],
-        'divorciadas/separadas': pop[17],
-        viúvas: pop[18]
+      {
+        gender: 'mulheres',
+        status: [
+          {
+            name: 'solteiras',
+            value: pop[14]
+          },
+          {
+            name: 'casadas',
+            value: pop[15]
+          },
+          {
+            name: 'união marital',
+            value: pop[16]
+          },
+          {
+            name: 'divorciadas/separadas',
+            value:  pop[17]
+          },
+          {
+            name: 'viúvas',
+            value: pop[18]
+          }
+        ]
       }
-    }
+    ]
   }
 
   const people = {

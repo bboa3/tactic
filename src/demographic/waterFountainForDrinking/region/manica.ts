@@ -6,18 +6,48 @@ const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 
 
 export const getManica = async (data: any) => {
   const getPeople = (pop: number[]) => {
-    return {
-      'canalizada': pop[2],
-      'fontanário/torneira pública': pop[6],
-      'furo/poço com bomba manual': pop[7],
-      'poço sem bomba manual': pop[8],
-      'nascente/rio/lago/lagoa': pop[11],
-      'chuva': pop[14],
-      'tanques camiões/carregada em tambores': pop[15],
-      'mineral/engarrafada': pop[16],
-      'outra': pop[17],
-      'desconhecida': pop[18]
-    }
+    return [
+      {
+        name: 'canalizada',
+        value: pop[2]
+      },
+      {
+        name: 'fontanário/torneira pública',
+        value: pop[6]
+      },
+      {
+        name: 'furo/poço com bomba manual',
+        value: pop[7]
+      },
+      {
+        name: 'poço sem bomba manual',
+        value: pop[8]
+      },
+      {
+        name: 'nascente/rio/lago/lagoa',
+        value: pop[11]
+      },
+      {
+        name: 'chuva',
+        value: pop[14]
+      },
+      {
+        name: 'tanques camiões/carregada em tambores',
+        value: pop[15]
+      },
+      {
+        name: 'mineral/engarrafada',
+        value: pop[16]
+      },
+      {
+        name: 'outra',
+        value: pop[17]
+      },
+      {
+        name: 'desconhecida',
+        value: pop[18]
+      }
+    ]
   }
 
 

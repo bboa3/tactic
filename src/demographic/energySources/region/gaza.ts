@@ -6,18 +6,48 @@ const path = resolve(__dirname, '..', '..', '..', '..', 'files', 'demographic', 
 
 export const getGaza = async (data: any) => {
   const getPeople = (pop: number[]) => {
-    return {
-      'electricidade': pop[2],
-      'gerador/placa solar': pop[3],
-      'gás': pop[4],
-      'petróleo/parafina/querosene': pop[5],
-      'velas': pop[6],
-      'baterias': pop[7],
-      'lenha': pop[8],
-      'pilhas': pop[9],
-      'outras': pop[10],
-      'desconhecida': pop[11]
-    }
+    return [
+      {
+        name: 'electricidade',
+        value: pop[2]
+      },
+      {
+        name: 'gerador/placa solar',
+        value: pop[3]
+      },
+      {
+        name: 'gás',
+        value: pop[4]
+      },
+      {
+        name: 'petróleo/parafina/querosene',
+        value: pop[5]
+      },
+      {
+        name: 'velas',
+        value: pop[6]
+      },
+      {
+        name: 'baterias',
+        value: pop[7]
+      },
+      {
+        name: 'lenha',
+        value: pop[8]
+      },
+      {
+        name: 'pilhas',
+        value: pop[9]
+      },
+      {
+        name: 'outras',
+        value: pop[10]
+      },
+      {
+        name: 'desconhecida',
+        value: pop[11]
+      }
+    ]
   }
 
   const people = {
