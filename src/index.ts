@@ -2,10 +2,7 @@ import express from 'express'
 import { config } from 'dotenv'
 import { resolve } from 'path'
 import dotenvExpand from 'dotenv-expand'
-import { energySources } from '@src/demographic/energySources'
-import { homeOwnership } from '@src/demographic/homeOwnership'
-import { maritalStatus } from '@src/demographic/maritalStatus'
-import { waterFountainForDrinking } from '@src/demographic/waterFountainForDrinking'
+import { interestRates } from '@src/interestRates'
 
 dotenvExpand(config())
 
@@ -19,7 +16,7 @@ app.use(
   })
 )
 
-app.get('/', waterFountainForDrinking)
+app.get('/', interestRates)
 
 
 app.listen(3002, () => {
