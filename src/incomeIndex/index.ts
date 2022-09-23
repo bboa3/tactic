@@ -45,10 +45,7 @@ export const incomeIndex = async (_request: Request, response: Response) => {
     tabName2022
   ]
 
-  const IIs: Entity = {
-    aggregate: [],
-    industries: []
-  }
+  let formatted: IIs[] = []
 
   for (const tabName of tabNames) {
     const data: any = xlsx.utils.sheet_to_json(file.Sheets[tabName], {
@@ -108,36 +105,21 @@ export const incomeIndex = async (_request: Request, response: Response) => {
       IILine49: data[49],
     }
 
-    const { aggregate: newAggregate, industries: newIndustries } = IIFormatter({ year, IiLines })
-
-    const { aggregate, industries } = IIs
+    const newFormatted = IIFormatter({ year, IiLines })
 
     let index = 0
-    for (const industry of newAggregate) {
-      if (!aggregate[0]) {
-        IIs.aggregate = newAggregate
+    for (const industry of newFormatted) {
+      if (!formatted[0]) {
+        formatted = newFormatted
       } else {
-        industry.values = [...aggregate[index].values, ...industry.values]
-        IIs.aggregate[index] = industry
+        industry.values = [...formatted[index].values, ...industry.values]
+        formatted[index] = industry
         index++
-      }
-    }
-
-    if (year >= 2020) {
-      let index = 0
-      for (const industry of newIndustries) {
-        if (!industries[0]) {
-          IIs.industries = newIndustries
-        } else {
-          industry.values = [...industries[index].values, ...industry.values]
-          IIs.industries[index] = industry
-          index++
-        }
       }
     }
   }
 
-  await fs.writeFile(dest, JSON.stringify(IIs))
+  await fs.writeFile(dest, JSON.stringify(formatted))
 
-  response.status(200).json(IIs)
+  response.status(200).json(formatted)
 }

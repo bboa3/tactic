@@ -105,203 +105,240 @@ export const  EAIFormatter = ({year, eaiLines }: EAIData) => {
     EAILine49,
     EAILine50,
   } = eaiLines
-  const aggregate = [
+
+  return [
     {
       id: 0,
       name: 'Indices do Volume de Negócios',
+      type: 'Agregado',
       values: getEAILine(year, EAILine2)
     },
     {
       id: 1,
       name: 'Indústria',
+      type: 'Agregado',
       values: getEAILine(year, EAILine3)
     },
     {
       id: 2,
       name: 'Energia,Água e San',
+      type: 'Agregado',
       values: getEAILine(year, EAILine4)
     },
     {
       id: 3,
       name: 'Comércio',
+      type: 'Agregado',
       values: getEAILine(year, EAILine5)
     },
     {
       id: 4,
       name: 'Transportes',
+      type: 'Agregado',
       values: getEAILine(year, EAILine6)
     },
     {
       id: 5,
       name: 'Aloj.Rest. similares',
+      type: 'Agregado',
       values: getEAILine(year, EAILine7)
     },
     {
       id: 6,
       name: 'Outros Serviços',
+      type: 'Agregado',
       values: getEAILine(year, EAILine8)
-    }
-  ]
-
-  const industries = [
+    },
     {
       id: 0,
       name: 'Total',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine10)
     },
     {
       id: 1,
       name: 'Indústria Extractiva',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine11)
     },
     {
       id: 2,
       name: 'Indústria Transformadora',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine12)
     },
     {
       id: 3,
       name: 'Hulha e Lenhite',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine13)
     },
     {
       id: 4,
       name: 'Extracção de Hulha',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine14)
     },
     {
       id: 5,
       name: 'Petróleo Bruto e Gás Natural',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine15)
     },
     {
       id: 6,
       name: 'Extracção de Gás Natural e de Condensados',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine16)
     },
     {
       id: 7,
       name: 'Minérios Metálicos',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine17)
     },
     {
       id: 8,
       name: 'Extracção e Preparação de Minérios Metálicos não Ferrosos',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine18)
     },
     {
       id: 9,
       name: 'Outros Produtos das Indústrias Extractivas',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine19)
     },
     {
       id: 10,
       name: 'Extracção de Pedra, Areia e Argila',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine20)
     },
     {
       id: 11,
       name: 'Indústrias extrativas, N.E.',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine21)
     },
     {
       id: 12,
       name: 'Produtos Alimentares',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine22)
     },
     {
       id: 13,
       name: 'Abate de Animais, Preparação e Conservação de Carne e de Produtos à Base de Carne',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine23)
     },
     {
       id: 14,
       name: 'Preparação e Conservação, de Frutos e de Produtos Hortícolas',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine24)
     },
     {
       id: 15,
       name: 'Produção de Óleos e Gorduras, Animais e Vegetais',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine25)
     },
     {
       id: 16,
       name: 'Indústria de Lacticínios',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine26)
     },
     {
       id: 17,
       name: 'Transformação de Cereais e Leguminosas; Fabricação de Amidos, Féculas e de Produtos afins',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine27)
     },
     {
       id: 18,
       name: 'Fabricação de Produtos de Padaria, Pastelaria (fresca e de conservação) e de outros produtos alimentares',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine28)
     },
     {
       id: 19,
       name: 'Fabricação de Alimentos para Animais',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine29)
     },
     {
       id: 20,
       name: 'Bebidas',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine30)
     },
     {
       id: 21,
       name: 'Indústria das Bebidas',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine31)
     },
     {
       id: 22,
       name: 'Produtos da Indústria do Tabaco',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine32)
     },
     {
       id: 23,
       name: 'Indústria do Tabaco',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine33)
     },
     {
       id: 24,
       name: 'Madeira e suas obras (excepto mobiliário), obras de cestaria e de espartaria',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine34)
     },
     {
       id: 25,
       name: 'Serração, Aplainamento e Impregnação da madeira',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine35)
     },
     {
       id: 26,
       name: 'Trabalhos de Impressão e Gravação',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine36)
     },
     {
       id: 27,
       name: 'Impressão e Actividades  dos Serviços Relacionados com a impressão',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine37)
     },
     {
       id: 28,
       name: 'Produtos Químicos',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine38)
     },
     {
       id: 29,
       name: 'Fabricação de Outros Produtos Químicos',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine39)
     },
     {
       id: 30,
       name: 'Artigos de Borracha e Matérias Plásticas',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine40)
     },
     {
       id: 31,
       name: 'Artigos de Borracha e Matérias Plásticas',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine41)
     },
     {
@@ -312,49 +349,52 @@ export const  EAIFormatter = ({year, eaiLines }: EAIData) => {
     {
       id: 33,
       name: 'Fabricação de Produtos Minerais não Metálicos, n.e.',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine43)
     },
     {
       id: 34,
       name: 'Metais de Base',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine44)
     },
     {
       id: 35,
       name: 'Indústrias Metalúrgicas de Base de Ferro e aço',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine45)
     },
     {
       id: 36,
       name: 'Obtenção e Primeira Transformação dos Metais não Ferrosos',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine46)
     },
     {
       id: 37,
       name: 'Produtos  Metálicos Transformados, Excepto Máquinas e Equipamento',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine47)
     },
     {
       id: 38,
       name: 'Fabricação de Elementos de Construção em Metal,  Reservatórios e Geradores de vapor',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine48)
     },
     {
       id: 39,
       name: 'Máquinas e Equipamentos, n.e.',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine49)
     },
     {
       id: 40,
       name: 'Fabricação de  Máquinas e Equipamento para uso Específico',
+      type: 'Volume',
       values: (year >= 2020) && getEAILine(year, EAILine50)
     }
   ]
-
-  return {
-    aggregate,
-    industries
-  }
 }
 
 function getEAILine (year: number, EAIs: number[]) {

@@ -19,11 +19,6 @@ interface EAIs {
   }[],
 }
 
-interface Entity {
-  aggregate: EAIs[]
-  industries: EAIs[]
-}
-
 export const economicActivityIndex = async (_request: Request, response: Response) => {
   const file = xlsx.readFile(path);
 
@@ -45,10 +40,7 @@ export const economicActivityIndex = async (_request: Request, response: Respons
     tabName2022
   ]
 
-  const EAIs: Entity = {
-    aggregate: [],
-    industries: []
-  }
+  let formatted: EAIs[] = []
 
   for (const tabName of tabNames) {
     const data: any = xlsx.utils.sheet_to_json(file.Sheets[tabName], {
@@ -109,36 +101,21 @@ export const economicActivityIndex = async (_request: Request, response: Respons
       EAILine50: data[50],
     }
 
-    const { aggregate: newAggregate, industries: newIndustries } = EAIFormatter({ year, eaiLines })
-
-    const { aggregate, industries } = EAIs
+    const newFormatted = EAIFormatter({ year, eaiLines })
 
     let index = 0
-    for (const industry of newAggregate) {
-      if (!aggregate[0]) {
-        EAIs.aggregate = newAggregate
+    for (const industry of newFormatted) {
+      if (!formatted[0]) {
+        formatted = newFormatted
       } else {
-        industry.values = [...aggregate[index].values, ...industry.values]
-        EAIs.aggregate[index] = industry
+        industry.values = [...formatted[index].values, ...industry.values]
+        formatted[index] = industry
         index++
-      }
-    }
-
-    if (year >= 2020) {
-      let index = 0
-      for (const industry of newIndustries) {
-        if (!industries[0]) {
-          EAIs.industries = newIndustries
-        } else {
-          industry.values = [...industries[index].values, ...industry.values]
-          EAIs.industries[index] = industry
-          index++
-        }
       }
     }
   }
 
-  await fs.writeFile(dest, JSON.stringify(EAIs))
+  await fs.writeFile(dest, JSON.stringify(formatted))
 
-  response.status(200).json(EAIs)
+  response.status(200).json(formatted)
 }
