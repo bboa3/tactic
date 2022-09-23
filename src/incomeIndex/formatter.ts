@@ -116,21 +116,26 @@ export const  IIFormatter = ({year, IiLines }: IIData) => {
     },
     {
       id: 2,
+      name: 'Energia,Água e San',
+      values: []
+    },
+    {
+      id: 3,
       name: 'Comércio',
       values: getIILine(year, IILine4)
     },
     {
-      id: 3,
+      id: 4,
       name: 'Transportes',
       values: getIILine(year, IILine5)
     },
     {
-      id: 4,
+      id: 5,
       name: 'Aloj.Rest. similares',
       values: getIILine(year, IILine6)
     },
     {
-      id: 5,
+      id: 6,
       name: 'Outros Serviços',
       values: getIILine(year, IILine7)
     }

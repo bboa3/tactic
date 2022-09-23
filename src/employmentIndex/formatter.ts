@@ -116,21 +116,26 @@ export const  EIFormatter = ({year, eiLines }: EIData) => {
     },
     {
       id: 2,
+      name: 'Energia,Água e San',
+      values: []
+    },
+    {
+      id: 3,
       name: 'Comércio',
       values: getEILine(year, EILine4)
     },
     {
-      id: 3,
+      id: 4,
       name: 'Transportes',
       values: getEILine(year, EILine5)
     },
     {
-      id: 4,
+      id: 5,
       name: 'Aloj.Rest. similares',
       values: getEILine(year, EILine6)
     },
     {
-      id: 5,
+      id: 6,
       name: 'Outros Serviços',
       values: getEILine(year, EILine7)
     }

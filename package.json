@@ -13,9 +13,8 @@
   "dependencies": {
     "@florpor/pdf-table-extractor": "^1.0.6",
     "@pdftron/pdfnet-node": "^9.2.0-1",
-    "@tensorflow-models/qna": "^1.0.1",
     "axios": "^0.27.2",
-    "cheerio": "^1.0.0-rc.10",
+    "cheerio": "^1.0.0-rc.12",
     "dayjs": "^1.10.8",
     "dotenv": "^10.0.0",
     "dotenv-expand": "^5.1.0",

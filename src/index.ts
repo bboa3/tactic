@@ -2,7 +2,7 @@ import express from 'express'
 import { config } from 'dotenv'
 import { resolve } from 'path'
 import dotenvExpand from 'dotenv-expand'
-import { interestRates } from '@src/interestRates'
+import { employmentIndex } from '@src/employmentIndex'
 
 dotenvExpand(config())
 
@@ -16,7 +16,7 @@ app.use(
   })
 )
 
-app.get('/', interestRates)
+app.get('/', employmentIndex)
 
 
 app.listen(3002, () => {
