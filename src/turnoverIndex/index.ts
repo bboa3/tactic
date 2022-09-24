@@ -2,12 +2,12 @@ import { Request, Response } from "express"
 import { resolve } from "path"
 import fs from 'fs/promises'
 import xlsx from 'xlsx'
-import { IILines, IIFormatter } from '@src/incomeIndex/formatter'
+import { TurnoverIndexLines, turnoverIndexFormatter } from '@src/turnoverIndex/formatter'
 
-const path = resolve(__dirname, '..', '..', 'files', 'incomeIndex', 'indice-de-remuneracoes.xlsx')
-const dest = resolve(__dirname, '..', '..', 'files', 'incomeIndex', 'income-index.json')
+const path = resolve(__dirname, '..', '..', 'files', 'turnoverIndex', 'indices-volume-de-negócios.xlsx')
+const dest = resolve(__dirname, '..', '..', 'files', 'turnoverIndex', 'turnover-index.json')
 
-export interface IIs {
+export interface TurnoverIndex {
   _id: string
   name: string
   type: string
@@ -20,12 +20,7 @@ export interface IIs {
   }[],
 }
 
-interface Entity {
-  aggregate: IIs[]
-  industries: IIs[]
-}
-
-export const incomeIndex = async (_request: Request, response: Response) => {
+export const turnoverIndex = async (_request: Request, response: Response) => {
   const file = xlsx.readFile(path);
 
   const tabName2016 = file.SheetNames[0]
@@ -46,7 +41,7 @@ export const incomeIndex = async (_request: Request, response: Response) => {
     tabName2022
   ]
 
-  let formatted: IIs[] = []
+  let formatted: TurnoverIndex[] = []
 
   for (const tabName of tabNames) {
     const data: any = xlsx.utils.sheet_to_json(file.Sheets[tabName], {
@@ -56,16 +51,17 @@ export const incomeIndex = async (_request: Request, response: Response) => {
 
     const year = Number(tabName)
 
-    const IiLines: IILines = {
-      IILine2: data[2],
-      IILine3: data[3],
-      IILine4: data[4],
-      IILine5: data[5],
-      IILine6: data[6],
-      IILine7: data[7]
+    const turnoverIndexLines: TurnoverIndexLines = {
+      turnoverIndexLine2: data[2],
+      turnoverIndexLine3: data[3],
+      turnoverIndexLine4: data[4],
+      turnoverIndexLine5: data[5],
+      turnoverIndexLine6: data[6],
+      turnoverIndexLine7: data[7],
+      turnoverIndexLine8: data[8]
     }
 
-    const newFormatted = IIFormatter({ year, IiLines })
+    const newFormatted = turnoverIndexFormatter({ year, turnoverIndexLines })
 
     let index = 0
     for (const industry of newFormatted) {

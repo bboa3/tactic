@@ -8,7 +8,7 @@ const path = resolve(__dirname, '..', '..', 'files', 'employmentIndex', 'indice-
 const dest = resolve(__dirname, '..', '..', 'files', 'employmentIndex', 'employment-index.json')
 
 export interface EIs {
-  id: number
+  _id: string
   name: string
   type: string
   values: {
@@ -57,48 +57,7 @@ export const employmentIndex = async (_request: Request, response: Response) => 
       EILine4: data[4],
       EILine5: data[5],
       EILine6: data[6],
-      EILine7: data[7],
-      EILine9: data[9],
-      EILine10: data[10],
-      EILine11: data[11],
-      EILine12: data[12],
-      EILine13: data[13],
-      EILine14: data[14],
-      EILine15: data[15],
-      EILine16: data[16],
-      EILine17: data[17],
-      EILine18: data[18],
-      EILine19: data[19],
-      EILine20: data[20],
-      EILine21: data[21],
-      EILine22: data[22],
-      EILine23: data[23],
-      EILine24: data[24],
-      EILine25: data[25],
-      EILine26: data[26],
-      EILine27: data[27],
-      EILine28: data[28],
-      EILine29: data[29],
-      EILine30: data[30],
-      EILine31: data[31],
-      EILine32: data[32],
-      EILine33: data[33],
-      EILine34: data[34],
-      EILine35: data[35],
-      EILine36: data[36],
-      EILine37: data[37],
-      EILine38: data[38],
-      EILine39: data[39],
-      EILine40: data[40],
-      EILine41: data[41],
-      EILine42: data[42],
-      EILine43: data[43],
-      EILine44: data[44],
-      EILine45: data[45],
-      EILine46: data[46],
-      EILine47: data[47],
-      EILine48: data[48],
-      EILine49: data[49],
+      EILine7: data[7]
     }
 
     const newFormatted = EIFormatter({ year, eiLines })
