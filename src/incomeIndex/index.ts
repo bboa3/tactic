@@ -7,9 +7,10 @@ import { IILines, IIFormatter } from '@src/incomeIndex/formatter'
 const path = resolve(__dirname, '..', '..', 'files', 'incomeIndex', 'indice-de-remuneracoes.xlsx')
 const dest = resolve(__dirname, '..', '..', 'files', 'incomeIndex', 'income-index.json')
 
-interface IIs {
+export interface IIs {
   id: number
   name: string
+  type: string
   values: {
     date: {
       year: number
@@ -114,8 +115,9 @@ export const incomeIndex = async (_request: Request, response: Response) => {
       } else {
         industry.values = [...formatted[index].values, ...industry.values]
         formatted[index] = industry
-        index++
       }
+      
+      index++
     }
   }
 

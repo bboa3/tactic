@@ -7,9 +7,10 @@ import { EAILines, EAIFormatter } from '@src/economicActivityIndex/formatter'
 const path = resolve(__dirname, '..', '..', 'files', 'economicActivityIndex', 'indice-de-actividade-economica.xlsx')
 const dest = resolve(__dirname, '..', '..', 'files', 'economicActivityIndex', 'eai.json')
 
-interface EAIs {
+export interface EAIs {
   id: number
   name: string
+  type: string
   values: {
     date: {
       year: number
@@ -110,8 +111,9 @@ export const economicActivityIndex = async (_request: Request, response: Respons
       } else {
         industry.values = [...formatted[index].values, ...industry.values]
         formatted[index] = industry
-        index++
       }
+      
+      index++
     }
   }
 

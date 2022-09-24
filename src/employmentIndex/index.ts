@@ -7,9 +7,10 @@ import { EILines, EIFormatter } from '@src/employmentIndex/formatter'
 const path = resolve(__dirname, '..', '..', 'files', 'employmentIndex', 'indice-de-emprego.xlsx')
 const dest = resolve(__dirname, '..', '..', 'files', 'employmentIndex', 'employment-index.json')
 
-interface EIs {
+export interface EIs {
   id: number
   name: string
+  type: string
   values: {
     date: {
       year: number
@@ -103,15 +104,15 @@ export const employmentIndex = async (_request: Request, response: Response) => 
     const newFormatted = EIFormatter({ year, eiLines })
 
     let index = 0
-    for (const industry of newFormatted) {
-      
+    for (const indicator of newFormatted) {
       if (!formatted[0]) {
         formatted = newFormatted
       } else {
-        industry.values = [...formatted[index].values, ...industry.values]
-        formatted[index] = industry
-        index++
+        indicator.values = [...formatted[index].values, ...indicator.values]
+        formatted[index] = indicator
       }
+
+      index++
     }
   }
 
