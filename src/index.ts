@@ -2,7 +2,7 @@ import express from 'express'
 import { config } from 'dotenv'
 import { resolve } from 'path'
 import dotenvExpand from 'dotenv-expand'
-import { turnoverIndex } from '@src/turnoverIndex'
+import { businessConfidenceBySector } from '@src/businessConfidenceBySector'
 
 dotenvExpand(config())
 
@@ -16,7 +16,7 @@ app.use(
   })
 )
 
-app.get('/', turnoverIndex)
+app.get('/', businessConfidenceBySector)
 
 
 app.listen(3002, () => {
