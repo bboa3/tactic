@@ -17,27 +17,27 @@ export const  businessConfidenceFormatter = (businessConfidenceData: BusinessCon
 
   const businessConfidence = [
     {
-      type: 'Agregados',
+      type: 'Agregado',
       name: 'Indicador do clima económico',
       values: getBusinessConfidence(line5)
     },
    {
-      type: 'Agregados',
+      type: 'Agregado',
       name: 'Indicador de perspectiva da procura',
       values: getBusinessConfidence(line10)
     },
     {
-      type: 'Agregados',
+      type: 'Agregado',
       name: 'Indicador de perspectiva emprego',
       values: getBusinessConfidence(line15)
     },
     {
-      type: 'Agregados',
+      type: 'Agregado',
       name: 'Indicador de emprego actual',
       values: getBusinessConfidence(line20)
     },
     {
-      type: 'Agregados',
+      type: 'Agregado',
       name: 'Indicador de perspectivas de preços',
       values: getBusinessConfidence(line25)
     }
