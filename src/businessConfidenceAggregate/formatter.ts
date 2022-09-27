@@ -49,70 +49,70 @@ export const  businessConfidenceFormatter = (businessConfidenceData: BusinessCon
 
 function getBusinessConfidence (businessConfidence: number[]) {
   let year = 2004
-  let quarter = 'I'
+  let sign = 'I'
 
   const businessConfidences = businessConfidence.map((value) => {
-    if (quarter === 'I') {
+    if (sign === 'I') {
       const bc = {
-        date: {
+        quarter: {
           year,
-          quarter,
+          sign,
           fromMonth: 1,
           toMonth: 3
         },
         value
       }
 
-      quarter = 'II'
+      sign = 'II'
       return bc
     }
 
-    if (quarter === 'II') {
+    if (sign === 'II') {
       const bc = {
-        date: {
+        quarter: {
           year,
-          quarter,
+          sign,
           fromMonth: 4,
           toMonth: 6
         },
         value
       }
 
-      quarter = 'III'
+      sign = 'III'
       return bc
     }
 
     
-    if (quarter === 'III') {
+    if (sign === 'III') {
       const bc = {
-        date: {
+        quarter: {
           year,
-          quarter,
+          sign,
           fromMonth: 7,
           toMonth: 9
         },
         value
       }
 
-      quarter = 'IV'
+      sign = 'IV'
       return bc
     }
 
     const bc = {
-      date: {
+      quarter: {
         year,
-        quarter,
+        sign,
         fromMonth: 10,
         toMonth: 12
       },
       value
     }
 
-    quarter = 'I'
+    sign = 'I'
     year++
     return bc
   })
 
-  quarter = 'II'
+  sign = 'II'
   return businessConfidences
 }
