@@ -26,7 +26,7 @@ export const  businessConfidenceFormatter = (businessConfidenceData: BusinessCon
     {
       _id: '6332ee71feef414249d8dc37',
       type: 'Por setor de atividade',
-      name: 'Outros serviços',
+      name: 'Serviços',
       values: getBusinessConfidence(line4)
     }
   ]
