@@ -12,16 +12,19 @@ export const  businessConfidenceFormatter = (businessConfidenceData: BusinessCon
   } = businessConfidenceData
   const businessConfidence = [
     {
+      _id: '6332ee71feef414249d8dc35',
       type: 'Por setor de atividade',
       name: 'Produção Industrial',
       values: getBusinessConfidence(line2)
     },
     {
+      _id: '6332ee71feef414249d8dc36',
       type: 'Por setor de atividade',
       name: 'Comércio',
       values: getBusinessConfidence(line3)
     },
     {
+      _id: '6332ee71feef414249d8dc37',
       type: 'Por setor de atividade',
       name: 'Outros serviços',
       values: getBusinessConfidence(line4)

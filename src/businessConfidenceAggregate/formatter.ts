@@ -17,26 +17,31 @@ export const  businessConfidenceFormatter = (businessConfidenceData: BusinessCon
 
   const businessConfidence = [
     {
+      _id: '6332ee55feef414249d8dc2e',
       type: 'Agregado',
       name: 'Indicador do clima económico',
       values: getBusinessConfidence(line5)
     },
    {
+      _id: '6332ee55feef414249d8dc2f',
       type: 'Agregado',
       name: 'Indicador de perspectiva da procura',
       values: getBusinessConfidence(line10)
     },
     {
+      _id: '6332ee55feef414249d8dc30',
       type: 'Agregado',
       name: 'Indicador de perspectiva emprego',
       values: getBusinessConfidence(line15)
     },
     {
+      _id: '6332ee55feef414249d8dc31',
       type: 'Agregado',
       name: 'Indicador de emprego actual',
       values: getBusinessConfidence(line20)
     },
     {
+      _id: '6332ee55feef414249d8dc32',
       type: 'Agregado',
       name: 'Indicador de perspectivas de preços',
       values: getBusinessConfidence(line25)
