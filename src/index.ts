@@ -1,14 +1,11 @@
 import express from 'express'
 import { config } from 'dotenv'
-import { resolve } from 'path'
 import dotenvExpand from 'dotenv-expand'
-import { businessConfidenceAggregate } from '@src/businessConfidenceAggregate'
+import { creditByPurpose } from '@src/creditByPurpose'
 
 dotenvExpand(config())
 
 const app = express()
-
-const path = resolve(__dirname, '..', 'files', 'interestRates.json')
 
 app.use(
   express.json({
@@ -16,7 +13,7 @@ app.use(
   })
 )
 
-app.get('/', businessConfidenceAggregate)
+app.get('/', creditByPurpose)
 
 
 app.listen(3002, () => {
