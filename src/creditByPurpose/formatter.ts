@@ -132,22 +132,18 @@ function getcreditByPurposeLine (creditByPurposees: number[]) {
   let investmentIndex = 2
   let totalIndex = 3
 
-  while ((year > 2022) && (month >= 8)) {
+  while ((year < 2022) && (month <= 8)) {
     if (month >= 13) {
       year++
       month = 1
     }
 
-    console.log(circulIndex, year)
-
-    formatted.push(
-      {
-        date: { year, month },
-        circul: creditByPurposees[circulIndex],
-        investment: creditByPurposees[investmentIndex],
-        total: creditByPurposees[totalIndex],
-      }
-    )
+    formatted.push({
+      date: { year, month },
+      circul: creditByPurposees[circulIndex],
+      investment: creditByPurposees[investmentIndex],
+      total: creditByPurposees[totalIndex]
+    })
 
     circulIndex += 3 
     investmentIndex += 3

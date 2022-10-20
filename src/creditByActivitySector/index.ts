@@ -30,9 +30,7 @@ export const creditByActivitySector = async (_request: Request, response: Respon
     header: 1,
   }) 
 
-  const filterData = (row: number[]) => {
-    return row.filter((_, index) => index >= 1)
-  }
+  const filterData = (row: number[]) => row.splice(1)
 
   const creditByActivitySectorLines: CreditByActivitySectorLines = {
     creditByActivitySectorLine4: filterData(data[4]),

@@ -2,6 +2,7 @@ import { Request, Response } from "express"
 import { resolve } from "path"
 import fs from 'fs/promises'
 import xlsx from 'xlsx'
+import excel from 'exceljs'
 import { CreditByPurposeLines, creditByPurposeFormatter } from '@src/creditByPurpose/formatter'
 
 const path = resolve(__dirname, '..', '..', 'files', 'credit', 'credit-by-purpose.xlsx')
@@ -26,15 +27,12 @@ export const creditByPurpose = async (_request: Request, response: Response) => 
 
   const tabName = file.SheetNames[0]
 
-
   const data: any = xlsx.utils.sheet_to_json(file.Sheets[tabName], {
     blankrows: false,
     header: 1,
-  }) 
+  })
 
-  const filterData = (row: number[]) => {
-    return row.filter((_, index) => index >= 1)
-  }
+  const filterData = (row: number[]) => row.splice(1)
 
   const creditByPurposeLines: CreditByPurposeLines = {
     creditByPurposeLine4: filterData(data[4]),
@@ -53,7 +51,6 @@ export const creditByPurpose = async (_request: Request, response: Response) => 
     creditByPurposeLine38: filterData(data[38])  }
 
   const formatted = creditByPurposeFormatter({ creditByPurposeLines })
-
 
   await fs.writeFile(dest, JSON.stringify(formatted))
 
