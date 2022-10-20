@@ -2,7 +2,6 @@ import { Request, Response } from "express"
 import { resolve } from "path"
 import fs from 'fs/promises'
 import xlsx from 'xlsx'
-import excel from 'exceljs'
 import { CreditByPurposeLines, creditByPurposeFormatter } from '@src/creditByPurpose/formatter'
 
 const path = resolve(__dirname, '..', '..', 'files', 'credit', 'credit-by-purpose.xlsx')
