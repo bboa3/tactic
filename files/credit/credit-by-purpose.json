@@ -1,5 +1,6 @@
 [
     {
+        "_id": "6351831c4630a096007da367",
         "name": "AGRICULTURA",
         "type": "Por Sector de Atividades",
         "values": [
@@ -1914,6 +1915,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da368",
         "name": "PECU\u00c1RIA",
         "type": "Por Sector de Atividades",
         "values": [
@@ -3828,6 +3830,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da369",
         "name": "SILVICULT.E EXPL. FLORESTAL",
         "type": "Por Sector de Atividades",
         "values": [
@@ -5742,6 +5745,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da36a",
         "name": "PESCAS",
         "type": "Por Sector de Atividades",
         "values": [
@@ -7656,6 +7660,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da36b",
         "name": "INDUSTRIA EXTRACTIVA",
         "type": "Por Sector de Atividades",
         "values": [
@@ -9570,6 +9575,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da36c",
         "name": "IND\u00daSTRIAS TRANSFORMAD.",
         "type": "Por Sector de Atividades",
         "values": [
@@ -11484,6 +11490,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da36d",
         "name": "ELECTRICIDADE G\u00c1S E AGUA",
         "type": "Por Sector de Atividades",
         "values": [
@@ -13398,6 +13405,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da36e",
         "name": "CONSTRU\u00c7\u00c3O E OBRAS P\u00daBLICAS",
         "type": "Por Sector de Atividades",
         "values": [
@@ -15312,6 +15320,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da36f",
         "name": "IND\u00daSTRIA  DE TURISMO",
         "type": "Por Sector de Atividades",
         "values": [
@@ -17226,6 +17235,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da370",
         "name": "COM\u00c9RCIO",
         "type": "Por Sector de Atividades",
         "values": [
@@ -19140,6 +19150,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da371",
         "name": "TRANSPORTES E COMUNICA\u00c7\u00d5ES",
         "type": "Por Sector de Atividades",
         "values": [
@@ -21054,6 +21065,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da372",
         "name": "INST. FINANC.N/ MONET\u00c1RIAS",
         "type": "Por Sector de Atividades",
         "values": [
@@ -22968,6 +22980,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da373",
         "name": "OUTROS SECTORES",
         "type": "Por Sector de Atividades",
         "values": [
@@ -24882,6 +24895,7 @@
         ]
     },
     {
+        "_id": "6351831c4630a096007da374",
         "name": "TOTAL",
         "type": "Por Sector de Atividades",
         "values": [
