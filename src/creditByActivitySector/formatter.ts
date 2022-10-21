@@ -29,41 +29,49 @@ export const creditByActivitySectorFormatter = ({ creditByActivitySectorLines }:
 
   return [
     {
+      _id: '63503b410fb0a210901b891a',
       name: 'Total',
       type: 'Por Sector de Atividades',
       values: getCreditByActivitySectorLine(creditByActivitySectorLine4)
     },
     {
+      _id: '63503b410fb0a210901b891b',
       name: 'AGRICULTURA',
       type: 'Por Sector de Atividades',
       values: getCreditByActivitySectorLine(creditByActivitySectorLine5)
     },
     {
+      _id: '63503b410fb0a210901b891c',
       name: 'INDÚSTRIA',
       type: 'Por Sector de Atividades',
       values: getCreditByActivitySectorLine(creditByActivitySectorLine6)
     },
     {
+      _id: '63503b410fb0a210901b891d',
       name: 'CONSTRUÇÃO',
       type: 'Por Sector de Atividades',
       values: getCreditByActivitySectorLine(creditByActivitySectorLine7)
     },
     {
+      _id: '63503b410fb0a210901b891e',
       name: 'INDÚSTRIA DE TURISMO',
       type: 'Por Sector de Atividades',
       values: getCreditByActivitySectorLine(creditByActivitySectorLine8)
     },
     {
+      _id: '6351831c4630a096007da370',
       name: 'COMÉRCIO',
       type: 'Por Sector de Atividades',
       values: getCreditByActivitySectorLine(creditByActivitySectorLine9)
     },
     {
+      _id: '63503b410fb0a210901b8920',
       name: 'TRANSPORTES E COMUNICAÇÕES',
       type: 'Por Sector de Atividades',
       values: getCreditByActivitySectorLine(creditByActivitySectorLine10)
     },
     {
+      _id: '63503b410fb0a210901b8921',
       name: 'OUTROS SECTORES',
       type: 'Por Sector de Atividades',
       values: getCreditByActivitySectorLine(creditByActivitySectorLine11)

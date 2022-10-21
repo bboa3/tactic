@@ -8,6 +8,7 @@ const path = resolve(__dirname, '..', '..', 'files', 'credit', 'credit-by-activi
 const dest = resolve(__dirname, '..', '..', 'files', 'credit', 'credit-by-activity-sector.json')
 
 export interface CreditByActivitySector {
+  _id: string
   name: string
   type: string
   values: {

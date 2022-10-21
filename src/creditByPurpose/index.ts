@@ -8,6 +8,7 @@ const path = resolve(__dirname, '..', '..', 'files', 'credit', 'credit-by-purpos
 const dest = resolve(__dirname, '..', '..', 'files', 'credit', 'credit-by-purpose.json')
 
 export interface CreditByPurpose {
+  _id: string
   name: string
   type: string
   values: {
