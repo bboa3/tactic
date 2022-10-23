@@ -1,0 +1,32 @@
+# Run script on Http
+fastapi
+uvicorn
+
+# Run Script scheduler
+schedule
+pandas
+bs4
+python-dotenv
+rapidfuzz
+
+# MongoDB
+dnspython
+pymongo
+pymongo[aws]
+
+# PDF scrapping
+tk
+ghostscript
+camelot-py[cv]
+lxml
+pypdf2
+boto3[crt]
+amazon-textract-response-parser
+
+# Excell
+xlsxwriter
+xlrd
+
+#Web scrapping
+selenium
+webdriver-manager
