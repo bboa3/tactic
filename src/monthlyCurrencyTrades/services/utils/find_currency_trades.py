@@ -5,9 +5,9 @@ def find(countryName: str, table: list[list[str]]):
   names = [f'{row[0]}' for row in table]
 
   match = extractOne(countryName, names)
-  matched = match[-3]
-  match_score  = match[-2]
-  matched_index  = match[-1]
+  matched = match[0]
+  match_score  = match[1]
+  matched_index  = match[2]
 
   if (match_score > 85):
     divider_1000_match_score = partial_ratio(matched, '*')

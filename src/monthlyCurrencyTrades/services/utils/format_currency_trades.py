@@ -16,9 +16,9 @@ def formatCurrencyTrades(tableRow: list[str], divider: int):
 
     row = filterValues(tableRow)
 
+    index = 0
     for value in row:
-      if value:
-        print(value)
+      if bool(value) and not type(value) == type('n'):
         values.append({
           'date': { 'year': year, 'month': month },
           'value': value / divider
@@ -29,6 +29,8 @@ def formatCurrencyTrades(tableRow: list[str], divider: int):
         year += 1
       else:
         month += 1
+
+      index += 1
       
   except Exception as err:
     print(err)
