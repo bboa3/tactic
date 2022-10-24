@@ -17,9 +17,9 @@ def saveCurrentTradesDB (currencyTrades: list[CurrencyTrade], indicator: Indicat
     for currency in currencyTrades:
       collection.update_one(
         {
-          'iso.code': currency['isoCode']
+          'iso.code': currency['iso']['code']
         },
-        { '$set': { 'currentTrades': currency['trade'] }}
+        { '$set': { 'monthlyTrades': currency['monthlyTrades'] }}
     )
     
   except Exception as err:
