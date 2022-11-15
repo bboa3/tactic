@@ -43,85 +43,85 @@ export const creditByPurposeFormatter = ({ creditByPurposeLines }: CreditByPurpo
     {
       _id: '6351831c4630a096007da367',
       name: 'AGRICULTURA',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine4)
     },
     {
       _id: '6351831c4630a096007da368',
       name: 'PECUÁRIA',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine12)
     },
     {
       _id: '6351831c4630a096007da369',
       name: 'SILVICULT.E EXPL. FLORESTAL',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine13)
     },
     {
       _id: '6351831c4630a096007da36a',
       name: 'PESCAS',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine14)
     },
     {
       _id: '6351831c4630a096007da36b',
       name: 'INDUSTRIA EXTRACTIVA',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine15)
     },
     {
       _id: '6351831c4630a096007da36c',
       name: 'INDÚSTRIAS TRANSFORMAD.',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine18)
     },
     {
       _id: '6351831c4630a096007da36d',
       name: 'ELECTRICIDADE GÁS E AGUA',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine24)
     },
     {
       _id: '6351831c4630a096007da36e',
       name: 'CONSTRUÇÃO E OBRAS PÚBLICAS',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine25)
     },
     {
       _id: '6351831c4630a096007da36f',
       name: 'INDÚSTRIA  DE TURISMO',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine26)
     },
     {
       _id: '6351831c4630a096007da370',
       name: 'COMÉRCIO',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine27)
     },
     {
       _id: '6351831c4630a096007da371',
       name: 'TRANSPORTES E COMUNICAÇÕES',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine28)
     },
     {
       _id: '6351831c4630a096007da372',
       name: 'INST. FINANC.N/ MONETÁRIAS',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine33)
     },
     {
       _id: '6351831c4630a096007da373',
       name: 'OUTROS SECTORES',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine34)
     },
     {
       _id: '6351831c4630a096007da374',
       name: 'TOTAL',
-      type: 'Por Sector de Atividades',
+      type: 'Por Finalidade',
       values: getcreditByPurposeLine(creditByPurposeLine38)
     }
   ]
