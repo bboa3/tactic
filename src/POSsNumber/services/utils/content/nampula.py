@@ -24,8 +24,6 @@ def nampulaFormatter(
 
         row = filter_row(row)
 
-        values = []
-
         index = 0
         for new_date in date_row:
           dates = new_date.split('-')
