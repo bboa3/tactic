@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from src.core.http.router.atm import ATMRouter
+from src.core.http.router.pos import POSRouter
 from src.core.http.router.currency_trades import currencyTradesRouter
 from dotenv import load_dotenv
 
@@ -22,3 +23,4 @@ app.add_middleware(
 
 app.include_router(currencyTradesRouter)
 app.include_router(ATMRouter)
+app.include_router(POSRouter)

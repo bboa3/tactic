@@ -1,3 +1,5 @@
+# https://www.bancomoc.mz/fm_pgLink.aspx?id=222
+
 indicators = [
   {
     'name': 'Taxa de Câmbio Corrente',

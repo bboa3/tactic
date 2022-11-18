@@ -2,11 +2,11 @@
 
 indicators = [
   {
-    'name': 'Número de máquinas ATMs',
-    'description': 'Número de máquinas de ATMs',
+    'name': 'Número de máquinas POSs',
+    'description': 'Número de máquinas de POSs',
     'page_identifiers': [''],
-    'db_name': 'atm-number',
-    'jobCode': 'atm-number',
+    'db_name': 'pos-number',
+    'jobCode': 'pos-number',
   }
 ]
 
