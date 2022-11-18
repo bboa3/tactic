@@ -1,0 +1,3706 @@
+[
+    {
+        "_id": {
+            "$oid": "63778ffe4fe16ee1e9bfeb12"
+        },
+        "name": "Transfer\u00eancias para contas",
+        "volumes": [
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 1
+                },
+                "value": 111376
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 2
+                },
+                "value": 111389
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 3
+                },
+                "value": 132573
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 4
+                },
+                "value": 122290
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 5
+                },
+                "value": 123182
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 6
+                },
+                "value": 132866
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 7
+                },
+                "value": 152793
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 8
+                },
+                "value": 154987
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 9
+                },
+                "value": 158590
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 10
+                },
+                "value": 169899
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 11
+                },
+                "value": 153327
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 12
+                },
+                "value": 156475
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 1
+                },
+                "value": 157283
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 2
+                },
+                "value": 148756
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 3
+                },
+                "value": 166073
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 4
+                },
+                "value": 153962
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 5
+                },
+                "value": 174857
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 6
+                },
+                "value": 114342
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 7
+                },
+                "value": 122412
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 8
+                },
+                "value": 137988
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 9
+                },
+                "value": 132158
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 10
+                },
+                "value": 346533
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 11
+                },
+                "value": 346367
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 12
+                },
+                "value": 485821
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 1
+                },
+                "value": 416283
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 2
+                },
+                "value": 562187
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 3
+                },
+                "value": 461853
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 4
+                },
+                "value": 460633
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 5
+                },
+                "value": 473878
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 6
+                },
+                "value": 523126
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 7
+                },
+                "value": 523258
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 8
+                },
+                "value": 542914
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 9
+                },
+                "value": 558048
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 10
+                },
+                "value": 561608
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 11
+                },
+                "value": 561904
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 12
+                },
+                "value": 570895
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 1
+                },
+                "value": 138846
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 2
+                },
+                "value": 136464
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 3
+                },
+                "value": 116199
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 4
+                },
+                "value": 107627
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 5
+                },
+                "value": 111935
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 6
+                },
+                "value": 122180
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 7
+                },
+                "value": 133462
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 8
+                },
+                "value": 141393
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 9
+                },
+                "value": 132849
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 10
+                },
+                "value": 130836
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 11
+                },
+                "value": 136622
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 12
+                },
+                "value": 167114
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 1
+                },
+                "value": 163140
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 2
+                },
+                "value": 125811
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 3
+                },
+                "value": 145640
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 4
+                },
+                "value": 149441
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 5
+                },
+                "value": 155232
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 6
+                },
+                "value": 174378
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 7
+                },
+                "value": 168619
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 8
+                },
+                "value": 180493
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 9
+                },
+                "value": 103150
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 10
+                },
+                "value": 189228.497
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 11
+                },
+                "value": 183625
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 12
+                },
+                "value": 222186
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 1
+                },
+                "value": 230135
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 2
+                },
+                "value": 172173
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 3
+                },
+                "value": 685469
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 4
+                },
+                "value": 2274
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 5
+                },
+                "value": 481851
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 6
+                },
+                "value": 679208
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 7
+                },
+                "value": 755274
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 8
+                },
+                "value": 685961
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 9
+                },
+                "value": 722021
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 10
+                },
+                "value": 1403070
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 11
+                },
+                "value": 792678
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 12
+                },
+                "value": 887490
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 1
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 2
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 3
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 4
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 5
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 6
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 7
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 8
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 9
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 10
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 11
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 12
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 1
+                },
+                "value": 908775
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 2
+                },
+                "value": 833533
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 3
+                },
+                "value": 971991
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 4
+                },
+                "value": 936725
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 5
+                },
+                "value": 976664
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 6
+                },
+                "value": 968645
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 7
+                },
+                "value": 995699
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 8
+                },
+                "value": 1018013
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 9
+                },
+                "value": 1031180
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 10
+                },
+                "value": 1033022
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 11
+                },
+                "value": 1104737
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 12
+                },
+                "value": 1233896
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 1
+                },
+                "value": 1058817
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 2
+                },
+                "value": 940808
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 3
+                },
+                "value": 1057903
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 4
+                },
+                "value": 964415
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 5
+                },
+                "value": 1033386
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 6
+                },
+                "value": 1058319
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 7
+                },
+                "value": 951921
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 8
+                },
+                "value": 1215097
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 9
+                },
+                "value": 1116133
+            }
+        ],
+        "values": [
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 1
+                },
+                "value": 267795.95922
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 2
+                },
+                "value": 267514.31223
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 3
+                },
+                "value": 332627.97918
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 4
+                },
+                "value": 293650.1403
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 5
+                },
+                "value": 294980.76622
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 6
+                },
+                "value": 332486.63725
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 7
+                },
+                "value": 401222.61638
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 8
+                },
+                "value": 394431.51569
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 9
+                },
+                "value": 403328.38926
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 10
+                },
+                "value": 433608.80294
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 11
+                },
+                "value": 396712.69229
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 12
+                },
+                "value": 396149.89358
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 1
+                },
+                "value": 414858.11814
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 2
+                },
+                "value": 385774.03106
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 3
+                },
+                "value": 510698.23489
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 4
+                },
+                "value": 831147.65261
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 5
+                },
+                "value": 155987.99796285
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 6
+                },
+                "value": 1202686.26237712
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 7
+                },
+                "value": 344594216.20966
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 8
+                },
+                "value": 172379259.6999
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 9
+                },
+                "value": 1558802.65537
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 10
+                },
+                "value": 1332971
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 11
+                },
+                "value": 1278753.26409
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 12
+                },
+                "value": 2184992.0536
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 1
+                },
+                "value": 1271320.04725
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 2
+                },
+                "value": 1364599.01939
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 3
+                },
+                "value": 1129974.83656
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 4
+                },
+                "value": 1102720.48237
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 5
+                },
+                "value": 1434609.42453
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 6
+                },
+                "value": 2163900.5548
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 7
+                },
+                "value": 2163910.63198
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 8
+                },
+                "value": 2395836.69943
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 9
+                },
+                "value": 1356511154.86919
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 10
+                },
+                "value": 1346883393.61967
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 11
+                },
+                "value": 1346655746.11123
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 12
+                },
+                "value": 1350954421.73571
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 1
+                },
+                "value": 6184653.43035
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 2
+                },
+                "value": 10077246.83338
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 3
+                },
+                "value": 7366145.29167
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 4
+                },
+                "value": 9126424.30067
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 5
+                },
+                "value": 3125097.45459
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 6
+                },
+                "value": 3539613.59157
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 7
+                },
+                "value": 10434758.26981
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 8
+                },
+                "value": 4921684.10694
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 9
+                },
+                "value": 10226525.22042
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 10
+                },
+                "value": 4122685.56233
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 11
+                },
+                "value": 4826727.03485
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 12
+                },
+                "value": 4051990.23285
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 1
+                },
+                "value": 32103220.27815
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 2
+                },
+                "value": 59903971.15155
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 3
+                },
+                "value": 152011984.22834
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 4
+                },
+                "value": 21679268.51433
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 5
+                },
+                "value": 36181302.87883
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 6
+                },
+                "value": 169692112.41277
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 7
+                },
+                "value": 155147614.09806
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 8
+                },
+                "value": 13923015.62644
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 9
+                },
+                "value": 12457555.25831
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 10
+                },
+                "value": 18506691.02953
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 11
+                },
+                "value": 1012075927.83217
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 12
+                },
+                "value": 262591002.15987
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 1
+                },
+                "value": 251121959.98
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 2
+                },
+                "value": 240784249.27
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 3
+                },
+                "value": 935671271117.138
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 4
+                },
+                "value": 8774176216497.78
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 5
+                },
+                "value": 13975493277239
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 6
+                },
+                "value": 639303382003.84
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 7
+                },
+                "value": 1186556996018.35
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 8
+                },
+                "value": 3645141023457.35
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 9
+                },
+                "value": 1384628798743.75
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 10
+                },
+                "value": 2508518097814.1
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 11
+                },
+                "value": 61149815838785.7
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 12
+                },
+                "value": 1130923932441.4
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 1
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 2
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 3
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 4
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 5
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 6
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 7
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 8
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 9
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 10
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 11
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 12
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 1
+                },
+                "value": 5303581064.8681
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 2
+                },
+                "value": 5126510014.2521
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 3
+                },
+                "value": 6175418483.958
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 4
+                },
+                "value": 5385261147.688
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 5
+                },
+                "value": 6042449816.057
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 6
+                },
+                "value": 6031019946.33
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 7
+                },
+                "value": 6209139788.76941
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 8
+                },
+                "value": 6370924291.2305
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 9
+                },
+                "value": 6467272838.9182
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 10
+                },
+                "value": 6277599048.0587
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 11
+                },
+                "value": 7008268390.004
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 12
+                },
+                "value": 8025744312.608
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 1
+                },
+                "value": 6594993523.20162
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 2
+                },
+                "value": 5401944331.257
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 3
+                },
+                "value": 6117110867.356
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 4
+                },
+                "value": 5325730136.476
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 5
+                },
+                "value": 5781315040.42
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 6
+                },
+                "value": 6167476024.1609
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 7
+                },
+                "value": 5656158306.9575
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 8
+                },
+                "value": 6796286230.13
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 9
+                },
+                "value": 6347832246.89
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "63778ffe4fe16ee1e9bfeb13"
+        },
+        "name": "Transfer\u00eancias para telem\u00f3veis",
+        "volumes": [
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 1
+                },
+                "value": 40950
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 2
+                },
+                "value": 39376
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 3
+                },
+                "value": 48600
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 4
+                },
+                "value": 47734
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 5
+                },
+                "value": 58710
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 6
+                },
+                "value": 55358
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 7
+                },
+                "value": 58481
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 8
+                },
+                "value": 73620
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 9
+                },
+                "value": 81866
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 10
+                },
+                "value": 82618
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 11
+                },
+                "value": 87965
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 12
+                },
+                "value": 42672
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 1
+                },
+                "value": 88530
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 2
+                },
+                "value": 94962
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 3
+                },
+                "value": 110851
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 4
+                },
+                "value": 120785
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 5
+                },
+                "value": 137225
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 6
+                },
+                "value": 137497
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 7
+                },
+                "value": 163561
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 8
+                },
+                "value": 170252
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 9
+                },
+                "value": 172355
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 10
+                },
+                "value": 190466
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 11
+                },
+                "value": 186069
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 12
+                },
+                "value": 253189
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 1
+                },
+                "value": 219078
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 2
+                },
+                "value": 202839
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 3
+                },
+                "value": 242188
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 4
+                },
+                "value": 244792
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 5
+                },
+                "value": 263832
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 6
+                },
+                "value": 263914
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 7
+                },
+                "value": 147095
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 8
+                },
+                "value": 314022
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 9
+                },
+                "value": 304655
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 10
+                },
+                "value": 324430
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 11
+                },
+                "value": 324642
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 12
+                },
+                "value": 396506
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 1
+                },
+                "value": 322200
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 2
+                },
+                "value": 304667
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 3
+                },
+                "value": 355802
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 4
+                },
+                "value": 355802
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 5
+                },
+                "value": 387822
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 6
+                },
+                "value": 459797
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 7
+                },
+                "value": 427195
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 8
+                },
+                "value": 470588
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 9
+                },
+                "value": 526526
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 10
+                },
+                "value": 535338
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 11
+                },
+                "value": 549010
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 12
+                },
+                "value": 705134
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 1
+                },
+                "value": 623663
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 2
+                },
+                "value": 555047
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 3
+                },
+                "value": 4619589
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 4
+                },
+                "value": 690089
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 5
+                },
+                "value": 724834
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 6
+                },
+                "value": 745434
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 7
+                },
+                "value": 745321
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 8
+                },
+                "value": 825359
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 9
+                },
+                "value": 716459
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 10
+                },
+                "value": 865362
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 11
+                },
+                "value": 745323
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 12
+                },
+                "value": 1021598
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 1
+                },
+                "value": 862131
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 2
+                },
+                "value": 794152
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 3
+                },
+                "value": 905014
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 4
+                },
+                "value": 826758
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 5
+                },
+                "value": 1112662
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 6
+                },
+                "value": 1026170
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 7
+                },
+                "value": 1121622
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 8
+                },
+                "value": 1152840
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 9
+                },
+                "value": 490486636.34
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 10
+                },
+                "value": 1313064
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 11
+                },
+                "value": 1318298
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 12
+                },
+                "value": 1563617
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 1
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 2
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 3
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 4
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 5
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 6
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 7
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 8
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 9
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 10
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 11
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 12
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 1
+                },
+                "value": 6141694
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 2
+                },
+                "value": 5545074
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 3
+                },
+                "value": 6407195
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 4
+                },
+                "value": 6152763
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 5
+                },
+                "value": 6448821
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 6
+                },
+                "value": 6435908
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 7
+                },
+                "value": 6542426
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 8
+                },
+                "value": 6833595
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 9
+                },
+                "value": 6895587
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 10
+                },
+                "value": 7078373
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 11
+                },
+                "value": 2656109
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 12
+                },
+                "value": 3017610
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 1
+                },
+                "value": 7985855
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 2
+                },
+                "value": 7077953
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 3
+                },
+                "value": 7806818
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 4
+                },
+                "value": 7141570
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 5
+                },
+                "value": 7535910
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 6
+                },
+                "value": 7515161
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 7
+                },
+                "value": 7178195
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 8
+                },
+                "value": 8298283
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 9
+                },
+                "value": 8098321
+            }
+        ],
+        "values": [
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 1
+                },
+                "value": 68399.7436
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 2
+                },
+                "value": 60790.48431
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 3
+                },
+                "value": 79572.19413
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 4
+                },
+                "value": 74941.20812
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 5
+                },
+                "value": 93613.0972160722
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 6
+                },
+                "value": 87821.67222
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 7
+                },
+                "value": 97095.7581
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 8
+                },
+                "value": 119861.62109
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 9
+                },
+                "value": 134107.76823
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 10
+                },
+                "value": 135763.94238
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 11
+                },
+                "value": 145862.63354
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 12
+                },
+                "value": 71583.6568
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 1
+                },
+                "value": 149394.49353
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 2
+                },
+                "value": 159936.22482
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 3
+                },
+                "value": 178499.90179
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 4
+                },
+                "value": 194351.49675
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 5
+                },
+                "value": 219543.81216
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 6
+                },
+                "value": 220633.80884
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 7
+                },
+                "value": 270662.53953
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 8
+                },
+                "value": 342599.17396
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 9
+                },
+                "value": 276431.66852
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 10
+                },
+                "value": 305093.41133
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 11
+                },
+                "value": 556175.84802
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 12
+                },
+                "value": 772161.24681
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 1
+                },
+                "value": 358728.08812
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 2
+                },
+                "value": 324316.8735
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 3
+                },
+                "value": 376958.8161
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 4
+                },
+                "value": 380361.51343
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 5
+                },
+                "value": 406124.95618
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 6
+                },
+                "value": 406810.68987
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 7
+                },
+                "value": 405816.6091
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 8
+                },
+                "value": 692827.93854
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 9
+                },
+                "value": 1169716.03645
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 10
+                },
+                "value": 1460207.09182
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 11
+                },
+                "value": 1226244.72086
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 12
+                },
+                "value": 1903832.26929
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 1
+                },
+                "value": 509526.78924
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 2
+                },
+                "value": 877511.27861
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 3
+                },
+                "value": 948713.56796
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 4
+                },
+                "value": 948713.56796
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 5
+                },
+                "value": 602980.4107
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 6
+                },
+                "value": 709443.98687
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 7
+                },
+                "value": 721629.55664
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 8
+                },
+                "value": 766437.6537
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 9
+                },
+                "value": 832847.21376
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 10
+                },
+                "value": 854442.89681
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 11
+                },
+                "value": 1606235.17753
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 12
+                },
+                "value": 1189993.01769
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 1
+                },
+                "value": 1110558.88811
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 2
+                },
+                "value": 987769.91239
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 3
+                },
+                "value": 1064972341.72628
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 4
+                },
+                "value": 1171001.78265
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 5
+                },
+                "value": 5106710.14549
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 6
+                },
+                "value": 1156907039.52503
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 7
+                },
+                "value": 1154324384.71094
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 8
+                },
+                "value": 5895580.0779266
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 9
+                },
+                "value": 5171681.90421
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 10
+                },
+                "value": 1464263.8955
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 11
+                },
+                "value": 1807517.03106
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 12
+                },
+                "value": 1610796472.4481
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 1
+                },
+                "value": 1435440284.46
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 2
+                },
+                "value": 1287168732.94
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 3
+                },
+                "value": 5265152600.79622
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 4
+                },
+                "value": 3252070417.11894
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 5
+                },
+                "value": 1816750017.61092
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 6
+                },
+                "value": 1652428474.89
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 7
+                },
+                "value": 1931445731.37
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 8
+                },
+                "value": 1954209970.34
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 9
+                },
+                "value": 1633012923.48724
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 10
+                },
+                "value": 2129047501.55724
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 11
+                },
+                "value": 2210693058
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 12
+                },
+                "value": 2682860564.45
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 1
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 2
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 3
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 4
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 5
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 6
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 7
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 8
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 9
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 10
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 11
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 12
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 1
+                },
+                "value": 7001381436.71
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 2
+                },
+                "value": 6470431839.1925
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 3
+                },
+                "value": 7837814654.62
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 4
+                },
+                "value": 7409475657.49
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 5
+                },
+                "value": 7805069177.15
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 6
+                },
+                "value": 7497084104.79
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 7
+                },
+                "value": 7834378065.21
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 8
+                },
+                "value": 7951389293.44
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 9
+                },
+                "value": 8156979782.4
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 10
+                },
+                "value": 8431705862.99
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 11
+                },
+                "value": 8958057723.91
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 12
+                },
+                "value": 11146359998.38
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 1
+                },
+                "value": 9315160197.78
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 2
+                },
+                "value": 8381060244.61
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 3
+                },
+                "value": 9313683018.92
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 4
+                },
+                "value": 8297138598.98
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 5
+                },
+                "value": 8959361271.48
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 6
+                },
+                "value": 9059355213.17
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 7
+                },
+                "value": 8552634702.79
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 8
+                },
+                "value": 9871276900.21
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 9
+                },
+                "value": 9634472158.01
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "63778ffe4fe16ee1e9bfeb11"
+        },
+        "name": "Quantidade de subscritores",
+        "volumes": [
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 1
+                },
+                "value": 822589
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 2
+                },
+                "value": 829683
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 3
+                },
+                "value": 850718
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 4
+                },
+                "value": 889723
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 5
+                },
+                "value": 907248
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 6
+                },
+                "value": 695048
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 7
+                },
+                "value": 964755
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 8
+                },
+                "value": 268038
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 9
+                },
+                "value": 991084
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 10
+                },
+                "value": 883719
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 11
+                },
+                "value": 885476
+            },
+            {
+                "date": {
+                    "year": 2014,
+                    "month": 12
+                },
+                "value": 886964
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 1
+                },
+                "value": 898804
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 2
+                },
+                "value": 1157689
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 3
+                },
+                "value": 1193189
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 4
+                },
+                "value": 1148292
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 5
+                },
+                "value": 1134559
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 6
+                },
+                "value": 913492
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 7
+                },
+                "value": 835517
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 8
+                },
+                "value": 910194
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 9
+                },
+                "value": 990587
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 10
+                },
+                "value": 1554630
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 11
+                },
+                "value": 1623818
+            },
+            {
+                "date": {
+                    "year": 2015,
+                    "month": 12
+                },
+                "value": 1652959.94302
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 1
+                },
+                "value": 1673911
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 2
+                },
+                "value": 1570788
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 3
+                },
+                "value": 1616275
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 4
+                },
+                "value": 1631608
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 5
+                },
+                "value": 1708826
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 6
+                },
+                "value": 1732164
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 7
+                },
+                "value": 1802798
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 8
+                },
+                "value": 1861211
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 9
+                },
+                "value": 1923270
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 10
+                },
+                "value": 1965524
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 11
+                },
+                "value": 2002332
+            },
+            {
+                "date": {
+                    "year": 2016,
+                    "month": 12
+                },
+                "value": 2052847
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 1
+                },
+                "value": 2005341
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 2
+                },
+                "value": 2043420
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 3
+                },
+                "value": 2068138
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 4
+                },
+                "value": 2084523
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 5
+                },
+                "value": 2161073
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 6
+                },
+                "value": 2184893
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 7
+                },
+                "value": 2277165
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 8
+                },
+                "value": 2341042
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 9
+                },
+                "value": 1898261
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 10
+                },
+                "value": 1897852
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 11
+                },
+                "value": 1849143
+            },
+            {
+                "date": {
+                    "year": 2017,
+                    "month": 12
+                },
+                "value": 1646150
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 1
+                },
+                "value": 1942743
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 2
+                },
+                "value": 1982824
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 3
+                },
+                "value": 2028838
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 4
+                },
+                "value": 2022237
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 5
+                },
+                "value": 2105037
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 6
+                },
+                "value": 2136612
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 7
+                },
+                "value": 2141439
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 8
+                },
+                "value": 2205830
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 9
+                },
+                "value": 2234030
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 10
+                },
+                "value": 2258786
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 11
+                },
+                "value": 2327514
+            },
+            {
+                "date": {
+                    "year": 2018,
+                    "month": 12
+                },
+                "value": 2348917
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 1
+                },
+                "value": 2383741
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 2
+                },
+                "value": 2422037
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 3
+                },
+                "value": 2553682
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 4
+                },
+                "value": 2583288
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 5
+                },
+                "value": 2621478
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 6
+                },
+                "value": 2546303
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 7
+                },
+                "value": 2652511
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 8
+                },
+                "value": 2659155
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 9
+                },
+                "value": 2706986
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 10
+                },
+                "value": 2825194
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 11
+                },
+                "value": 2923544
+            },
+            {
+                "date": {
+                    "year": 2019,
+                    "month": 12
+                },
+                "value": 2975550
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 1
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 2
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 3
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 4
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 5
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 6
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 7
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 8
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 9
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 10
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 11
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2020,
+                    "month": 12
+                },
+                "value": null
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 1
+                },
+                "value": 3654798
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 2
+                },
+                "value": 3719626
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 3
+                },
+                "value": 3805866
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 4
+                },
+                "value": 3810283
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 5
+                },
+                "value": 3903011
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 6
+                },
+                "value": 4021391
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 7
+                },
+                "value": 3997954
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 8
+                },
+                "value": 4154797
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 9
+                },
+                "value": 4238229
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 10
+                },
+                "value": 4277716
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 11
+                },
+                "value": 4392255
+            },
+            {
+                "date": {
+                    "year": 2021,
+                    "month": 12
+                },
+                "value": 4516681
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 1
+                },
+                "value": 4651451
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 2
+                },
+                "value": 4691858
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 3
+                },
+                "value": 5158496
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 4
+                },
+                "value": 4874716
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 5
+                },
+                "value": 4904056
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 6
+                },
+                "value": 5003099
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 7
+                },
+                "value": 5094117
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 8
+                },
+                "value": 5210149
+            },
+            {
+                "date": {
+                    "year": 2022,
+                    "month": 9
+                },
+                "value": 5313612
+            }
+        ],
+        "values": []
+    }
+]
