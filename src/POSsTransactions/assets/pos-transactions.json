@@ -739,27 +739,6 @@
                     "month": 9
                 },
                 "value": 4184451
-            },
-            {
-                "date": {
-                    "year": 2022,
-                    "month": 10
-                },
-                "value": null
-            },
-            {
-                "date": {
-                    "year": 2022,
-                    "month": 11
-                },
-                "value": null
-            },
-            {
-                "date": {
-                    "year": 2022,
-                    "month": 12
-                },
-                "value": null
             }
         ],
         "values": [
@@ -1497,27 +1476,6 @@
                     "month": 9
                 },
                 "value": 11396460382.48
-            },
-            {
-                "date": {
-                    "year": 2022,
-                    "month": 10
-                },
-                "value": null
-            },
-            {
-                "date": {
-                    "year": 2022,
-                    "month": 11
-                },
-                "value": null
-            },
-            {
-                "date": {
-                    "year": 2022,
-                    "month": 12
-                },
-                "value": null
             }
         ]
     }
