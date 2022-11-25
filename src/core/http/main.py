@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from src.core.http.router.money import MoneyRouter
 from src.core.http.router.atm import ATMRouter
 from src.core.http.router.pos import POSRouter
 from src.core.http.router.mobile_banking import mobileBankingRouter
@@ -26,5 +27,6 @@ app.add_middleware(
 app.include_router(currencyTradesRouter)
 app.include_router(ATMRouter)
 app.include_router(POSRouter)
+app.include_router(MoneyRouter)
 app.include_router(mobileBankingRouter)
 app.include_router(internetBankingRouter)
