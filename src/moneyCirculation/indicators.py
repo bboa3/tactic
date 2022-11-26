@@ -1,4 +1,4 @@
-# https://www.bancomoc.mz/fm_pgTab1.aspx?id=27
+# https://www.bancomoc.mz/fm_pgLink.aspx?id=223
 
 indicators = [
   {
