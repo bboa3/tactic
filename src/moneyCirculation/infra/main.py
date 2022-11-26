@@ -3,6 +3,6 @@ from src.moneyCirculation.domain.requiredFields.money_circulation import Indicat
 
 def moneyCirculationInfra(indicator: Indicator):   
   db_name = indicator['db_name']
-  path = str(Path(__file__).parents[1].joinpath(f'assets/{db_name}.xlsx')) 
+  path = str(Path(__file__).parents[1].joinpath(f'assets/{db_name}.xls')) 
   
   return path

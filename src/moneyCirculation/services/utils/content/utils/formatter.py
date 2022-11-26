@@ -10,7 +10,6 @@ def rowFormatter(
   for new_date in date_row:
     dates = new_date.split('-')
 
-    print(dates)
     year = int(dates[0])
     month = int(dates[1])
 

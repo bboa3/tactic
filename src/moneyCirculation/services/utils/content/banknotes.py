@@ -14,8 +14,8 @@ def banknotesFormatter(
   values = []
 
   try:
-    values_row = findValuesRows(table, name, 9)
-    volumes_row = findVolumesRows(table, name, 17)
+    values_row = findValuesRows(table, name, 7)
+    volumes_row = findVolumesRows(table, name, 15)
 
     if (not bool(volumes_row)) or (not bool(values_row)):
       raise Exception(f"'{name}' have not found row of data.")

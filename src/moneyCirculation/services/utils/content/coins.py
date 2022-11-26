@@ -1,11 +1,11 @@
 from typing import Union
-from src.ATMsTransactions.services.utils.content.utils.find_rows import findValuesAndVolumesRows
-from src.ATMsTransactions.services.utils.content.utils.formatter import rowFormatter
-from src.ATMsTransactions.domain.requiredFields.atm import Indicator
+from src.moneyCirculation.services.utils.content.utils.find_rows import findValuesRows, findVolumesRows
+from src.moneyCirculation.services.utils.content.utils.formatter import rowFormatter
+from src.moneyCirculation.domain.requiredFields.money_circulation import Indicator
 
-name: str = 'Pagamentos de Serviços'
+name: str = 'Moedas em circulação'
 
-def paymentsForServicesFormatter(
+def coinsFormatter(
   table: list[list[Union[float, str]]],
   date_row: list[str],
   indicator: Indicator
@@ -14,10 +14,8 @@ def paymentsForServicesFormatter(
   values = []
 
   try:
-    rows = findValuesAndVolumesRows(table, name)
-
-    volumes_row = rows[0]
-    values_row = rows[1]
+    values_row = findValuesRows(table, name, 10)
+    volumes_row = findVolumesRows(table, name, 21)
 
     if (not bool(volumes_row)) or (not bool(values_row)):
       raise Exception(f"'{name}' have not found row of data.")
@@ -30,7 +28,7 @@ def paymentsForServicesFormatter(
 
   return {
     "_id": {
-      "$oid": "63778ffe4fe16ee1e9bfeb13"
+      "$oid": "63778ffe4fe16ee1e9bfeb16"
     },
     'name': name,
     'volumes': volumes,

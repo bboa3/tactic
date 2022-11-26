@@ -18,6 +18,8 @@ def findValuesRows(table: list[list[Union[float, str]]], name: str, rows_to_jump
         foundRow = filter_row(total_row)
 
         return foundRow
+      
+    index += 1
 
 
 def findVolumesRows(table: list[list[Union[float, str]]], name: str, rows_to_jump: int):
@@ -29,8 +31,6 @@ def findVolumesRows(table: list[list[Union[float, str]]], name: str, rows_to_jum
     if (match_score > 90):
       total_row = table[index + rows_to_jump]
 
-      print(total_row)
-
       total_row_name = f'{total_row[0]}'
       match_score = partial_ratio('Total', total_row_name)
 
@@ -38,3 +38,6 @@ def findVolumesRows(table: list[list[Union[float, str]]], name: str, rows_to_jum
         foundRow = filter_row(total_row)
 
         return foundRow
+      
+    index += 1
+    

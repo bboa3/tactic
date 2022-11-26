@@ -12,6 +12,7 @@ class Value(BaseModel):
 class MoneyCirculation(BaseModel):
   _id: str
   name: str
+  volumes: list[Value]
   values: list[Value]
 
 class Indicator(BaseModel):

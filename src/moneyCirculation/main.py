@@ -18,6 +18,6 @@ def moneyCirculationUseCase():
                 
             money = moneyCirculationService(sheet, indicator)
             
-            # saveMoneyCirculationDB(money, indicator)
+            saveMoneyCirculationDB(money, indicator)
 
     return money
