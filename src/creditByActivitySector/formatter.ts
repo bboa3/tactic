@@ -1,15 +1,23 @@
 import { CreditByActivitySector } from '.'
 
 export interface CreditByActivitySectorLines {
-  creditByActivitySectorLine4: number[]
-  creditByActivitySectorLine5: number[]
-  creditByActivitySectorLine6: number[]
-  creditByActivitySectorLine7: number[]
-  creditByActivitySectorLine8: number[]
-  creditByActivitySectorLine9: number[]
-  creditByActivitySectorLine10: number[]
-  creditByActivitySectorLine11: number[]
+  total: number[]
+  agriculture: number[]
+  construction: number[]
+  tourismIndustry: number[]
+  livestock: number[]
+  trading: number[]
+  manufacturingIndustry: number[]
+  electricityGasAndWater: number[]
+  silvicultAndForestExpl: number[]
+  financialInstitutions: number[]
+  extractiveIndustry: number[]
+  fisheries: number[]
+  transportAndCommunication: number[]
+  otherSector: number[]
 }
+
+const unitPotentiation = 1000000
 
 interface CreditByActivitySectorData {
   creditByActivitySectorLines: CreditByActivitySectorLines
@@ -17,66 +25,158 @@ interface CreditByActivitySectorData {
 
 export const creditByActivitySectorFormatter = ({ creditByActivitySectorLines }: CreditByActivitySectorData): CreditByActivitySector[] => {
   const {
-    creditByActivitySectorLine4,
-    creditByActivitySectorLine5,
-    creditByActivitySectorLine6,
-    creditByActivitySectorLine7,
-    creditByActivitySectorLine8,
-    creditByActivitySectorLine9,
-    creditByActivitySectorLine10,
-    creditByActivitySectorLine11
+    total,
+    agriculture,
+    construction,
+    tourismIndustry,
+    fisheries,
+    electricityGasAndWater,
+    silvicultAndForestExpl,
+    manufacturingIndustry,
+    trading,
+    financialInstitutions,
+    extractiveIndustry,
+    livestock,
+    transportAndCommunication,
+    otherSector
   } = creditByActivitySectorLines
 
-  return [
-    {
-      _id: '63503b410fb0a210901b891a',
-      name: 'Total',
-      type: 'Por Sector de Atividades',
-      values: getCreditByActivitySectorLine(creditByActivitySectorLine4)
+  const unit = 'MZN'
+  const type = {
+    pt: "Por Sector de Atividades",
+    en: "By Activity Sectors"
+  }
+
+  return [{
+    _id: "6351831c4630a096007da370",
+    name: {
+      pt: "Comércio",
+      en: "Trading"
     },
-    {
-      _id: '63503b410fb0a210901b891b',
-      name: 'AGRICULTURA',
-      type: 'Por Sector de Atividades',
-      values: getCreditByActivitySectorLine(creditByActivitySectorLine5)
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(trading)
+  },
+  {
+    _id: "6351831c4630a096007da36a",
+    name: {
+      pt: "Pescas",
+      en: "Fisheries"
     },
-    {
-      _id: '63503b410fb0a210901b891c',
-      name: 'INDÚSTRIA',
-      type: 'Por Sector de Atividades',
-      values: getCreditByActivitySectorLine(creditByActivitySectorLine6)
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(fisheries)
+  },{
+    _id: "6351831c4630a096007da36d",
+    name: {
+      pt: "Electricidade Gás E água",
+      en: "Electricity Gas and water"
     },
-    {
-      _id: '63503b410fb0a210901b891d',
-      name: 'CONSTRUÇÃO',
-      type: 'Por Sector de Atividades',
-      values: getCreditByActivitySectorLine(creditByActivitySectorLine7)
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(electricityGasAndWater)
+  },{
+    _id: "6351831c4630a096007da36c",
+    name: {
+      pt: "Indústria Transformadora",
+      en: "Manufacturing Industry"
     },
-    {
-      _id: '63503b410fb0a210901b891e',
-      name: 'INDÚSTRIA DE TURISMO',
-      type: 'Por Sector de Atividades',
-      values: getCreditByActivitySectorLine(creditByActivitySectorLine8)
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(manufacturingIndustry)
+  },{
+    _id: "6351831c4630a096007da36f",
+    name: {
+      pt: "Indústria  de Turismo",
+      en: "Tourism Industry"
     },
-    {
-      _id: '6351831c4630a096007da370',
-      name: 'COMÉRCIO',
-      type: 'Por Sector de Atividades',
-      values: getCreditByActivitySectorLine(creditByActivitySectorLine9)
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(tourismIndustry)
+  },{
+    _id: "6351831c4630a096007da368",
+    name: {
+      pt: "Pecuária",
+      en: "Livestock"
     },
-    {
-      _id: '63503b410fb0a210901b8920',
-      name: 'TRANSPORTES E COMUNICAÇÕES',
-      type: 'Por Sector de Atividades',
-      values: getCreditByActivitySectorLine(creditByActivitySectorLine10)
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(livestock)
+  },{
+    _id: "6351831c4630a096007da371",
+    name: {
+      pt: "Transporte e Comunicações",
+      en: "Transport and communication"
     },
-    {
-      _id: '63503b410fb0a210901b8921',
-      name: 'OUTROS SECTORES',
-      type: 'Por Sector de Atividades',
-      values: getCreditByActivitySectorLine(creditByActivitySectorLine11)
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(transportAndCommunication)
+  },{
+    _id: "6351831c4630a096007da367",
+    name: {
+      pt: "Agricultura",
+      en: "Agriculture"
     },
-  ]
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(agriculture)
+  },{
+    _id: "6351831c4630a096007da369",
+    name: {
+      pt: "Silvicult. E Expl Florestal",
+      en: "Silvicult. And Forest Expl"
+    },
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(silvicultAndForestExpl)
+  },{
+    _id: "6351831c4630a096007da36b",
+    name: {
+      pt: "Indústria Extrativa",
+      en: "Extractive Industry"
+    },
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(extractiveIndustry)
+  },{
+    _id: "6351831c4630a096007da372",
+    name: {
+      pt: "Instituições Financeir. N. Monetária",
+      en: "Financial Institutions N. Monetary"
+    },
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(financialInstitutions)
+  },{
+    _id: "6351831c4630a096007da36e",
+    name: {
+      pt: "Construção e Obras Públicas",
+      en: "Construction and Public building"
+    },
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(construction)
+  },
+  {
+    _id: "63503b410fb0a210901b8921",
+    name: {
+      pt: "Outro Sectores",
+      en: "Other Sector"
+    },
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(otherSector)
+  },
+  {
+    _id: "6351831c4630a096007da374",
+    name: {
+      pt: "Total",
+      en: "Total"
+    },
+    type,
+    unit,
+    values: getCreditByActivitySectorLine(total)
+  }]
 }
 
 interface Value {
@@ -88,7 +188,7 @@ interface Value {
 }
 
 function getCreditByActivitySectorLine (creditByActivitySectores: number[]) {
-  let year = 2011
+  let year = 2008
   let index = 0
   const formatted: Value[] = []
   
@@ -104,7 +204,7 @@ function getCreditByActivitySectorLine (creditByActivitySectores: number[]) {
           year,
           month: index + 1
         },
-        value
+        value: value * unitPotentiation
       }
     )
 

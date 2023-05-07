@@ -7,10 +7,16 @@ import { CreditByPurposeLines, creditByPurposeFormatter } from '@src/creditByPur
 const path = resolve(__dirname, '..', '..', 'files', 'credit', 'credit-by-purpose.xlsx')
 const dest = resolve(__dirname, '..', '..', 'files', 'credit', 'credit-by-purpose.json')
 
+interface Locale {
+  pt: string
+  en: string
+}
+
 export interface CreditByPurpose {
   _id: string
-  name: string
-  type: string
+  name: Locale
+  type: Locale
+  unit: string
   values: {
     date: {
       year: number
@@ -32,23 +38,25 @@ export const creditByPurpose = async (_request: Request, response: Response) => 
     header: 1,
   })
 
-  const filterData = (row: number[]) => row.splice(1)
+
+  const filterData = (row: number[]) => row.splice(6)
 
   const creditByPurposeLines: CreditByPurposeLines = {
-    creditByPurposeLine4: filterData(data[4]),
-    creditByPurposeLine12: filterData(data[12]),
-    creditByPurposeLine13: filterData(data[13]),
-    creditByPurposeLine14: filterData(data[14]),
-    creditByPurposeLine15: filterData(data[15]),
-    creditByPurposeLine18: filterData(data[18]),
-    creditByPurposeLine24: filterData(data[24]),
-    creditByPurposeLine25: filterData(data[25]),
-    creditByPurposeLine26: filterData(data[26]),
-    creditByPurposeLine27: filterData(data[27]),
-    creditByPurposeLine28: filterData(data[28]),
-    creditByPurposeLine33: filterData(data[33]),
-    creditByPurposeLine34: filterData(data[34]),
-    creditByPurposeLine38: filterData(data[38])  }
+    agriculture: filterData(data[4]),
+    livestock: filterData(data[12]),
+    silvicultAndForestExpl: filterData(data[13]),
+    fisheries: filterData(data[14]),
+    extractiveIndustry: filterData(data[15]),
+    manufacturingIndustry: filterData(data[18]),
+    electricityGasAndWater: filterData(data[24]),
+    construction: filterData(data[25]),
+    tourismIndustry: filterData(data[26]),
+    trading: filterData(data[27]),
+    transportAndCommunication: filterData(data[28]),
+    financialInstitutions: filterData(data[33]),
+    otherSector: filterData(data[34]),
+    total: filterData(data[38])
+  }
 
   const formatted = creditByPurposeFormatter({ creditByPurposeLines })
 

@@ -1,7 +1,7 @@
 import express from 'express'
 import { config } from 'dotenv'
 import dotenvExpand from 'dotenv-expand'
-import { creditByActivitySector } from '@src/creditByActivitySector'
+import { creditByPurpose } from '@src/creditByPurpose'
 
 dotenvExpand(config())
 
@@ -13,7 +13,7 @@ app.use(
   })
 )
 
-app.get('/', creditByActivitySector)
+app.get('/', creditByPurpose)
 
 
 app.listen(3002, () => {

@@ -1,130 +1,182 @@
 import { CreditByPurpose } from '.'
 
 export interface CreditByPurposeLines {
-  creditByPurposeLine4: number[]
-  creditByPurposeLine12: number[]
-  creditByPurposeLine13: number[]
-  creditByPurposeLine14: number[]
-  creditByPurposeLine15: number[]
-  creditByPurposeLine18: number[]
-  creditByPurposeLine24: number[]
-  creditByPurposeLine25: number[]
-  creditByPurposeLine26: number[]
-  creditByPurposeLine27: number[]
-  creditByPurposeLine28: number[]
-  creditByPurposeLine33: number[]
-  creditByPurposeLine34: number[]
-  creditByPurposeLine38: number[]
+  total: number[]
+  agriculture: number[]
+  construction: number[]
+  tourismIndustry: number[]
+  livestock: number[]
+  trading: number[]
+  manufacturingIndustry: number[]
+  electricityGasAndWater: number[]
+  silvicultAndForestExpl: number[]
+  financialInstitutions: number[]
+  extractiveIndustry: number[]
+  fisheries: number[]
+  transportAndCommunication: number[]
+  otherSector: number[]
 }
 
 interface CreditByPurposeData {
   creditByPurposeLines: CreditByPurposeLines
 }
 
+const unitPotentiation = 1000
+
 export const creditByPurposeFormatter = ({ creditByPurposeLines }: CreditByPurposeData): CreditByPurpose[] => {
   const {
-    creditByPurposeLine4,
-    creditByPurposeLine12,
-    creditByPurposeLine13,
-    creditByPurposeLine14,
-    creditByPurposeLine15,
-    creditByPurposeLine18,
-    creditByPurposeLine24,
-    creditByPurposeLine25,
-    creditByPurposeLine26,
-    creditByPurposeLine27,
-    creditByPurposeLine28,
-    creditByPurposeLine33,
-    creditByPurposeLine34,
-    creditByPurposeLine38
+    total,
+    agriculture,
+    construction,
+    tourismIndustry,
+    fisheries,
+    electricityGasAndWater,
+    silvicultAndForestExpl,
+    manufacturingIndustry,
+    trading,
+    financialInstitutions,
+    extractiveIndustry,
+    livestock,
+    transportAndCommunication,
+    otherSector
   } = creditByPurposeLines
 
-  return [
-    {
-      _id: '6351831c4630a096007da367',
-      name: 'AGRICULTURA',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine4)
+  const unit = 'MZN'
+  const type = {
+    pt: "Por Sector de Atividades",
+    en: "By Activity Sectors"
+  }
+
+  return [{
+    _id: "6351831c4630a096007da370",
+    name: {
+      pt: "Comércio",
+      en: "Trading"
     },
-    {
-      _id: '6351831c4630a096007da368',
-      name: 'PECUÁRIA',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine12)
+    type,
+    unit,
+    values: getCreditByPurposeLine(trading)
+  },
+  {
+    _id: "6351831c4630a096007da36a",
+    name: {
+      pt: "Pescas",
+      en: "Fisheries"
     },
-    {
-      _id: '6351831c4630a096007da369',
-      name: 'SILVICULT.E EXPL. FLORESTAL',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine13)
+    type,
+    unit,
+    values: getCreditByPurposeLine(fisheries)
+  },{
+    _id: "6351831c4630a096007da36d",
+    name: {
+      pt: "Electricidade Gás E água",
+      en: "Electricity Gas and water"
     },
-    {
-      _id: '6351831c4630a096007da36a',
-      name: 'PESCAS',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine14)
+    type,
+    unit,
+    values: getCreditByPurposeLine(electricityGasAndWater)
+  },{
+    _id: "6351831c4630a096007da36c",
+    name: {
+      pt: "Indústria Transformadora",
+      en: "Manufacturing Industry"
     },
-    {
-      _id: '6351831c4630a096007da36b',
-      name: 'INDUSTRIA EXTRACTIVA',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine15)
+    type,
+    unit,
+    values: getCreditByPurposeLine(manufacturingIndustry)
+  },{
+    _id: "6351831c4630a096007da36f",
+    name: {
+      pt: "Indústria  de Turismo",
+      en: "Tourism Industry"
     },
-    {
-      _id: '6351831c4630a096007da36c',
-      name: 'INDÚSTRIAS TRANSFORMAD.',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine18)
+    type,
+    unit,
+    values: getCreditByPurposeLine(tourismIndustry)
+  },{
+    _id: "6351831c4630a096007da368",
+    name: {
+      pt: "Pecuária",
+      en: "Livestock"
     },
-    {
-      _id: '6351831c4630a096007da36d',
-      name: 'ELECTRICIDADE GÁS E AGUA',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine24)
+    type,
+    unit,
+    values: getCreditByPurposeLine(livestock)
+  },{
+    _id: "6351831c4630a096007da371",
+    name: {
+      pt: "Transporte e Comunicações",
+      en: "Transport and communication"
     },
-    {
-      _id: '6351831c4630a096007da36e',
-      name: 'CONSTRUÇÃO E OBRAS PÚBLICAS',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine25)
+    type,
+    unit,
+    values: getCreditByPurposeLine(transportAndCommunication)
+  },{
+    _id: "6351831c4630a096007da367",
+    name: {
+      pt: "Agricultura",
+      en: "Agriculture"
     },
-    {
-      _id: '6351831c4630a096007da36f',
-      name: 'INDÚSTRIA  DE TURISMO',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine26)
+    type,
+    unit,
+    values: getCreditByPurposeLine(agriculture)
+  },{
+    _id: "6351831c4630a096007da369",
+    name: {
+      pt: "Silvicult. E Expl Florestal",
+      en: "Silvicult. And Forest Expl"
     },
-    {
-      _id: '6351831c4630a096007da370',
-      name: 'COMÉRCIO',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine27)
+    type,
+    unit,
+    values: getCreditByPurposeLine(silvicultAndForestExpl)
+  },{
+    _id: "6351831c4630a096007da36b",
+    name: {
+      pt: "Indústria Extrativa",
+      en: "Extractive Industry"
     },
-    {
-      _id: '6351831c4630a096007da371',
-      name: 'TRANSPORTES E COMUNICAÇÕES',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine28)
+    type,
+    unit,
+    values: getCreditByPurposeLine(extractiveIndustry)
+  },{
+    _id: "6351831c4630a096007da372",
+    name: {
+      pt: "Instituições Financeir. N. Monetária",
+      en: "Financial Institutions N. Monetary"
     },
-    {
-      _id: '6351831c4630a096007da372',
-      name: 'INST. FINANC.N/ MONETÁRIAS',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine33)
+    type,
+    unit,
+    values: getCreditByPurposeLine(financialInstitutions)
+  },{
+    _id: "6351831c4630a096007da36e",
+    name: {
+      pt: "Construção e Obras Públicas",
+      en: "Construction and Public building"
     },
-    {
-      _id: '6351831c4630a096007da373',
-      name: 'OUTROS SECTORES',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine34)
+    type,
+    unit,
+    values: getCreditByPurposeLine(construction)
+  },
+  {
+    _id: "63503b410fb0a210901b8921",
+    name: {
+      pt: "Outro Sectores",
+      en: "Other Sector"
     },
-    {
-      _id: '6351831c4630a096007da374',
-      name: 'TOTAL',
-      type: 'Por Finalidade',
-      values: getcreditByPurposeLine(creditByPurposeLine38)
-    }
-  ]
+    type,
+    unit,
+    values: getCreditByPurposeLine(otherSector)
+  },
+  {
+    _id: "6351831c4630a096007da374",
+    name: {
+      pt: "Total",
+      en: "Total"
+    },
+    type,
+    unit,
+    values: getCreditByPurposeLine(total)
+  }]
 }
 
 interface Value {
@@ -137,33 +189,34 @@ interface Value {
   total: number
 }
 
-function getcreditByPurposeLine (creditByPurposees: number[]) {
-  let year = 2001
-  let month = 1
+function getCreditByPurposeLine (creditByPurposes: number[]) {
+  const length = creditByPurposes.length
+  let year = 2003
+  let index = 0
   const formatted: Value[] = []
 
   let circulIndex = 1 
   let investmentIndex = 2
   let totalIndex = 3
 
-  while ((year < 2022) && (month <= 8)) {
-    if (month >= 13) {
+  while (totalIndex <= length) {
+    if (index >= 12) {
       year++
-      month = 1
+      index = 0
     }
 
     formatted.push({
-      date: { year, month },
-      circul: creditByPurposees[circulIndex],
-      investment: creditByPurposees[investmentIndex],
-      total: creditByPurposees[totalIndex]
+      date: { year, month: index + 1 },
+      circul: creditByPurposes[circulIndex] * unitPotentiation,
+      investment: creditByPurposes[investmentIndex] * unitPotentiation,
+      total: creditByPurposes[totalIndex] * unitPotentiation
     })
 
-    circulIndex += 3 
+    circulIndex += 3
     investmentIndex += 3
     totalIndex += 3
 
-    month++
+    index++
   }
 
   return formatted
